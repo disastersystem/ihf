@@ -1,0 +1,430 @@
+<template>
+  <div class="
+    pa-4
+    pa-sm-6
+    pa-md-12
+    pa-lg-12
+    pa-xl-12
+  ">
+    <Cover/>
+
+    <!-- <Message/> -->
+
+    <v-row justify="center" class="ihf-extra-margin-top">
+      <h2 class="display-1 mb-5 pa-5">Behandlinger hos oss</h2>
+    </v-row>
+
+    <v-row justify="center" class="ihf-extra-margin-bottom">
+      <v-col
+        xs="12" md="6" sm="6" lg="3" xl="3"
+        v-for="(treatment, index) in treatments"
+        :key="index"
+        @click="$router.push(treatment.link)"
+        class="ihf-card"
+      >
+        <div>
+          <!-- <v-img
+            v-if="treatment.image"
+            :src="require('@/assets/' + treatment.image)"
+            contain
+          ></v-img> -->
+          <!-- <v-responsive v-else :aspect-ratio="16/11" style="background: #ddd;"></v-responsive> -->
+          <v-img
+            v-if="treatment.image"
+            :src="require('@/assets/' + treatment.image)"
+            contain
+            :aspect-ratio="treatment.ratio"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+
+        <div class="ihf-treatment-desc">
+          <h2 v-html="treatment.name"></h2>
+
+          <div v-html="treatment.text"></div>
+        </div>
+
+        <v-row justify="center" class="pt-0 ml-2 mr-2">
+          <v-btn
+            @click="$router.push(treatment.link)"
+            target="_blank"
+            color="secondary"
+            class="text-none mb-8"
+            text
+          >
+            <span>Les mer</span>
+            <v-icon right dark>mdi-arrow-right</v-icon>
+          </v-btn>
+        </v-row>
+      </v-col>
+    </v-row>
+
+    <!-- <v-row justify="center" class="ihf-extra-margin-bottom">
+      <v-col
+        v-for="(treatment, i) in cards"
+        :key="i"
+        @click="$router.push(treatment.link)"
+        xs="12" sm="6" md="4" lg="3" xl="2"
+      >
+        <div class="pa-8 ml-4 mr-4 mt-4 mb-6 treatment-card elevation-2">
+          <v-img
+            :src="require(`@/assets/${treatment.image}`)"
+            contain
+            style="height: 80px;"
+          ></v-img>
+
+          <div class="mt-6">
+            <h2 class="text-center">
+              {{ treatment.name }}
+            </h2>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <v-btn
+            @click="$router.push(treatment.link)"
+            target="_blank"
+            color="secondary"
+            class="text-none"
+            text
+          >
+            <span>Les mer</span>
+            <v-icon right dark>mdi-arrow-right</v-icon>
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row> -->
+
+    <v-row justify="center" class="ihf-extra-margin-top">
+      <!-- <h2 class="display-1 mb-5 pa-5">Hør hva andre mener</h2> -->
+      <h2 class="display-1 mb-5 pa-5" id="pasienterfaring">Pasienterfaringer</h2>
+    </v-row>
+
+    <v-row justify="center" class="ihf-extra-margin-bottom">
+      <v-col
+        cols="12" sm="12" md="6" lg="5" xl="4"
+        v-for="(quote, index) in quotes"
+        :key="index"
+      >
+        <div class="ihf-quote pa-5">
+          <div class="line-height-18">
+            <v-icon color="#F75F49">mdi-format-quote-open</v-icon>
+            <span v-html="quote.text"></span>
+            <!-- <v-icon>mdi-format-quote-close</v-icon> -->
+          </div>
+          <div class="ihf-quote-author ml-4 mt-2">
+            - {{ quote.author }}
+          </div>
+        </div>
+      </v-col>
+    </v-row>
+
+    <!-- <v-row justify="center">
+      <div class="ihf-wrap" style="margin-top: 200px; margin-bottom: 200px; display: flex;">
+        <Contact style="margin-right: 200px;" class="mb-12"/>
+
+        <div style="position: relative;">
+          <div class="ihf-welcome-message">
+            <h2 class="h1" style="font-weight: 400;">Velkommen inn til oss!</h2>
+          </div>
+          <v-img
+            :src="require('@/assets/sofa.jpg')"
+            contain
+            style="max-width: 800px; min-width: 300px;"
+          ></v-img>
+        </div>
+      </div>
+    </v-row> -->
+
+    <Footer/>
+  </div>
+</template>
+
+<script>
+import Cover from '@/components/Cover'
+// import Message from '@/components/Message'
+import Footer from '@/components/Footer'
+
+export default {
+  name: 'Home',
+
+  components: {
+    Cover,
+    // Message,
+    Footer
+  },
+
+  data: () => ({
+    cards: [
+      {
+        name: 'Fysioterapi',
+        image: 'fysio.svg',
+        ratio: 1.72,
+        bookingBtn: true,
+        link: 'fysioterapi'
+      },
+      {
+        name: 'Massasje',
+        image: 'relax.svg',
+        ratio: 1.72,
+        bookingBtn: true,
+        link: 'massasje'
+      },
+      {
+        name: 'Fotpleie',
+        image: 'massage.svg',
+        ratio: 1.72,
+        bookingBtn: true,
+        link: 'fotpleie'
+      },
+      {
+        name: 'MediYoga',
+        image: 'lotus-position.svg',
+        ratio: 1.72,
+        bookingBtn: null,
+        link: 'yoga'
+      },
+      {
+        name: 'ViryaYoga',
+        image: 'exercise.svg',
+        ratio: 1.72,
+        bookingBtn: null,
+        link: 'viryayoga'
+      }
+    ],
+    treatments: [
+      {
+        name: 'Fysioterapi',
+        image: 'neck-small.jpg',
+        ratio: 1.5,
+        bookingBtn: true,
+        link: 'fysioterapi',
+        // Vi gjør en grundig undersøkelse sammen med en samtale for å kartlegge hvor plagene dine kommer fra.
+        text: `
+          <p class="line-height-18 mt-4">
+            Denne behandlingen består ofte av leddmobilisering, tøyinger og dyp behandling av muskler og vev.
+            Du får råd og tips om øvelser som du kan gjøre hjemme.
+          </p>
+        `
+      },
+      {
+        name: 'Massasje',
+        image: 'massage.jpg',
+        ratio: 1.5,
+        bookingBtn: true,
+        link: 'massasje',
+        text: `
+        `
+        // <p class="mt-4">
+        //   Terapeutisk/fysikalsk massasje, klassisk massasje, idrettsmassasje, velværemassasje, lymfedrenasje,
+        //   gravidmassasje, triggerpunktbehandling (massasje eller nåler), kopping, kinesioteiping, IMS (intramuskulær stimulering),
+        //   elektroakupunktur, tradisjonell kinesisk akupunktur og øreakupunktur.
+        // </p>
+      },
+      {
+        name: 'Fotpleie',
+        image: 'foot.jpeg',
+        ratio: 1.55,
+        bookingBtn: true,
+        link: 'fotpleie',
+        text: `
+          <p class="mt-4 line-height-18">
+            Føttene bruker vi hver dag og det er de som bærer oss gjennom hele livet. Hver dag går vi flere tusen
+            skritt og de blir stengt inne i sko. De trenger vedlikehold og pleie.
+          </p>
+        `
+
+        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
+        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
+        // få innvirkning på andre deler av kroppen vår.
+      },
+      {
+        name: 'MediYoga',
+        image: 'berit-small.jpg',
+        ratio: 1.5,
+        bookingBtn: null,
+        link: 'yoga',
+        text: `
+          <p class="mt-4 line-height-18">
+            MediYoga passer for alle enten man har fysiske begrensninger eller ikke. Fokuset ligger på pust,
+            bevegelighet i rygg/hofter, styrke kjernemusklaturen, avspenning og ro.
+          </p>
+        `
+      },
+      {
+        name: 'ViryaYoga',
+        image: 'ansatte/yiryayoga.jpeg',
+        ratio: 1.3,
+        bookingBtn: null,
+        link: 'viryayoga',
+        text: `
+          <p class="mt-4 line-height-18">
+            I viryayoga møter du dynamiske yogasekvenser med fokus på god bevegelseslære, og et filosofisk tankekorn for sjelen.
+            Du får en tøff og morsom yogatrening som skaper kraft og energi.
+          </p>
+        `
+      },
+      {
+        name: 'Bedrifter',
+        image: 'bedrift3.png',
+        ratio: 1,
+        bookingBtn: null,
+        link: 'bedrifter',
+        text: `
+          <p class="mt-4 line-height-18">
+            Muskel- og skjelettplager er den vanligste årsaken til sykefravær på norske arbeidsplasser.
+            Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.
+          </p>
+        `
+      },
+      {
+        name: 'Svømming',
+        image: 'swimming.png',
+        ratio: 2.6,
+        bookingBtn: null,
+        link: 'svømming',
+        text: `
+          <p class="mt-4 line-height-18">
+            Det arrangeres svømmetilbud for barn i Moelv-hallen i samarbeid mellom Innlandet Helse og Fysioterapi og Moleven IL.
+          </p>
+        `
+      }
+    ],
+    quotes: [
+      {
+        author: 'Bjørn Erik, 69 år',
+        text: `
+          Etter årevis med muskelplager, særlig i ryggen og korsryggen, har jeg lang erfaring med fysioterapibehandling som ikke har hjulpet meg.
+          Først da jeg kom til Elin fikk jeg fysikalsk behandling som virker.
+          Jeg gir de aller beste anbefalinger. Bedre fysikalsk behandling har jeg ikke fått fra noen fysioterapeut i årenes løp.
+        `
+      },
+      {
+        author: 'Frank, 41 år.',
+        text: `
+          Jeg har fått veldig bra behandling og utbytte hos fysioterapeut. De har et veldig bra tilbud for dem som sliter med rygg og muskulatur.
+          Trivelig personale, kort ventetid og det virker som at alt er etter skjema.
+        `
+      },
+      {
+        author: 'Astrid, 77 år.',
+        text: `
+          Elin er kjempeflink og en behagelig person. Jeg har stor nytte av hennes behandling på nakke, skulder, hofter og knær.
+          En helt ny tilværelse å leve med Artrose.
+        `
+      },
+      {
+        author: 'Stein Roger, 55 år.',
+        text: `
+          Jeg hadde konstante smerter, nummenhet og prikking i hele beinet etter et brudd i 2013.
+          Jeg kunne bare gå korte distanser og sykle, og beinet var hovent hele tiden.
+          Etter vurdering av lege og spesialist, ble det konstatert at jeg måtte leve med smertene
+          hele livet og at jeg aldri kunne bli helt bra igjen. Jeg ble til og med uføretrygdet på grunn av dette.
+          Etter at jeg begynte med behandling hos fysioterapeut på Innlandet helse og fysioterapi,
+          har foten blitt nesten helt bra igjen, jeg kan gå flere mil og til og med jogge.<br>
+          Jeg lever nå nesten helt smertefritt, og dette skjedde etter bare to-tre behandlinger.
+        `
+      },
+      {
+        author: 'Kirsten Franciska, 36 år.',
+        text: `
+          Gro er utrolig flink. Hun hjelper meg med fibromyalgi plager og sliten
+          kropp. Verd å la Gro prøve seg.
+        `
+      }
+    ]
+  })
+}
+</script>
+
+<style lang="css" scoped>
+  .treatment-card {
+    background: #F1EDEE;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .treatment-card:hover {
+    transform: scale(1.1);
+  }
+  .bottom-gradient {
+    background-image: linear-gradient(to top, rgba(100,115,201,.33) 0%, transparent 50%);
+  }
+  .ihf-cover {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    justify-content: space-between;
+  }
+  .ihf-statement {
+    margin-left: 20%;
+    /*transform: translateX(140px);*/
+    /*background: red;*/
+    margin-top: 100px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+  }
+  .ihf-treatment-desc {
+    padding: 20px;
+    background: #F1EDEE;
+    border-radius: 5px;
+    height: auto;
+    transform: translateY(-30px);
+    margin: 0 3%;
+    width: 94%;
+  }
+  .ihf-quote {
+    border-radius: 5px;
+    /*padding: 20px;*/
+    /*background:#F1EDEE;*/
+    /*min-width: 300px;*/
+    /*max-width: 600px;*/
+  }
+  .ihf-quote-author {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1em;
+  }
+  .ihf-placeholder-card {
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+  }
+  .ihf-card {
+    cursor: pointer;
+  }
+  .ihf-welcome-message {
+    position: absolute;
+    left: -20%;
+    top: 10%;
+    z-index: 2;
+  }
+  @media (max-width: 1300px) {
+    .ihf-cover {
+      justify-content: center;
+    }
+    .ihf-statement {
+      /*transform: translateX(0px);*/
+      margin-left: 0;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+    .ihf-welcome-message {
+      left: 3%;
+    }
+    .ihf-wrap {
+      flex-wrap: wrap;
+    }
+  }
+</style>

@@ -1,0 +1,151 @@
+<template>
+  <div class="
+    mr-6 ml-6
+    mr-sm-6 ml-sm-4
+    mr-md-12 ml-md-12
+    mr-lg-12 ml-lg-12
+    mr-xl-12 ml-xl-12
+  ">
+    <v-breadcrumbs class="ml-3" :items="[
+      { text: 'Hjem', disabled: false, to: '/' },
+      { text: 'Om Innlandet Helse of Fysioterapi', disabled: true, to: 'om' }
+    ]">
+      <template v-slot:divider>
+        <v-icon>mdi-chevron-right</v-icon>
+      </template>
+    </v-breadcrumbs>
+
+    <v-container class="about mt-12">
+      <v-row justify="center" class="wrap-point-large" style="margin-top: 40px;">
+        <v-col style="max-width: 750px;" class="pr-12">
+          <h1 class="display-2">Om Innlandet Helse og Fysioterapi</h1>
+          <!-- <h3 class="mt-12">Vår visjon er</h3> -->
+          <p class="headline mt-12 line-height-18" style="line-height: 1.8em;">
+            Vår visjon er: Vi skal være en profesjonell helse- og fysioterapiklinikk, samtidig som vi skal møte den enkelte
+            pasienten med omsorg og forståelse for dens situasjon. Vi skal være nære gjennom hele
+            behandlingen, støtte og veilede pasienten til bedre helse gjennom erfaring og faglig kompetanse på
+            både kort og lang sikt.
+          </p>
+          <!-- <h3 class="mt-12">Historie</h3> -->
+          <p class="line-height-18 mt-6">
+            Innlandet helse og fysioterapi ble startet i januar 2020 av Lene Moe Sognar og Elin Fossbråten
+            Næsse. Klinikken er helprivat, det vil si at den drives uten driftstilskudd fra det offentlige. Det betyr
+            igjen at det er veldig kort ventetid for å komme inn, og pasienten betaler behandlingen sin selv.
+          </p>
+          <p class="mt-6 line-height-18">
+            Alle som jobber på Innlandet helse og fysioterapi skal være opptatt av at kunden skal få best mulig
+            service og bli fulgt gjennom hele behandlingen. Det vil si at vi aldri har flere inne til behandling
+            samtidig og vi skal være nære og støttende i behandlingen. Har du tilbakemeldinger, setter vi stor
+            pris på å få høre det.
+          </p>
+          <p class="mt-6 line-height-18">
+            Vi tilbyr fysioterapi, massasjeterapi, akupunktur og fotpleie. Alle timene kan bookes via telefon, mail,
+            facebook eller online timebestilling.
+          </p>
+          <p class="mt-6 line-height-18">
+            Du finner oss i nyoppusede lokaler i Moelv sentrum, og på Gjøvik!
+          </p>
+        </v-col>
+
+        <v-col style="max-width: 550px;">
+          <v-img
+            :src="require('@/assets/sofa.jpg')"
+            contain
+          ></v-img>
+        </v-col>
+      </v-row>
+
+      <v-row class="justify-center mt-12">
+        <div class="mb-4 mr-6">
+          <h4 class="mb-2">Moelv</h4>
+          <iframe class="iframe-map" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:EiFNw7hsbGVyZ2F0YSAzLCAyMzkwIE1vZWx2LCBOb3J3YXkiMBIuChQKEgnpa6VqIXhqRhHlI3WyV5DiYRADKhQKEgnzQctuIXhqRhGzCSOc9-Bqkw"
+          ></iframe>
+        </div>
+
+        <div>
+          <h4 class="mb-2">Gjøvik</h4>
+          <iframe class="iframe-map" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:ChIJ_8uuaRjaQUYR3MPSedwXKrc"
+          ></iframe>
+        </div>
+      </v-row>
+
+      <!-- <v-row justify="center" class="mt-12 pt-12">
+        <v-col cols="auto">
+          <div style="position: relative;">
+            <div class="ihf-welcome-message">
+              <h2 class="h1" style="font-weight: 400;">Velkommen inn<br>til oss!</h2>
+            </div>
+            <v-img
+              :src="require('@/assets/sofa.jpg')"
+              contain
+              style="width: 800px;"
+            ></v-img>
+          </div>
+        </v-col>
+      </v-row> -->
+    </v-container>
+
+    <!-- <v-row style="margin-top: 200px; background:#F1EDEE;" class="mb-12">
+      <Contact/>
+    </v-row> -->
+    <v-row
+      style="margin-top: 200px; background:#F1EDEE;"
+      class="
+        mb-12
+        pa-4
+        pa-sm-6
+        pa-md-12
+        pa-lg-12
+        pa-xl-12
+      "
+    >
+      <v-layout wrap>
+        <v-flex>
+          <Contact/>
+        </v-flex>
+      </v-layout>
+    </v-row>
+  </div>
+</template>
+
+<script>
+import Contact from '@/components/Contact'
+
+export default {
+  components: {
+    Contact
+  },
+
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
+<style lang="css" scoped>
+  .iframe-map {
+    height: 300px;
+    width: 500px;
+  }
+  .ihf-welcome-message {
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    z-index: 2;
+  }
+  @media (max-width: 1200px) {
+    .iframe-map {
+      height: 200px;
+      width: 400px;
+    }
+  }
+ /* @media (max-width: 1000px) {
+    .iframe-map {
+      height: 200px;
+      width: 200px;
+    }
+  }*/
+</style>
