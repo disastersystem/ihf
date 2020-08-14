@@ -41,7 +41,7 @@
           I tillegg til vanlig fotbehandling får man skrubbet beina med salt fra Dødehavet. Den skrubber bort døde hudceller og er
           tilsatt olje slik at den etterlater huden myk. Etter fotbehandlingen legger man på en energigivende Collagen maske.
           Denne masken vil etterlate huden myk og fuktig. Spesielt laget for å mykgjøre de røffere områdene.
-          Behandlingen avsluttes med legg og fotmassasje med bruk av en behagelig massasje olje.
+          Behandlingen avsluttes med legg og fotmassasje med bruk av en behagelig massasjeolje.
         </p>
 
         <h4 class="mt-6">Gelish/Shellac tær</h4>
@@ -51,15 +51,12 @@
           neglene eller lakken. Den kan ikke fjernes med vanlig neglelakkfjerner, men fjernes med bruk av aceton eller slipes av.
         </p>
 
-        <h4 class="mt-6">Parafinvoksbehandling</h4>
+        <!-- <h4 class="mt-6">Parafinvoksbehandling</h4>
         <p class="mt-2 line-height-18">
           Parafinvoksbehandling kan utføres på hender og/eller føtter og gir en deilig fuktighet til huden. Den kan kombineres med f.eks.
-          fotpleiebehandling eller pedikyr behandling. Etter desinfisering, skrubb og fuktighetskrem, dyppes føttene eller hendene ned i den
-          smeltende voksen. Den legger seg som en hinne rundt huden og du pakkes deretter inn i plastpose og frotté vanter eller sokker.
+          fotpleiebehandling eller pedikyrbehandling. Etter desinfisering, skrubb og fuktighetskrem, dyppes føttene eller hendene ned i den
+          smeltende voksen. Den legger seg som en hinne rundt huden og du pakkes deretter inn i plastpose og frottévotter eller sokker.
           Porene åpner seg og urenheter slipper ut. Etter ca 15 min dras vokslaget av og fotpleier gir en deilig massasje.
-        </p>
-        <!-- <p class="mt-4 line-height-18">
-          Etter ca 15 min dras vokslaget av og fotpleier gir en deilig massasje.
         </p> -->
 
         <h4 class="mt-5 pt-5">Priser</h4>
@@ -108,9 +105,9 @@
         <h3>Fotpleier Monica Skjønsberg</h3>
         <p class="mt-4 line-height-18">
           Monica er utdannet helsefagarbeider med etterutdanning i rehabilitering*. Gjennom erfaringer som helsefagarbeider
-          i flere år har hun sett viktigheten av godt benstell og bestemte seg for å ta fotterapeut utdannelse.
+          i flere år har hun sett viktigheten av godt benstell og bestemte seg for å ta fotterapeututdannelse.
           Hun har erfaring med praktisk pleie, omsorg og miljøarbeid for pasienter, kunder og brukere av helse- og sosialtjenesten.
-          Monica er ferdigutdannet sommeren 2020 og jobber frem til da som fotpleier. Monica tilbyr behandling i institusjon, klinikk og hjemmebehandlinger.
+          Monica er ferdigutdannet sommeren 2020 og jobber som fotpleier frem til da. Monica tilbyr behandling i institusjon, klinikk og hjemmebehandlinger.
         </p>
         <p class="caption mt-12 line-height-18">
           *<i>Rehabilitering</i> har til formål å gjenvinne fysisk, kognitiv eller sosial funksjonsevne som er tapt på grunn av sykdom eller skade.
@@ -133,11 +130,11 @@ export default {
   data () {
     return {
       treatments: [
-        { name: 'Fotpleie behandling', time: 45, price: 620 },
-        { name: 'SPA fotpleie behandling', time: 90, price: 1250 },
+        { name: 'Fotpleiebehandling', time: 45, price: 620 },
+        { name: 'SPA fotpleiebehandling', time: 90, price: 1250 },
         { name: 'Gelish/Shellac tær', time: 30, price: 395 },
         { name: 'Fot og leggmassasje', time: 30, price: 445 },
-        { name: 'Parafinvoks behandling', time: 30, price: 395 },
+        // { name: 'Parafinvoksbehandling', time: 30, price: 395 },
         { name: 'Fotpleie hjemmebehandling *', time: 45, price: 790 }
       ]
     }

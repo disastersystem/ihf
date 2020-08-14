@@ -24,9 +24,36 @@
           <span>Hjem</span>
         </v-btn>
 
-        <v-btn @click="$router.push('om')" text class="text-none mr-4">
+        <!-- <v-btn @click="$router.push('om')" text class="text-none mr-4">
           <span>Om Innlandet Helse og Fysioterapi</span>
-        </v-btn>
+        </v-btn> -->
+
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              text
+              class="text-none mr-4"
+              v-on="on"
+            >
+              Om Innlandet Helse og Fysioterapi
+              <v-icon>mdi-chevron-down</v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item @click="$router.push('om')">
+              <v-list-item-title>
+                <!-- Om oss / historie -->
+                Vår visjon og historie
+              </v-list-item-title>
+            </v-list-item>
+
+            <v-list-item @click="$router.push('jobb')">
+              <v-list-item-title>
+                Lyst på jobb hos oss?
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
 
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
@@ -59,6 +86,10 @@
         <v-btn text class="text-none mr-4" @click="$router.push('/pasienterfaringer')">
           <span>Pasienterfaringer</span>
         </v-btn>
+
+        <!-- <v-btn text class="text-none mr-4" @click="$router.push('/pasienterfaringer')">
+          <span>Jobbe hos oss?</span>
+        </v-btn> -->
 
         <v-btn
           href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
@@ -105,12 +136,33 @@
             </v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <!-- <v-list-item>
             <v-list-item-title @click="$router.push('om')">
               Om Innlandet Helse og Fysioterapi
             </v-list-item-title>
-          </v-list-item>
+          </v-list-item> -->
         </v-list-item-group>
+
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>Om Innlandet Helse og Fysioterapi</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item @click="$router.push('om')">
+            <v-list-item-title class="pl-6">
+              <!-- Om oss / historie -->
+              Vår visjon og historie
+            </v-list-item-title>
+          </v-list-item>
+
+          <v-list-item @click="$router.push('jobb')">
+            <v-list-item-title class="pl-6">
+              Lyst på jobb hos oss?
+            </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
 
         <v-list-group
           v-model="behandlinger"
@@ -172,6 +224,10 @@ export default {
         link: 'fysioterapi'
       },
       {
+        name: 'Osteopati',
+        link: 'osteopati'
+      },
+      {
         name: 'Massasje',
         link: 'massasje'
       },
@@ -186,6 +242,10 @@ export default {
       {
         name: 'ViryaYoga',
         link: 'viryayoga'
+      },
+      {
+        name: 'YinYoga',
+        link: 'yinyoga'
       },
       {
         name: 'Svømming',

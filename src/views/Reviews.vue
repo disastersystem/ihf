@@ -47,6 +47,46 @@ export default {
   data: () => ({
     quotes: [
       {
+        author: 'Christian, 35 år.',
+        text: `
+          Lokaliserte problemet med nakke/skulder fort og videre behandling både
+          fungerer og er veldig behagelig.
+        `
+      },
+      {
+        author: 'Kristine, 28 år.',
+        text: `
+          Anbefales!<br>
+          Lene er veldig flink og har god oppfølging.
+        `
+      },
+      {
+        author: 'Anette, 35 år.',
+        text: `
+          Har mottatt svært god behandling, både i forbindelse med svangerskap og
+          tiden etter. Veldig flinke terapeuter, med høy kompetanse.
+        `
+      },
+      {
+        author: 'Bjørn, 72 år.',
+        text: `
+          Den hjelpen jeg har mottatt er veldig bra. Behagelige terapeuter.
+        `
+      },
+      {
+        author: 'Øyvind, 29 år.',
+        text: `
+          Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!
+        `
+      },
+      {
+        author: 'Kirsten Franciska, 36 år.',
+        text: `
+          Gro er utrolig flink. Hun hjelper meg med fibromyalgi plager og sliten
+          kropp. Verd å la Gro prøve seg.
+        `
+      },
+      {
         author: 'Bjørn Erik, 69 år',
         text: `
           Etter årevis med muskelplager, særlig i ryggen og korsryggen, har jeg lang erfaring med fysioterapibehandling som ikke har hjulpet meg.
@@ -78,13 +118,6 @@ export default {
           Etter at jeg begynte med behandling hos fysioterapeut på Innlandet helse og fysioterapi,
           har foten blitt nesten helt bra igjen, jeg kan gå flere mil og til og med jogge.<br>
           Jeg lever nå nesten helt smertefritt, og dette skjedde etter bare to-tre behandlinger.
-        `
-      },
-      {
-        author: 'Kirsten Franciska, 36 år.',
-        text: `
-          Gro er utrolig flink. Hun hjelper meg med fibromyalgi plager og sliten
-          kropp. Verd å la Gro prøve seg.
         `
       }
     ]

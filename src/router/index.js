@@ -21,6 +21,12 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
+    path: '/jobb',
+    name: 'work',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/Work.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
     path: '/bedrifter',
     name: 'company',
     component: () => import(/* webpackChunkName: "company" */ '@/views/treatments/Company.vue'),
@@ -48,6 +54,18 @@ const routes = [
     path: '/viryayoga',
     name: 'Viryayoga',
     component: () => import('@/views/treatments/Viryayoga.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/yinyoga',
+    name: 'Yinyoga',
+    component: () => import('@/views/treatments/Yinyoga.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/osteopati',
+    name: 'Osteopati',
+    component: () => import('@/views/treatments/Osteopati.vue'),
     meta: { scrollToTop: true }
   },
   {

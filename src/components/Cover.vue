@@ -40,11 +40,12 @@
 
         <div class="ihf-statement">
           <div class="ihf-statement-text">
-            <h2 clasS="display-1 mb-6">
-              Helse- og fysioterapiklinikk<br>i Moelv og Gjøvik sentrum.
+            <h2 class="display-1 mb-6" style="line-height: 1.4em;">
+              Vi hjelper deg til bedre helse <br>med hensyn til din situasjon!
+              <!-- <br>på kort og lang sikt! -->
             </h2>
-            <p class="title">
-              Vi hjelper deg til bedre helse med hensyn til din situasjon,<br>på kort og lang sikt!
+            <p class="title mt-6 font-weight-thin">
+              Helse- og fysioterapiklinikk i Moelv og Gjøvik sentrum.
             </p>
           </div>
 

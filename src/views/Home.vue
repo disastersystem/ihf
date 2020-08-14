@@ -30,7 +30,7 @@
           ></v-img> -->
           <!-- <v-responsive v-else :aspect-ratio="16/11" style="background: #ddd;"></v-responsive> -->
           <v-img
-            v-if="treatment.image"
+            v-if="treatment.image !== ''"
             :src="require('@/assets/' + treatment.image)"
             contain
             :aspect-ratio="treatment.ratio"
@@ -46,6 +46,7 @@
               </v-layout>
             </template>
           </v-img>
+          <v-responsive v-else :aspect-ratio="16/11" style="background: #ddd;"></v-responsive>
         </div>
 
         <div class="ihf-treatment-desc">
@@ -110,7 +111,7 @@
       <h2 class="display-1 mb-5 pa-5" id="pasienterfaring">Pasienterfaringer</h2>
     </v-row>
 
-    <v-row justify="center" class="ihf-extra-margin-bottom">
+    <v-row justify="center">
       <v-col
         cols="12" sm="12" md="6" lg="5" xl="4"
         v-for="(quote, index) in quotes"
@@ -127,6 +128,19 @@
           </div>
         </div>
       </v-col>
+    </v-row>
+
+    <v-row justify="center" class="ihf-extra-margin-bottom">
+      <v-btn
+        @click="$router.push('/pasienterfaringer')"
+        target="_blank"
+        color="secondary"
+        class="text-none mb-8"
+        text
+      >
+        <span>Se flere</span>
+        <v-icon right dark>mdi-arrow-right</v-icon>
+      </v-btn>
     </v-row>
 
     <!-- <v-row justify="center">
@@ -188,6 +202,13 @@ export default {
         link: 'fotpleie'
       },
       {
+        name: 'Osteopati',
+        image: 'exercise.svg',
+        ratio: 1.72,
+        bookingBtn: null,
+        link: 'osteopati'
+      },
+      {
         name: 'MediYoga',
         image: 'lotus-position.svg',
         ratio: 1.72,
@@ -200,6 +221,13 @@ export default {
         ratio: 1.72,
         bookingBtn: null,
         link: 'viryayoga'
+      },
+      {
+        name: 'YinYoga',
+        image: 'exercise.svg',
+        ratio: 1.72,
+        bookingBtn: null,
+        link: 'yinyoga'
       }
     ],
     treatments: [
@@ -241,6 +269,40 @@ export default {
           <p class="mt-4 line-height-18">
             Føttene bruker vi hver dag og det er de som bærer oss gjennom hele livet. Hver dag går vi flere tusen
             skritt og de blir stengt inne i sko. De trenger vedlikehold og pleie.
+          </p>
+        `
+
+        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
+        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
+        // få innvirkning på andre deler av kroppen vår.
+      },
+      {
+        name: 'Osteopati',
+        image: '',
+        ratio: 1.55,
+        bookingBtn: true,
+        link: 'osteopati',
+        text: `
+          <p class="mt-4 line-height-18">
+            En osteopat finner sammenhengen mellom dine plager, din kropp og din
+            hverdag.
+          </p>
+        `
+
+        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
+        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
+        // få innvirkning på andre deler av kroppen vår.
+      },
+      {
+        name: 'YinYoga',
+        image: 'berit-sun.jpg',
+        ratio: 1.55,
+        bookingBtn: true,
+        link: 'yinyoga',
+        text: `
+          <p class="mt-4 line-height-18">
+            YinYoga er en terapeutisk og meditativ form for yoga. Det er lange gode
+            strekk som er bra for stive muskler, bidevev og ledd.
           </p>
         `
 
@@ -342,6 +404,40 @@ export default {
           kropp. Verd å la Gro prøve seg.
         `
       }
+      // ,
+      // {
+      //   author: 'Christian, 35 år.',
+      //   text: `
+      //     Lokaliserte problemet med nakke/skulder fort og videre behandling både
+      //     fungerer og er veldig behagelig.
+      //   `
+      // },
+      // {
+      //   author: 'Kristine, 28 år.',
+      //   text: `
+      //     Anbefales!<br>
+      //     Lene er veldig flink og har god oppfølging.
+      //   `
+      // },
+      // {
+      //   author: 'Anette, 35 år.',
+      //   text: `
+      //     Har mottatt svært god behandling, både i forbindelse med svangerskap og
+      //     tiden etter. Veldig flinke terapeuter, med høy kompetanse.
+      //   `
+      // },
+      // {
+      //   author: 'Bjørn, 72 år.',
+      //   text: `
+      //     Den hjelpen jeg har mottatt er veldig bra. Behagelige terapeuter.
+      //   `
+      // },
+      // {
+      //   author: 'Øyvind, 29 år.',
+      //   text: `
+      //     Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!
+      //   `
+      // }
     ]
   })
 }
