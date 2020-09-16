@@ -6,6 +6,19 @@
     pa-lg-12
     pa-xl-12
   ">
+    <!-- <v-container class="mb-0 pb-0"> -->
+    <!-- <v-row justify="center" class="mt-0 pt-0">
+      <v-breadcrumbs :items="[
+        { text: 'Hjem', disabled: false, to: '/' },
+        { text: 'Pasienterfaringer', disabled: true, to: '' }
+      ]" style="padding-left: 0;">
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
+    </v-row> -->
+    <!-- </v-container> -->
+
     <v-row justify="center" style="margin-top: 80px;">
       <!-- <h2 class="display-1 mb-5 pa-5">Hør hva andre mener</h2> -->
       <h2 class="display-1 mb-5 pa-5" id="pasienterfaring">Pasienterfaringer</h2>

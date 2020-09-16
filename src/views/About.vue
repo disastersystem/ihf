@@ -6,17 +6,19 @@
     mr-lg-12 ml-lg-12
     mr-xl-12 ml-xl-12
   ">
-    <v-breadcrumbs class="ml-3" :items="[
-      { text: 'Hjem', disabled: false, to: '/' },
-      { text: 'Vår visjon og historie', disabled: true, to: 'om' }
-    ]">
-      <template v-slot:divider>
-        <v-icon>mdi-chevron-right</v-icon>
-      </template>
-    </v-breadcrumbs>
+    <v-container class="mb-0 pb-0">
+      <v-breadcrumbs :items="[
+        { text: 'Hjem', disabled: false, to: '/' },
+        { text: 'Vår visjon og historie', disabled: true, to: 'om' }
+      ]" style="padding-left: 0;">
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
+    </v-container>
 
     <v-container class="about mt-12">
-      <v-row justify="center" class="wrap-point-large" style="margin-top: 40px;">
+      <v-row class="justify-center wrap-point-large" style="margin-top: 40px;">
         <v-col style="max-width: 750px;" class="pr-12">
           <h1 class="display-2">Om Innlandet Helse og Fysioterapi</h1>
           <!-- <h3 class="mt-12">Vår visjon er</h3> -->
@@ -71,7 +73,7 @@
         </div>
       </v-row>
 
-      <v-row justify="center mt-12">
+      <v-row class="justify-center mt-12">
         <v-col style="max-width: 750px;" class="pr-12">
           <h3>Lyst på jobb hos oss?</h3>
           <p class="line-height-18 mt-6">

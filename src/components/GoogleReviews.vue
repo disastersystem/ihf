@@ -1,0 +1,257 @@
+<template>
+  <v-card
+    class="mx-auto"
+    max-width="344"
+    style="min-height: 80px; width: 320px; position: fixed; bottom: 30px; right: 30px; z-index: 10; border-radius: 10px;"
+    @click.prevent="_blank"
+    v-if="show"
+  >
+    <v-card-text>
+      <!-- <transition name="fade"> -->
+      <v-carousel
+        :continuous="true"
+        :cycle="true"
+        :interval="4000"
+        :show-arrows="false"
+        show-arrows-on-hover
+        hide-delimiter-background
+        delimiter-icon="mdi-minus"
+        height="60"
+      >
+        <v-carousel-item
+          v-for="(review, i) in reviews.reviews"
+          :key="i"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        >
+          <v-sheet light height="100%" tile>
+            <div class="d-flex">
+              <!-- <a href="https://www.google.com/maps/place/Innlandet+helse+og+fysioterapi/@60.9293545,10.7016516,17z/data=!4m7!3m6!1s0x466a7821156874a3:0xefc837dace3aa5bd!8m2!3d60.9293545!4d10.7038403!9m1!1b1">
+                hh
+              </a> -->
+              <div class="pr-4 pt-1">
+                <v-img src="@/assets/google-logo.svg" style="width: 30px;"></v-img>
+              </div>
+              <div>
+                <div class="pl-1">{{ review.author_name }}</div>
+                <div class="d-flex align-center">
+                  <v-rating
+                    v-model="review.rating"
+                    dense
+                    size="18"
+                    half-increments
+                    color="rgb(251, 188, 5)"
+                  ></v-rating>
+                  <div class="grey--text caption mr-2 mb-2 pl-1 pt-3">
+                    {{ review.rating }} av 5 stjerner
+                  </div>
+                </div>
+                <!-- <p class="display-1 text--primary">
+                  {{ reviews.reviews[0].text }}
+                </p> -->
+                <!-- <p>adjective</p> -->
+                <div class="text--primary pl-1">
+                  <!-- {{ limitLength(review.text) }} -->
+                </div>
+              </div>
+            </div>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
+      <!-- </transition> -->
+    </v-card-text>
+    <!-- <v-card-actions>
+      <v-btn
+        text
+        color="deep-purple accent-4"
+      >
+        Learn More
+      </v-btn>
+    </v-card-actions> -->
+  </v-card>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      index: 0,
+      show: false,
+
+      reviews: {
+        reviews: [
+          {
+            author_name: 'Marte Bergseth',
+            author_url: 'https://www.google.com/maps/contrib/102651844660476963214/reviews',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kfEbutaiIBM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn71XBRLRoSYhZF1e70JkJnYdCp0w/s40-c0x00000000-cc-rp/photo.jpg',
+            text: 'Flotte nye fine lokaler,  blide og hyggelige ansatte med mye forskjellig fagkunnskap! Ligger lett tilgjengelig når man ankommer med bil.',
+            rating: 5,
+            time: 1491144016,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Øyvind Humlen',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Silje Cathrine Sigvathsen',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: '',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Christian Nordlien',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Kristine vanem',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Anette Nicolaisen',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Jonas Engholm',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          // {
+          //   author_name: 'Gro Visdal',
+          //   author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+          //   profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+          //   text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+          //   rating: 5,
+          //   time: 1491150012,
+          //   relative_time_description: 'a month ago'
+          // },
+          {
+            author_name: 'Lena Ulven',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: 'Var på ferie og fikk snarlig hjelp for akutte nakkesmerter. Fikk time med en gang, og fikk veldig god hjelp! Anbefales!',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Stefan F',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: '',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Simon Huhtimo',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: '',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Ane Sakshaug',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: '',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          },
+          {
+            author_name: 'Are Narten Hovde',
+            author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
+            profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
+            text: '',
+            rating: 5,
+            time: 1491150012,
+            relative_time_description: 'a month ago'
+          }
+        ],
+        averageRating: 4,
+        totalReviewCount: 30,
+        nextPageToken: 'string'
+      }
+    }
+  },
+
+  created () {
+    window.setInterval(() => {
+      if (window.pageYOffset > 399) { // or 199?
+        // clearInterval('show')
+        this.show = true
+      } else {
+        this.show = false
+      }
+    }, 1000)
+
+    // const accountId = 'n45h34kj5hjkad'
+    // const locationId = 'Moelv'
+
+    // fetch(`https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews`)
+    //   .then(response => response.json())
+    //   .then(data => console.log(data))
+    // fetch(`https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&placeid=ChIJ_8uuaRjaQUYR3MPSedwXKrc`)
+    // fetch('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ_8uuaRjaQUYR3MPSedwXKrc&fields=name,rating,formatted_phone_number&key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU')
+    //   .then(response => response.json())
+    //   .then(data => console.log(data))
+  },
+
+  methods: {
+    /**
+     * If the provided string is longer than 60 characters take the first 60
+     * characters of the string and a add three dots (...) at the end,
+     * otherwise return the original string.
+     */
+    limitLength (text) {
+      text.trim()
+      let string = (text.length > 60) ? text.substring(0, 60) + '...' : text
+      return string
+    },
+
+    _blank () {
+      const url = 'https://www.google.com/maps/place/Innlandet+helse+og+fysioterapi/@60.9293545,10.7016516,17z/data=!4m7!3m6!1s0x0:0xefc837dace3aa5bd!8m2!3d60.9293545!4d10.7038403!9m1!1b1'
+      window.open(url, '_blank')
+    }
+  }
+}
+</script>
+
+<style scoped lang="css">
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 2s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+</style>

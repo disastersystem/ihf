@@ -210,14 +210,23 @@
         </transition>
       </keep-alive>
     </v-content>
+
+    <transition name="fade" mode="out-in">
+      <GoogleReviews v-if="show"/>
+    </transition>
   </v-app>
 </template>
 
 <script>
+import GoogleReviews from '@/components/GoogleReviews'
+
 export default {
   name: 'App',
 
+  components: { GoogleReviews },
+
   data: () => ({
+    show: true,
     treatments: [
       {
         name: 'Fysioterapi',

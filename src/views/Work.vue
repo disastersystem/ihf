@@ -6,14 +6,16 @@
     mr-lg-12 ml-lg-12
     mr-xl-12 ml-xl-12
   ">
-    <v-breadcrumbs class="ml-3" :items="[
-      { text: 'Hjem', disabled: false, to: '/' },
-      { text: 'Lyst på jobb hos oss?', disabled: true, to: 'om' }
-    ]">
-      <template v-slot:divider>
-        <v-icon>mdi-chevron-right</v-icon>
-      </template>
-    </v-breadcrumbs>
+    <v-container class="mb-0 pb-0">
+      <v-breadcrumbs class="pl-0" :items="[
+        { text: 'Hjem', disabled: false, to: '/' },
+        { text: 'Lyst på jobb hos oss?', disabled: true, to: 'om' }
+      ]">
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
+    </v-container>
 
     <v-container class="about mt-12">
       <v-row justify="center" class="wrap-point-large" style="margin-top: 40px;">
