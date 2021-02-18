@@ -39,7 +39,13 @@
             <div class="mr-3">
               <v-icon>mdi-cellphone-iphone</v-icon>
             </div>
-            <div>Tlf: 951 888 73</div>
+            <div>Tlf Moelv: 951 888 73</div>
+          </div>
+          <div class="mt-4" style="display: flex;">
+            <div class="mr-3">
+              <v-icon>mdi-cellphone-iphone</v-icon>
+            </div>
+            <div>Tlf Gjøvik: 973 488 73</div>
           </div>
 
           <div class="mt-4" style="display: flex;">

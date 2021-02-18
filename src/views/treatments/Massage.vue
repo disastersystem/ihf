@@ -9,7 +9,7 @@
     <v-container class="mb-0 pb-0 pl-0">
       <v-breadcrumbs class="pl-0" :items="[
         { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Massasje', disabled: true, to: 'massasje' }
+        { text: 'Massasjeterapi/massasje og akupunktur', disabled: true, to: 'massasje' }
       ]">
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>
@@ -19,7 +19,7 @@
 
     <v-row justify="center" class="wrap-point-large" style="margin: 100px 0;">
       <v-col style="max-width: 700px;" class="pr-5">
-        <h1 class="display-2">Massasje</h1>
+        <h1 class="display-2">Massasjeterapi/massasje og akupunktur</h1>
 
         <v-simple-table dense class="ihf-table mt-6">
           <template v-slot:default>

@@ -19,7 +19,7 @@
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col class="pr-5" style="max-width: 700px;">
-        <h1 class="display-2">Fotpleie</h1>
+        <h1 class="display-2">Fotterapi- og pleie</h1>
 
         <p class="mt-4 line-height-18">
           Føttene er ofte en glemt del av det daglig stellet vi gjør med resten av kroppen. Føttene
@@ -104,12 +104,15 @@
         ></v-img>
       </v-col>
       <v-col style="max-width: 700px;">
-        <h3>Fotpleier Monica Skjønsberg</h3>
+        <h3>Fotterapeut Monica Skjønsberg</h3>
         <p class="mt-4 line-height-18">
-          Monica er utdannet helsefagarbeider med etterutdanning i rehabilitering*. Gjennom erfaringer som helsefagarbeider
-          i flere år har hun sett viktigheten av godt benstell og bestemte seg for å ta fotterapeututdannelse.
-          Hun har erfaring med praktisk pleie, omsorg og miljøarbeid for pasienter, kunder og brukere av helse- og sosialtjenesten.
-          Monica er ferdigutdannet sommeren 2020 og jobber som fotpleier frem til da. Monica tilbyr behandling i institusjon, klinikk og hjemmebehandlinger.
+          Monica er utdannet helsefagarbeider med etterutdanning i rehabilitering*.
+          Gjennom erfaringer som helsefagarbeider
+          i flere år har hun sett viktigheten av godt benstell og bestemte seg derfor for å ta fotterapeututdannelse.
+          Hun har erfaring med praktisk pleie, omsorg og miljøarbeid for pasienter,
+          kunder og brukere av helse- og sosialtjenesten.
+          <!-- Monica er ferdigutdannet sommeren 2020 og jobber som fotpleier frem til da. -->
+          Monica tilbyr behandling i institusjon, klinikk og hjemmebehandlinger.
         </p>
         <p class="caption mt-12 line-height-18">
           *<i>Rehabilitering</i> har til formål å gjenvinne fysisk, kognitiv eller sosial funksjonsevne som er tapt på grunn av sykdom eller skade.

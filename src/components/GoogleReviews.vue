@@ -2,7 +2,7 @@
   <v-card
     class="mx-auto"
     max-width="344"
-    style="min-height: 80px; width: 320px; position: fixed; bottom: 30px; right: 30px; z-index: 10; border-radius: 10px;"
+    style="min-height: 80px; width: 320px; position: fixed; bottom: 30px; right: 30px; z-index: 2; border-radius: 10px;"
     @click.prevent="_blank"
     v-if="show"
   >
@@ -30,11 +30,15 @@
                 hh
               </a> -->
               <div class="pr-4 pt-1">
-                <v-img src="@/assets/google-logo.svg" style="width: 30px;"></v-img>
+                <v-img v-if="review.type === 'google'" src="@/assets/google-logo.svg" style="width: 30px;"></v-img>
+                <v-img
+                  v-if="review.type === 'facebook.review' || review.type === 'facebook.recommends'"
+                  src="@/assets/facebook-logo.svg" style="width: 30px;"
+                ></v-img>
               </div>
               <div>
                 <div class="pl-1">{{ review.author_name }}</div>
-                <div class="d-flex align-center">
+                <div class="d-flex align-center" v-if="review.type === 'google'">
                   <v-rating
                     v-model="review.rating"
                     dense
@@ -46,10 +50,21 @@
                     {{ review.rating }} av 5 stjerner
                   </div>
                 </div>
-                <!-- <p class="display-1 text--primary">
-                  {{ reviews.reviews[0].text }}
-                </p> -->
-                <!-- <p>adjective</p> -->
+
+                <div class="d-flex align-center" v-if="review.type === 'facebook.recommends'">
+                  <div class="grey--text caption mr-2 mb-2 pl-1 pt-3 d-flex align-center">
+                    <v-img src="@/assets/thumb.svg" style="width: 20px;"></v-img>
+                    <span class="ml-2">anbefaler</span>
+                  </div>
+                </div>
+
+                <div class="d-flex align-center" v-if="review.type === 'facebook.review'">
+                  <div class="grey--text caption mr-2 mb-2 pl-1 pt-3 d-flex align-center">
+                    <v-img src="@/assets/review.png" style="width: 25px;"></v-img>
+                    <span class="ml-2">5 stjerner</span>
+                  </div>
+                </div>
+
                 <div class="text--primary pl-1">
                   <!-- {{ limitLength(review.text) }} -->
                 </div>
@@ -81,6 +96,7 @@ export default {
       reviews: {
         reviews: [
           {
+            type: 'google',
             author_name: 'Marte Bergseth',
             author_url: 'https://www.google.com/maps/contrib/102651844660476963214/reviews',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kfEbutaiIBM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn71XBRLRoSYhZF1e70JkJnYdCp0w/s40-c0x00000000-cc-rp/photo.jpg',
@@ -90,6 +106,21 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'facebook.recommends',
+            author_name: 'Stein R Johansen',
+            author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+            text: '',
+            rating: 5
+          },
+          // {
+          //   type: 'facebook.review',
+          //   author_name: 'Sandra Øvrås',
+          //   author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+          //   text: '',
+          //   rating: 5
+          // },
+          {
+            type: 'google',
             author_name: 'Øyvind Humlen',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -99,6 +130,7 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'google',
             author_name: 'Silje Cathrine Sigvathsen',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -108,6 +140,14 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'facebook.recommends',
+            author_name: 'Juliane Håkenåsen',
+            author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+            text: '',
+            rating: 5
+          },
+          {
+            type: 'google',
             author_name: 'Christian Nordlien',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -117,6 +157,21 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'facebook.recommends',
+            author_name: 'Trine McPac Hoel',
+            author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+            text: '',
+            rating: 5
+          },
+          {
+            type: 'facebook.recommends',
+            author_name: 'Eli Rigmor Mæhlumshagen',
+            author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+            text: '',
+            rating: 5
+          },
+          {
+            type: 'google',
             author_name: 'Kristine vanem',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -126,6 +181,7 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'google',
             author_name: 'Anette Nicolaisen',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -135,6 +191,7 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'google',
             author_name: 'Jonas Engholm',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -153,6 +210,7 @@ export default {
           //   relative_time_description: 'a month ago'
           // },
           {
+            type: 'google',
             author_name: 'Lena Ulven',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -162,6 +220,14 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'facebook.recommends',
+            author_name: 'Elin Kvikstadhagen',
+            author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+            text: '',
+            rating: 5
+          },
+          {
+            type: 'google',
             author_name: 'Stefan F',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -171,6 +237,7 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'google',
             author_name: 'Simon Huhtimo',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -179,7 +246,36 @@ export default {
             time: 1491150012,
             relative_time_description: 'a month ago'
           },
+          // {
+          //   type: 'facebook.review',
+          //   author_name: 'Tine Iselin Løvhøiden',
+          //   author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+          //   text: '',
+          //   rating: 5
+          // },
+          // {
+          //   type: 'facebook.review',
+          //   author_name: 'Andreas Jacobsen',
+          //   author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+          //   text: '',
+          //   rating: 5
+          // },
+          // {
+          //   type: 'facebook.review',
+          //   author_name: 'May-Britt Larsen',
+          //   author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+          //   text: '',
+          //   rating: 5
+          // },
+          // {
+          //   type: 'facebook.review',
+          //   author_name: 'Simon Huhtimo',
+          //   author_url: 'https://www.facebook.com/innlandethelseogfysio/reviews',
+          //   text: '',
+          //   rating: 5
+          // },
           {
+            type: 'google',
             author_name: 'Ane Sakshaug',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -189,6 +285,7 @@ export default {
             relative_time_description: 'a month ago'
           },
           {
+            type: 'google',
             author_name: 'Are Narten Hovde',
             author_url: 'https://www.google.com/maps/contrib/103528405088566813062/reviews/@60.9293545,10.7038403,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1',
             profile_photo_url: 'https://lh5.googleusercontent.com/-kDISVqhHnpo/AAAAAAAAAAI/AAAAAAAAAAA/MSBwxa2vb4g/w75-h75-p-rp-mo-br100/photo.jpg',
@@ -211,7 +308,7 @@ export default {
         // clearInterval('show')
         this.show = true
       } else {
-        this.show = false
+        // this.show = false
       }
     }, 1000)
 

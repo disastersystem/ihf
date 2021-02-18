@@ -63,6 +63,12 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
+    path: '/kiro',
+    name: 'Kiro',
+    component: () => import('@/views/treatments/Kiro.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
     path: '/osteopati',
     name: 'Osteopati',
     component: () => import('@/views/treatments/Osteopati.vue'),
@@ -81,9 +87,21 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
+    path: '/jordmor',
+    name: 'jordmor',
+    component: () => import('@/views/treatments/Jordmor.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
     path: '/svømming',
     name: 'swimming',
     component: () => import('@/views/treatments/Swimming.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/løping',
+    name: 'running',
+    component: () => import('@/views/treatments/Running.vue'),
     meta: { scrollToTop: true }
   }
 ]

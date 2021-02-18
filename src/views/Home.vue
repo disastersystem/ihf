@@ -11,12 +11,12 @@
     <!-- <Message/> -->
 
     <v-row justify="center" class="ihf-extra-margin-top">
-      <h2 class="display-1 mb-5 pa-5">Behandlinger hos oss</h2>
+      <h2 class="display-1 mb-5 pa-5">Våre tjenester</h2>
     </v-row>
 
     <v-row justify="center" class="ihf-extra-margin-bottom">
       <v-col
-        xs="12" md="6" sm="6" lg="3" xl="3"
+        cols="12" xs="12" sm="6" md="4" lg="3" xl="3"
         v-for="(treatment, index) in treatments"
         :key="index"
         @click="$router.push(treatment.link)"
@@ -188,6 +188,13 @@ export default {
         link: 'fysioterapi'
       },
       {
+        name: 'Kiropraktor',
+        image: '',
+        ratio: 1.5,
+        bookingBtn: true,
+        link: 'kiropraktor'
+      },
+      {
         name: 'Massasje',
         image: 'relax.svg',
         ratio: 1.72,
@@ -215,13 +222,13 @@ export default {
         bookingBtn: null,
         link: 'yoga'
       },
-      {
-        name: 'ViryaYoga',
-        image: 'exercise.svg',
-        ratio: 1.72,
-        bookingBtn: null,
-        link: 'viryayoga'
-      },
+      // {
+      //   name: 'ViryaYoga',
+      //   image: 'exercise.svg',
+      //   ratio: 1.72,
+      //   bookingBtn: null,
+      //   link: 'viryayoga'
+      // },
       {
         name: 'YinYoga',
         image: 'exercise.svg',
@@ -260,7 +267,7 @@ export default {
         // </p>
       },
       {
-        name: 'Fotpleie',
+        name: 'Fotterapi- og pleie',
         image: 'foot.jpeg',
         ratio: 1.55,
         bookingBtn: true,
@@ -294,6 +301,17 @@ export default {
         // få innvirkning på andre deler av kroppen vår.
       },
       {
+        name: 'Kiropraktikk',
+        image: '',
+        ratio: 1.5,
+        bookingBtn: true,
+        link: 'kiro',
+        text: `
+          <p class="line-height-18 mt-4">
+          </p>
+        `
+      },
+      {
         name: 'YinYoga',
         image: 'berit-sun.jpg',
         ratio: 1.55,
@@ -323,19 +341,19 @@ export default {
           </p>
         `
       },
-      {
-        name: 'ViryaYoga',
-        image: 'ansatte/yiryayoga.jpeg',
-        ratio: 1.3,
-        bookingBtn: null,
-        link: 'viryayoga',
-        text: `
-          <p class="mt-4 line-height-18">
-            I viryayoga møter du dynamiske yogasekvenser med fokus på god bevegelseslære, og et filosofisk tankekorn for sjelen.
-            Du får en tøff og morsom yogatrening som skaper kraft og energi.
-          </p>
-        `
-      },
+      // {
+      //   name: 'ViryaYoga',
+      //   image: 'ansatte/yiryayoga.jpeg',
+      //   ratio: 1.3,
+      //   bookingBtn: null,
+      //   link: 'viryayoga',
+      //   text: `
+      //     <p class="mt-4 line-height-18">
+      //       I viryayoga møter du dynamiske yogasekvenser med fokus på god bevegelseslære, og et filosofisk tankekorn for sjelen.
+      //       Du får en tøff og morsom yogatrening som skaper kraft og energi.
+      //     </p>
+      //   `
+      // },
       {
         name: 'Bedrifter',
         image: 'bedrift3.png',
@@ -346,6 +364,32 @@ export default {
           <p class="mt-4 line-height-18">
             Muskel- og skjelettplager er den vanligste årsaken til sykefravær på norske arbeidsplasser.
             Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.
+          </p>
+        `
+      },
+      {
+        name: 'Jordmor',
+        image: 'baby.png',
+        ratio: 1,
+        bookingBtn: null,
+        link: 'jordmor',
+        text: `
+          <p class="mt-4 line-height-18">
+            Som jordmor arbeider man
+            med å gi kvinnen den støtte, omsorg og rådgivning som er nødvendig for å
+            gi henne en trygg og fin tid gjennom svangerskap, fødsel og barseltid.
+          </p>
+        `
+      },
+      {
+        name: 'Løpegrupper',
+        image: 'running2.jpg',
+        ratio: 1,
+        bookingBtn: null,
+        link: 'løping',
+        text: `
+          <p class="mt-4 line-height-18">
+            For bedrifter og private.
           </p>
         `
       },

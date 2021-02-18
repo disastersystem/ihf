@@ -246,6 +246,31 @@
               </div>
             </v-col>
           </v-row>
+
+          <v-row class="mt-12 wrap-point">
+            <v-col cols="auto" class="pr-8">
+              <v-img
+                :src="require('@/assets/ansatte/gry.jpg')"
+                contain
+                style="max-width: 200px;"
+              ></v-img>
+            </v-col>
+
+            <v-col>
+              <h3>Gry Merete Haakensveen</h3>
+
+              <p class="mt-4 line-height-18">
+                Gry har jobbet som fysioterapeut siden 2003, og har lang erfaring med pasienter i alle aldersgrupper og med bredde
+                i ulike diagnoser. De siste årene har hun jobbet privat med tilskudd samtidig som hun har tatt en master i
+                idrettsfysioterapi. Hun er utdannet personlig trener, yogalærer og gruppetreningsinstruktør.
+              </p>
+
+              <p class="mt-4 line-height-18">
+                Gry ser helheten hos kunden/pasienten og har god erfaring med kombinert behandling av tøyninger,
+                triggerpunkter, veiledete øvelser og treningsterapi.
+              </p>
+            </v-col>
+          </v-row>
         </div>
       </div>
     </v-row>

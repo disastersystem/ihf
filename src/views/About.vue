@@ -20,43 +20,150 @@
     <v-container class="about mt-12">
       <v-row class="justify-center wrap-point-large" style="margin-top: 40px;">
         <v-col style="max-width: 750px;" class="pr-12">
-          <h1 class="display-2">Om Innlandet Helse og Fysioterapi</h1>
+          <h1 class="display-2">Om oss</h1>
           <!-- <h3 class="mt-12">Vår visjon er</h3> -->
           <p class="headline mt-12 line-height-18" style="line-height: 1.8em;">
-            Vår visjon er: Vi skal være en profesjonell helse- og fysioterapiklinikk, samtidig som vi skal møte den enkelte
-            pasienten med omsorg og forståelse for dens situasjon. Vi skal være nære gjennom hele
-            behandlingen, støtte og veilede pasienten til bedre helse gjennom erfaring og faglig kompetanse på
-            både kort og lang sikt.
+            Vår visjon er: Vi skal være en profesjonell helse- og fysioterapiklinikk,
+            samtidig som vi skal møte den enkelte pasienten med omsorg og forståelse for dens
+            situasjon. Vi skal være nære gjennom hele behandlingen, støtte og veilede pasienten
+            til bedre helse gjennom erfaring og faglig kompetanse på både kort og lang sikt.
           </p>
           <!-- <h3 class="mt-12">Historie</h3> -->
           <p class="line-height-18 mt-6">
-            Innlandet helse og fysioterapi ble startet i januar 2020 av Lene Moe Sognar og Elin Fossbråten
-            Næsse. Klinikken er helprivat, det vil si at den drives uten driftstilskudd fra det offentlige. Det betyr
-            igjen at det er veldig kort ventetid for å komme inn, og pasienten betaler behandlingen sin selv.
+            Klinikken er helprivat, det vil si at den drives uten driftstilskudd fra det offentlige.
+            Det betyr igjen at det er veldig kort ventetid for å komme inn, og pasienten betaler
+            behandlingen sin selv.
           </p>
           <p class="mt-6 line-height-18">
-            Alle som jobber på Innlandet helse og fysioterapi skal være opptatt av at kunden skal få best mulig
-            service og bli fulgt gjennom hele behandlingen. Det vil si at vi aldri har flere inne til behandling
-            samtidig og vi skal være nære og støttende i behandlingen. Har du tilbakemeldinger, setter vi stor
-            pris på å få høre det.
+            Alle som jobber på Innlandet helse og fysioterapi skal være opptatt av at kunden skal
+            få best mulig service og bli fulgt gjennom hele behandlingen. Det vil si at vi aldri
+            har flere inne til behandling samtidig og vi skal være nære og støttende i
+            behandlingen. Har du tilbakemeldinger, setter vi stor pris på å få høre det.
           </p>
           <p class="mt-6 line-height-18">
-            Vi tilbyr fysioterapi, massasjeterapi, akupunktur og fotpleie. Alle timene kan bookes via telefon, mail,
-            facebook eller online timebestilling.
+            Alle timene kan bookes via telefon, mail, facebook eller online timebestilling.
           </p>
           <p class="mt-6 line-height-18">
-            Du finner oss i nyoppusede lokaler i Moelv sentrum, og på Gjøvik!
+            <!-- Du finner oss i nyoppusede lokaler i Moelv sentrum, og på Gjøvik! -->
           </p>
+
+          <v-row>
+            <v-col class="pr-6" cols="auto">
+              <v-icon>mdi-chevron-right</v-icon>
+              sentral beliggenhet
+            </v-col>
+            <v-col class="pr-6" cols="auto">
+              <v-icon>mdi-chevron-right</v-icon>
+              erfarne terapeuter
+            </v-col>
+            <v-col class="pr-6" cols="auto">
+              <v-icon>mdi-chevron-right</v-icon>
+              god service
+            </v-col>
+            <v-col class="pr-6" cols="auto">
+              <v-icon>mdi-chevron-right</v-icon>
+              kort ventetid
+            </v-col>
+          </v-row>
         </v-col>
 
         <v-col style="max-width: 550px;">
-          <v-img
+          <!-- <v-img
             :src="require('@/assets/sofa.jpg')"
             contain
-          ></v-img>
+          ></v-img> -->
         </v-col>
       </v-row>
 
+      <v-row class="mt-12">
+        <v-col cols="12">
+          <h3>Våre medarbeidere</h3>
+        </v-col>
+        <v-col v-for="index in moelvGroup" :key="index" sm="6" md="6" lg="4" xl="2">
+          <div class="pb-10">
+            <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+              <v-img
+                v-if="employees[index].img !== ''"
+                :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                contain
+                class="mb-3"
+              ></v-img>
+              <div>{{ employees[index].name }}</div>
+              <div>{{ employees[index].title }}</div>
+            </div>
+
+            <v-btn
+              href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+              target="_blank"
+              color="accent"
+              class="text-none"
+              rounded
+            >
+              <!-- <span class="mr-2">Bestill time</span> -->
+              <span>Bestill time</span>
+              <!-- <v-icon>mdi-open-in-new</v-icon> -->
+            </v-btn>
+          </div>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col v-for="index in gjovikGroup" :key="index" sm="6" md="6" lg="4" xl="2">
+          <div class="pb-10">
+            <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+              <v-img
+                v-if="employees[index].img !== ''"
+                :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                contain
+                class="mb-3"
+              ></v-img>
+              <div v-else style="padding-top: 100%; width: 100%; background: #ddd;"></div>
+              <div>{{ employees[index].name }}</div>
+              <div>{{ employees[index].title }}</div>
+            </div>
+
+            <v-btn
+              href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+              target="_blank"
+              color="accent"
+              class="text-none"
+              rounded
+            >
+              <span>Bestill time</span>
+              <!-- <v-icon>mdi-open-in-new</v-icon> -->
+            </v-btn>
+          </div>
+        </v-col>
+      </v-row>
+
+      <v-dialog
+        transition="dialog-bottom-transition"
+        max-width="600"
+        v-model="dialog"
+      >
+        <v-card>
+          <v-card-text>
+            <h3 class="pa-6 pt-12">{{ activeEmployee.name }}</h3>
+            <div class="text-h2 pa-6">
+              {{ activeEmployee.desc }}
+            </div>
+          </v-card-text>
+          <v-card-actions class="justify-end">
+            <v-btn
+              text
+              @click="dialog = false"
+            >
+              Lukk
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+
+      <v-row>
+        <v-col>
+          <h3>Du finner oss her</h3>
+        </v-col>
+      </v-row>
       <v-row class="justify-center mt-12">
         <div class="mb-4 mr-6">
           <h4 class="mb-2">Moelv</h4>
@@ -93,7 +200,13 @@
             <div class="mr-3">
               <v-icon>mdi-cellphone-iphone</v-icon>
             </div>
-            <div>Tlf: 951 888 73</div>
+            <div>Tlf Moelv: 951 888 73</div>
+          </div>
+          <div class="mt-4" style="display: flex;">
+            <div class="mr-3">
+              <v-icon>mdi-cellphone-iphone</v-icon>
+            </div>
+            <div>Tlf Gjøvik: 973 488 73</div>
           </div>
 
           <div class="mt-4" style="display: flex;">
@@ -161,12 +274,54 @@
 import Contact from '@/components/Contact'
 
 export default {
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Om oss',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Innlandet Helse og Fysioterapi, Moelv og Gjøvik',
+    meta: [
+      { name: 'description', content: '' }
+    ]
+  },
+
   components: {
     Contact
   },
 
   data () {
     return {
+      dialog: false,
+
+      employees: [
+        { img: 'lene', name: 'Lene Moe Sognar', title: 'Fysioterapeut', desc: '' },
+        { img: 'amalie', name: 'Amalie Øvergaard', title: 'Kiropraktor', desc: '' },
+        { img: 'monica', name: 'Monica Skjønsberg', title: 'Aut. fotterapeut', desc: '' },
+        { img: 'ingvild', name: 'Ingvild Midthaug', title: 'Osteopat D.O.', desc: '' },
+        { img: 'gro', name: 'Gro Visdal', title: 'Akupunktør og massasjeterapeut', desc: '' },
+        { img: 'gry', name: 'Gry Merete Haakensveen', title: 'Fysioterapeut', desc: '' },
+        { img: 'helge', name: 'Helge Afseth', title: 'Fysioterapeut', desc: '' },
+        { img: 'elin', name: 'Elin Fossbråten Næsse', title: 'Fysioterapeut', desc: '' },
+        { img: 'unn-therese', name: 'Unn-Therese Marken', title: 'Jordmor', desc: '' },
+        { img: 'berit', name: 'Berit Engeset', title: 'Yogaterapeut', desc: '' },
+        { img: '', name: 'Linda Wold Martinsen', title: 'Fysioterapeut', desc: '' },
+        { img: '', name: 'Ingrid Gillund Lium', title: 'Fysioterapeut og osteopat', desc: '' }
+      ],
+
+      moelvGroup: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      gjovikGroup: [7, 3, 10, 11, 4],
+
+      activeEmployee: {
+        name: '',
+        desc: ''
+      }
+    }
+  },
+
+  methods: {
+    showEmployee (index) {
+      this.activeEmployee.name = this.employees[index].name
+      this.activeEmployee.desc = this.employees[index].desc
+      this.dialog = true
     }
   }
 }
@@ -182,6 +337,9 @@ export default {
     left: 6%;
     top: 10%;
     z-index: 2;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   @media (max-width: 1200px) {
     .iframe-map {

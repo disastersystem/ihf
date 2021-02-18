@@ -15,28 +15,39 @@
       </div>
     </div>
 
-    <div class="mt-3" style="display: flex;">
-      <div class="mr-3">
-        <!-- <img src="phone.svg"/> -->
-        <v-icon>mdi-cellphone-iphone</v-icon>
+    <div class="mb-8 mt-8">
+      <div class="mt-3" style="display: flex;">
+        <div class="mr-3">
+          <!-- <img src="phone.svg"/> -->
+          <v-icon>mdi-cellphone-iphone</v-icon>
+        </div>
+        <div>Tlf Moelv: 951 888 73</div>
       </div>
-      <div>Tlf: 951 888 73</div>
+
+      <div class="mt-3" style="display: flex;">
+        <div class="mr-3">
+          <!-- <img src="location.svg"/> -->
+          <v-icon>mdi-map-marker</v-icon>
+        </div>
+        <div>Møllergata 3A<br>2390 Moelv</div>
+      </div>
     </div>
 
-    <div class="mt-3" style="display: flex;">
-      <div class="mr-3">
-        <!-- <img src="location.svg"/> -->
-        <v-icon>mdi-map-marker</v-icon>
+    <div class="mb-8 mt-8">
+      <div class="mt-3" style="display: flex;">
+        <div class="mr-3">
+          <!-- <img src="phone.svg"/> -->
+          <v-icon>mdi-cellphone-iphone</v-icon>
+        </div>
+        <div>Tlf Gjøvik: 973 488 73</div>
       </div>
-      <div>Møllergata 3A<br>2390 Moelv</div>
-    </div>
-
-    <div class="mt-3" style="display: flex;">
-      <div class="mr-3">
-        <!-- <img src="location.svg"/> -->
-        <v-icon>mdi-map-marker</v-icon>
+      <div class="mt-3" style="display: flex;">
+        <div class="mr-3">
+          <!-- <img src="location.svg"/> -->
+          <v-icon>mdi-map-marker</v-icon>
+        </div>
+        <div>Trondhjemsvegen 10<br>2821 Gjøvik</div>
       </div>
-      <div>Trondhjemsvegen 10<br>2821 Gjøvik</div>
     </div>
 
     <div class="mt-3" style="display: flex;">
@@ -45,23 +56,23 @@
         <div><b>Åpningstider</b></div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Mandag: </div>
-          <div>9-15</div>
+          <div>8-16</div>
         </div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Tirsdag: </div>
-          <div>9-20</div>
+          <div>8-20</div>
         </div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Onsdag: </div>
-          <div>9-15</div>
+          <div>8-1730</div>
         </div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Torsdag: </div>
-          <div>9-15</div>
+          <div>8-16</div>
         </div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Fredag: </div>
-          <div>9-15</div>
+          <div>8-16</div>
         </div>
         <div class="d-flex">
           <div class="flex-grow-1 mr-3">Lørdag: </div>

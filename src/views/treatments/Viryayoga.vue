@@ -43,10 +43,10 @@
     <v-row class="mt-12 pt-5 wrap-point-semi-large" justify="center">
       <v-col style="padding-right: 50px; max-width: 400px;">
         <!-- <img src="@/assets/ansatte/DSC_0200.jpg" style="display: block; width: 300px;"> -->
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/ansatte/jana.jpeg')"
           contain
-        ></v-img>
+        ></v-img> -->
       </v-col>
       <v-col style="max-width: 700px;">
         <h3>Yogalærer Jana S. Sørum</h3>
