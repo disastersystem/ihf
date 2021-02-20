@@ -40,8 +40,8 @@
 
         <div class="ihf-statement">
           <div class="ihf-statement-text">
-            <h2 class="display-1 mb-6" style="line-height: 1.4em;">
-              Vi hjelper deg til bedre helse <br>med hensyn til din situasjon!
+            <h2 class="display-1 mb-6 font-weight-bold" style="line-height: 1.4em;">
+              Vi hjelper deg til bedre helse <br>med hensyn til din situasjon
               <!-- <br>på kort og lang sikt! -->
             </h2>
             <p class="title mt-6 font-weight-thin">
@@ -61,7 +61,7 @@
               <span>Bli kjent med oss</span>
             </v-btn>
 
-            <v-btn
+            <!-- <v-btn
               href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
               target="_blank"
               color="accent"
@@ -70,7 +70,7 @@
               large
             >
               <span>Bestill time</span>
-            </v-btn>
+            </v-btn> -->
           </div>
         </div>
       </v-col>
@@ -100,7 +100,7 @@ export default {
     max-width: 1600px;
   }
   .ihf-logo {
-    max-width: 700px;
+    max-width: 600px;
     position: absolute;
     top: 80px;
     z-index: 2;
@@ -108,7 +108,7 @@ export default {
   }
   .ihf-statement {
     position: absolute;
-    bottom: 80px;
+    bottom: 10%;
     left: 80px;
     z-index: 2;
   }

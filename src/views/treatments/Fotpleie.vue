@@ -61,7 +61,7 @@
           Porene åpner seg og urenheter slipper ut. Etter ca 15 min dras vokslaget av og fotpleier gir en deilig massasje.
         </p> -->
 
-        <h4 class="mt-5 pt-5">Priser</h4>
+        <!-- <h4 class="mt-5 pt-5">Priser</h4>
 
         <v-simple-table dense class="ihf-table">
           <template v-slot:default>
@@ -85,7 +85,7 @@
         <div class="mt-4">
           <p style="font-size: 0.9em;">* Moelv sentrum er uten tillegg i prisen. Bor du mer enn 1 km. unna, koster det 10 kr. pr. km.
           kjøring.</p>
-        </div>
+        </div> -->
       </v-col>
 
       <v-col style="max-width: 500px;">
@@ -96,7 +96,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center" class="mt-12 pt-5 wrap-point-semi-large">
+    <!-- <v-row justify="center" class="mt-12 pt-5 wrap-point-semi-large">
       <v-col style="padding-right: 40px; max-width: 400px;">
         <v-img
           :src="require('@/assets/ansatte/monica.jpg')"
@@ -111,14 +111,13 @@
           i flere år har hun sett viktigheten av godt benstell og bestemte seg derfor for å ta fotterapeututdannelse.
           Hun har erfaring med praktisk pleie, omsorg og miljøarbeid for pasienter,
           kunder og brukere av helse- og sosialtjenesten.
-          <!-- Monica er ferdigutdannet sommeren 2020 og jobber som fotpleier frem til da. -->
           Monica tilbyr behandling i institusjon, klinikk og hjemmebehandlinger.
         </p>
         <p class="caption mt-12 line-height-18">
           *<i>Rehabilitering</i> har til formål å gjenvinne fysisk, kognitiv eller sosial funksjonsevne som er tapt på grunn av sykdom eller skade.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

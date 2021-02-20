@@ -36,9 +36,9 @@
           Svømmedyktig er den som trygt kan ta seg frem i vannet med effektive svømmebevegelser, som trives i vann, og mestrer forskjellige
           ferdigheter over og under vann.
         </p>
-        <p class="mt-12 line-height-18">
+        <!-- <p class="mt-12 line-height-18">
           Finn ut mer her: <a href="https://www.moelvenil.no/allidrett">https://www.moelvenil.no/allidrett</a>
-        </p>
+        </p> -->
       </v-col>
 
       <v-col style="max-width: 500px;">

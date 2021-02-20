@@ -30,14 +30,14 @@
         </p>
 
         <div class="mt-12">
-          <h4 class="mt-4">Priser</h4>
+          <!-- <h4 class="mt-4">Priser</h4> -->
           <!-- <ul>
             <li>Fysikalsk behandling/muskelterapi 30 min: <span class="mr-2"></span>350,-</li>
             <li>Fysikalsk behandling/muskelterapi 45 min: <span class="mr-2"></span>525,-</li>
             <li>Fysikalsk behandling/muskelterapi 60 min: <span class="mr-2"></span>700,-</li>
           </ul> -->
 
-          <v-simple-table dense class="ihf-table">
+          <!-- <v-simple-table dense class="ihf-table">
             <template v-slot:default>
               <thead>
                 <tr>
@@ -54,9 +54,9 @@
                 </tr>
               </tbody>
             </template>
-          </v-simple-table>
+          </v-simple-table> -->
 
-          <v-simple-table dense class="ihf-table mt-3">
+          <!-- <v-simple-table dense class="ihf-table mt-3">
             <template v-slot:default>
               <thead>
                 <tr>
@@ -78,7 +78,7 @@
                 </tr>
               </tbody>
             </template>
-          </v-simple-table>
+          </v-simple-table> -->
         </div>
 
         <div class="mt-12">
@@ -124,7 +124,7 @@
       <h2 class="mb-4">Fysioterapeutene</h2>
     </v-row> -->
 
-    <v-row style="margin-top: 100px; display: flex; justify-content: center;">
+    <!-- <v-row style="margin-top: 100px; display: flex; justify-content: center;">
       <div class="mt-5 pt-5" style="max-width: 1000px;">
         <h2 class="mb-4" style="text-align: center;">
           Fysioterapeutene
@@ -133,7 +133,6 @@
         <div style="display: flex; flex-wrap: wrap;">
           <v-row class="mt-12 wrap-point">
             <v-col cols="auto" class="pr-8">
-              <!-- <img :src="require('@/assets/ansatte/lene.jpg')" class="ihf-image"> -->
               <v-img
                 :src="require('@/assets/ansatte/lene.jpg')"
                 contain
@@ -143,18 +142,6 @@
 
             <v-col>
               <h3>Lene Moe Sognar</h3>
-
-              <!-- Lene har jobbet som fysioterapeut siden 2014. Hun har vært privatpraktiserende ved
-              Innlandet Helse og Fysioterapi sine lokaler siden 2016. Lene har god erfaring med
-              både forebygging og behandling av ulike plager og diagnoser.
-
-              Basert på individuell undersøkelse og vurdering av problemet og hva kunden selv
-              ønsker gir hun behandling. Noen av behandlingsmetodene Lene ser god effekt av er
-              massasje/triggerpunktsbehandling sammen med mobiliseringsteknikker og
-              tøyning/avspenning av muskler og vev, samt trenings- og øvelsesformer.
-
-              Lene er svømmeinstruktør og har startet svømming for barn i Moelv-hallen i
-              samarbeid med Moelven IL. -->
 
               <p class="mt-4 line-height-18">
                 Lene har jobbet som fysioterapeut siden 2014. Hun har vært privatpraktiserende ved
@@ -178,7 +165,6 @@
 
           <v-row class="mt-12 wrap-point">
             <v-col cols="auto" class="pr-8">
-              <!-- <img :src="require('@/assets/ansatte/elin.jpg')" class="ihf-image"> -->
               <v-img
                 :src="require('@/assets/ansatte/elin.jpg')"
                 contain
@@ -204,7 +190,6 @@
 
           <v-row class="mt-12 wrap-point">
             <v-col cols="auto" class="pr-8">
-              <!-- <img :src="require('@/assets/ansatte/helge.jpg')" class="ihf-image"> -->
               <v-img
                 :src="require('@/assets/ansatte/helge.jpg')"
                 contain
@@ -273,7 +258,7 @@
           </v-row>
         </div>
       </div>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>
