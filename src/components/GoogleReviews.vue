@@ -4,8 +4,13 @@
     max-width="344"
     style="min-height: 80px; width: 320px; position: fixed; bottom: 30px; right: 30px; z-index: 2; border-radius: 10px;"
     @click.prevent="_blank"
-    v-if="show"
+    v-if="show === true && hide === false"
   >
+    <div style="position: absolute; top: 0; right: 0; z-index: 3;">
+      <v-icon @click.prevent="hide = true" small class="pa-4">
+        mdi-close
+      </v-icon>
+    </div>
     <v-card-text>
       <!-- <transition name="fade"> -->
       <v-carousel
@@ -92,6 +97,7 @@ export default {
     return {
       index: 0,
       show: false,
+      hide: false,
 
       reviews: {
         reviews: [
