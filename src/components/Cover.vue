@@ -2,19 +2,6 @@
   <v-container class="ihf-max-width">
     <v-row>
       <v-col cols="auto" style="position: relative;">
-        <div class="ihf-logo">
-          <v-img
-            v-if="mobile"
-            :src="require('@/assets/logo.svg')"
-            contain
-          ></v-img>
-          <v-img
-            v-else
-            :src="require('@/assets/logo-dropshadow.svg')"
-            contain
-          ></v-img>
-        </div>
-
         <v-col class="pa-0" style="width: 1600px;">
           <v-img
             class="ihf-max-width"
@@ -40,12 +27,12 @@
 
         <div class="ihf-statement">
           <div class="ihf-statement-text">
-            <h2 class="display-1 mb-6" style="line-height: 1.4em;">
-              Vi hjelper deg til bedre helse <br>med hensyn til din situasjon!
+            <h2 class="display-1 mb-6 font-weight-bold" style="line-height: 1.4em;">
+              Vi hjelper deg til bedre helse <br>med hensyn til din situasjon
               <!-- <br>på kort og lang sikt! -->
             </h2>
             <p class="title mt-6 font-weight-thin">
-              Helse- og fysioterapiklinikk i Moelv og Gjøvik sentrum.
+              Helse- og fysioterapiklinikk<br>i Moelv og Gjøvik sentrum.
             </p>
           </div>
 
@@ -61,7 +48,7 @@
               <span>Bli kjent med oss</span>
             </v-btn>
 
-            <v-btn
+            <!-- <v-btn
               href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
               target="_blank"
               color="accent"
@@ -70,7 +57,7 @@
               large
             >
               <span>Bestill time</span>
-            </v-btn>
+            </v-btn> -->
           </div>
         </div>
       </v-col>
@@ -100,7 +87,7 @@ export default {
     max-width: 1600px;
   }
   .ihf-logo {
-    max-width: 700px;
+    max-width: 200px;
     position: absolute;
     top: 80px;
     z-index: 2;
@@ -108,7 +95,7 @@ export default {
   }
   .ihf-statement {
     position: absolute;
-    bottom: 80px;
+    top: 30%;
     left: 80px;
     z-index: 2;
   }
@@ -123,6 +110,11 @@ export default {
     }
   }
   @media (max-width: 1100px) {
+    .ihf-statement {
+      top: 20%;
+    }
+  }
+  @media (max-width: 800px) {
     .ihf-statement {
       position: static;
       margin-top: 48px;

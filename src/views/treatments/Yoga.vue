@@ -54,25 +54,14 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-12 pt-5 wrap-point" justify="center">
+    <!-- <v-row class="mt-12 pt-5 wrap-point" justify="center">
       <v-col style="padding-right: 50px; max-width: 300px;">
-        <!-- <img src="@/assets/ansatte/DSC_0200.jpg" style="display: block; width: 300px;"> -->
         <v-img
           :src="require('@/assets/ansatte/berit.jpg')"
           contain
         ></v-img>
       </v-col>
       <v-col style="max-width: 700px;">
-        <!-- <h3>Kort om meg som skal være yogalæreren din</h3>
-        <p class="mt-4 line-height-18">Jeg har deltatt og tatt kurs i klassisk yoga og Ashtanga yoga til og fra opp gjennom livet siste
-        noen og tjue år. Sett nå i ettertid var yogautøvelsens hyppighet knyttet opp mot stressfulle perioder i livet, der jeg jevnlig gikk på
-        yogaklasser når stresset var som størst for eksempel underveis i studietiden (utdannet veterinær). Jeg oppdaget MediYoga når jeg ble syk
-        med ME i 2014, og begynte på instruktørutdannelse i 2015. Yogautdannelsen er tatt hos MediYoga International og jeg ble ferdigutdannet
-        MediYoga lærer/terapeut (950 t) våren 2017. I tillegg til selve yogalærerutdannelsen har jeg tatt fordypning i MediYoga ved stress og utbrenthet,
-        MediYoga Kidz (barne- og ungdomsyoga), MediYoga for gravide og MediYoga ved kreft. Jeg har i tillegg til MediYogautdannelsen gått kurs for
-        yogalærere i Yoga Nidra. Siden starten av 2016 har jeg hatt gruppetimer i MediYoga hjemme i Veldre, hatt individuelle yogatimer og også undervist
-        MediYoga ute i bedrift en periode.</p> -->
-
         <h3>Yogaterapeut Berit Engeset</h3>
 
         <p class="mt-4 line-height-18">
@@ -98,7 +87,7 @@
           *ME er også kjent som kronisk utmattelsessyndrom
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

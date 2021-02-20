@@ -10,6 +10,8 @@
 
     <!-- <Message/> -->
 
+    <OnlineBookingButtons style="margin-top: 50px;"/>
+
     <v-row justify="center" class="ihf-extra-margin-top">
       <h2 class="display-1 mb-5 pa-5">Våre tjenester</h2>
     </v-row>
@@ -166,7 +168,7 @@
 
 <script>
 import Cover from '@/components/Cover'
-// import Message from '@/components/Message'
+import OnlineBookingButtons from '@/components/OnlineBookingButtons'
 import Footer from '@/components/Footer'
 
 export default {
@@ -174,7 +176,7 @@ export default {
 
   components: {
     Cover,
-    // Message,
+    OnlineBookingButtons,
     Footer
   },
 
@@ -222,13 +224,6 @@ export default {
         bookingBtn: null,
         link: 'yoga'
       },
-      // {
-      //   name: 'ViryaYoga',
-      //   image: 'exercise.svg',
-      //   ratio: 1.72,
-      //   bookingBtn: null,
-      //   link: 'viryayoga'
-      // },
       {
         name: 'YinYoga',
         image: 'exercise.svg',
@@ -237,6 +232,7 @@ export default {
         link: 'yinyoga'
       }
     ],
+
     treatments: [
       {
         name: 'Fysioterapi',
@@ -244,13 +240,7 @@ export default {
         ratio: 1.5,
         bookingBtn: true,
         link: 'fysioterapi',
-        // Vi gjør en grundig undersøkelse sammen med en samtale for å kartlegge hvor plagene dine kommer fra.
-        text: `
-          <p class="line-height-18 mt-4">
-            Denne behandlingen består ofte av leddmobilisering, tøyinger og dyp behandling av muskler og vev.
-            Du får råd og tips om øvelser som du kan gjøre hjemme.
-          </p>
-        `
+        text: ``
       },
       {
         name: 'Massasje',
@@ -258,13 +248,7 @@ export default {
         ratio: 1.5,
         bookingBtn: true,
         link: 'massasje',
-        text: `
-        `
-        // <p class="mt-4">
-        //   Terapeutisk/fysikalsk massasje, klassisk massasje, idrettsmassasje, velværemassasje, lymfedrenasje,
-        //   gravidmassasje, triggerpunktbehandling (massasje eller nåler), kopping, kinesioteiping, IMS (intramuskulær stimulering),
-        //   elektroakupunktur, tradisjonell kinesisk akupunktur og øreakupunktur.
-        // </p>
+        text: ``
       },
       {
         name: 'Fotterapi- og pleie',
@@ -272,16 +256,7 @@ export default {
         ratio: 1.55,
         bookingBtn: true,
         link: 'fotpleie',
-        text: `
-          <p class="mt-4 line-height-18">
-            Føttene bruker vi hver dag og det er de som bærer oss gjennom hele livet. Hver dag går vi flere tusen
-            skritt og de blir stengt inne i sko. De trenger vedlikehold og pleie.
-          </p>
-        `
-
-        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
-        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
-        // få innvirkning på andre deler av kroppen vår.
+        text: ``
       },
       {
         name: 'Osteopati',
@@ -289,16 +264,7 @@ export default {
         ratio: 1.55,
         bookingBtn: true,
         link: 'osteopati',
-        text: `
-          <p class="mt-4 line-height-18">
-            En osteopat finner sammenhengen mellom dine plager, din kropp og din
-            hverdag.
-          </p>
-        `
-
-        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
-        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
-        // få innvirkning på andre deler av kroppen vår.
+        text: ``
       },
       {
         name: 'Kiropraktikk',
@@ -306,10 +272,7 @@ export default {
         ratio: 1.5,
         bookingBtn: true,
         link: 'kiro',
-        text: `
-          <p class="line-height-18 mt-4">
-          </p>
-        `
+        text: ``
       },
       {
         name: 'YinYoga',
@@ -317,16 +280,7 @@ export default {
         ratio: 1.55,
         bookingBtn: true,
         link: 'yinyoga',
-        text: `
-          <p class="mt-4 line-height-18">
-            YinYoga er en terapeutisk og meditativ form for yoga. Det er lange gode
-            strekk som er bra for stive muskler, bidevev og ledd.
-          </p>
-        `
-
-        // Hver dag går vi flere tusen skritt og stenger føttene inne i sko. De trenger vedlikehold og pleie enten
-        // Hvis vi forsømmer føttene våre vil det etterhvert gi smerter og plager i føttene som over tid kan
-        // få innvirkning på andre deler av kroppen vår.
+        text: ``
       },
       {
         name: 'MediYoga',
@@ -334,38 +288,15 @@ export default {
         ratio: 1.5,
         bookingBtn: null,
         link: 'yoga',
-        text: `
-          <p class="mt-4 line-height-18">
-            MediYoga passer for alle enten man har fysiske begrensninger eller ikke. Fokuset ligger på pust,
-            bevegelighet i rygg/hofter, styrke kjernemusklaturen, avspenning og ro.
-          </p>
-        `
+        text: ``
       },
-      // {
-      //   name: 'ViryaYoga',
-      //   image: 'ansatte/yiryayoga.jpeg',
-      //   ratio: 1.3,
-      //   bookingBtn: null,
-      //   link: 'viryayoga',
-      //   text: `
-      //     <p class="mt-4 line-height-18">
-      //       I viryayoga møter du dynamiske yogasekvenser med fokus på god bevegelseslære, og et filosofisk tankekorn for sjelen.
-      //       Du får en tøff og morsom yogatrening som skaper kraft og energi.
-      //     </p>
-      //   `
-      // },
       {
         name: 'Bedrifter',
         image: 'bedrift3.png',
         ratio: 1,
         bookingBtn: null,
         link: 'bedrifter',
-        text: `
-          <p class="mt-4 line-height-18">
-            Muskel- og skjelettplager er den vanligste årsaken til sykefravær på norske arbeidsplasser.
-            Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.
-          </p>
-        `
+        text: ``
       },
       {
         name: 'Jordmor',
@@ -373,13 +304,7 @@ export default {
         ratio: 1,
         bookingBtn: null,
         link: 'jordmor',
-        text: `
-          <p class="mt-4 line-height-18">
-            Som jordmor arbeider man
-            med å gi kvinnen den støtte, omsorg og rådgivning som er nødvendig for å
-            gi henne en trygg og fin tid gjennom svangerskap, fødsel og barseltid.
-          </p>
-        `
+        text: ``
       },
       {
         name: 'Løpegrupper',
@@ -387,11 +312,7 @@ export default {
         ratio: 1,
         bookingBtn: null,
         link: 'løping',
-        text: `
-          <p class="mt-4 line-height-18">
-            For bedrifter og private.
-          </p>
-        `
+        text: ``
       },
       {
         name: 'Svømming',
@@ -399,13 +320,10 @@ export default {
         ratio: 2.6,
         bookingBtn: null,
         link: 'svømming',
-        text: `
-          <p class="mt-4 line-height-18">
-            Det arrangeres svømmetilbud for barn i Moelv-hallen i samarbeid mellom Innlandet Helse og Fysioterapi og Moleven IL.
-          </p>
-        `
+        text: ``
       }
     ],
+
     quotes: [
       {
         author: 'Bjørn Erik, 69 år',

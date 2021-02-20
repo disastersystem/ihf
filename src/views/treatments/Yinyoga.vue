@@ -49,9 +49,8 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-12 pt-5 wrap-point" justify="center">
+    <!-- <v-row class="mt-12 pt-5 wrap-point" justify="center">
       <v-col style="padding-right: 50px; max-width: 300px;">
-        <!-- <img src="@/assets/ansatte/DSC_0200.jpg" style="display: block; width: 300px;"> -->
         <v-img
           :src="require('@/assets/berit-beach.jpg')"
           contain
@@ -64,15 +63,8 @@
           Berit har deltatt og tatt kurs i klassisk- og Ashtanga yoga de siste tyve årene i tillegg til at hun er utdannet vetrinær.
           Når hun ser tilbake på sin yogautøvelses hyppighet, ser hun at hun har brukt yoga i stressfulle perioder i livet.
         </p>
-
-        <!-- <div style="padding-right: 50px; max-width: 100%;">
-          <v-img
-            :src="require('@/assets/berit-beach.jpg')"
-            contain
-          ></v-img>
-        </div> -->
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

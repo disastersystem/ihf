@@ -75,64 +75,93 @@
         </v-col>
       </v-row>
 
-      <v-row class="mt-12">
+      <v-row class="mt-12 pt-6">
         <v-col cols="12">
-          <h3>Våre medarbeidere</h3>
-        </v-col>
-        <v-col v-for="index in moelvGroup" :key="index" sm="6" md="6" lg="4" xl="2">
-          <div class="pb-10">
-            <div class="cursor-pointer mb-3" @click="showEmployee(index)">
-              <v-img
-                v-if="employees[index].img !== ''"
-                :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
-                contain
-                class="mb-3"
-              ></v-img>
-              <div>{{ employees[index].name }}</div>
-              <div>{{ employees[index].title }}</div>
-            </div>
-
-            <v-btn
-              href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
-              target="_blank"
-              color="accent"
-              class="text-none"
-              rounded
-            >
-              <!-- <span class="mr-2">Bestill time</span> -->
-              <span>Bestill time</span>
-              <!-- <v-icon>mdi-open-in-new</v-icon> -->
-            </v-btn>
-          </div>
+          <h2 class="display-1 mb-5">Våre medarbeidere</h2>
         </v-col>
       </v-row>
 
       <v-row>
-        <v-col v-for="index in gjovikGroup" :key="index" sm="6" md="6" lg="4" xl="2">
-          <div class="pb-10">
-            <div class="cursor-pointer mb-3" @click="showEmployee(index)">
-              <v-img
-                v-if="employees[index].img !== ''"
-                :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
-                contain
-                class="mb-3"
-              ></v-img>
-              <div v-else style="padding-top: 100%; width: 100%; background: #ddd;"></div>
-              <div>{{ employees[index].name }}</div>
-              <div>{{ employees[index].title }}</div>
-            </div>
+        <v-col sm="2" md="2" lg="1" xl="1">
+          <h3 class="pt-2 subtitle-1 font-weight-bold">Moelv</h3>
+        </v-col>
+        <v-col sm="10" md="10" lg="11" xl="11">
+          <v-row>
+            <v-col v-for="index in moelvGroup" :key="index" sm="6" md="6" lg="3" xl="2">
+              <div class="pb-10">
+                <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+                  <v-img
+                    v-if="employees[index].img !== ''"
+                    :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                    contain
+                    class="mb-3"
+                  ></v-img>
+                  <div class="body-1" style="margin-bottom: 2px;">{{ employees[index].name }}</div>
+                  <div class="body-1 font-weight-bold">{{ employees[index].title }}</div>
+                </div>
 
-            <v-btn
-              href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
-              target="_blank"
-              color="accent"
-              class="text-none"
-              rounded
-            >
-              <span>Bestill time</span>
-              <!-- <v-icon>mdi-open-in-new</v-icon> -->
-            </v-btn>
-          </div>
+                <v-btn
+                  v-if="employees[index].img !== 'amalie'"
+                  href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                >
+                  <!-- <span class="mr-2">Bestill time</span> -->
+                  <span>Bestill time</span>
+                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
+                </v-btn>
+                <v-btn
+                  v-else
+                  href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                >
+                  <span>Bestill time</span>
+                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col sm="2" md="2" lg="1" xl="1">
+          <h3 class="pt-2 subtitle-1 font-weight-bold">Gjøvik</h3>
+        </v-col>
+        <v-col sm="10" md="10" lg="11" xl="11">
+          <v-row>
+            <v-col v-for="index in gjovikGroup" :key="index" sm="6" md="6" lg="3" xl="2">
+              <div class="pb-10">
+                <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+                  <v-img
+                    v-if="employees[index].img !== ''"
+                    :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                    contain
+                    class="mb-3"
+                  ></v-img>
+                  <div v-else class="mb-3" style="padding-top: 100%; width: 100%; background: #ddd;"></div>
+                  <div class="body-1" style="margin-bottom: 2px;">{{ employees[index].name }}</div>
+                  <div class="body-1 font-weight-bold">{{ employees[index].title }}</div>
+                </div>
+
+                <v-btn
+                  href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                >
+                  <span>Bestill time</span>
+                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
 
@@ -144,9 +173,7 @@
         <v-card>
           <v-card-text>
             <h3 class="pa-6 pt-12">{{ activeEmployee.name }}</h3>
-            <div class="text-h2 pa-6">
-              {{ activeEmployee.desc }}
-            </div>
+            <div class="text-h2 pa-6 pt-0" v-html="activeEmployee.desc"></div>
           </v-card-text>
           <v-card-actions class="justify-end">
             <v-btn
@@ -159,12 +186,16 @@
         </v-card>
       </v-dialog>
 
-      <v-row>
+      <OnlineBookingButtons/>
+
+      <v-row class="mt-12">
         <v-col>
-          <h3>Du finner oss her</h3>
+          <!-- <h3>Du finner oss her</h3> -->
+          <h2 class="display-1">Du finner oss her</h2>
         </v-col>
       </v-row>
-      <v-row class="justify-center mt-12">
+
+      <v-row class="justify-center mt-6">
         <div class="mb-4 mr-6">
           <h4 class="mb-2">Moelv</h4>
           <iframe class="iframe-map" frameborder="0" style="border:0"
@@ -182,7 +213,7 @@
 
       <v-row class="justify-center mt-12">
         <v-col style="max-width: 750px;" class="pr-12">
-          <h3>Lyst på jobb hos oss?</h3>
+          <h2 class="display-1">Lyst på jobb hos oss?</h2>
           <p class="line-height-18 mt-6">
             Vi er en voksende bedrift, og har avdeling både på Moelv og Gjøvik. Send oss gjerne en åpen søknad om du er utdannet
             fysioterapeut, osteopat, kiropraktor, massasjeterapeut, akupunktør eller naprapat og fortell om hvorfor du ønsker å jobbe hos oss.
@@ -272,6 +303,8 @@
 
 <script>
 import Contact from '@/components/Contact'
+import OnlineBookingButtons from '@/components/OnlineBookingButtons'
+import employees from '@/employees.js'
 
 export default {
   metaInfo: {
@@ -285,28 +318,17 @@ export default {
   },
 
   components: {
-    Contact
+    Contact,
+    OnlineBookingButtons
   },
 
   data () {
     return {
       dialog: false,
 
-      employees: [
-        { img: 'lene', name: 'Lene Moe Sognar', title: 'Fysioterapeut', desc: '' },
-        { img: 'amalie', name: 'Amalie Øvergaard', title: 'Kiropraktor', desc: '' },
-        { img: 'monica', name: 'Monica Skjønsberg', title: 'Aut. fotterapeut', desc: '' },
-        { img: 'ingvild', name: 'Ingvild Midthaug', title: 'Osteopat D.O.', desc: '' },
-        { img: 'gro', name: 'Gro Visdal', title: 'Akupunktør og massasjeterapeut', desc: '' },
-        { img: 'gry', name: 'Gry Merete Haakensveen', title: 'Fysioterapeut', desc: '' },
-        { img: 'helge', name: 'Helge Afseth', title: 'Fysioterapeut', desc: '' },
-        { img: 'elin', name: 'Elin Fossbråten Næsse', title: 'Fysioterapeut', desc: '' },
-        { img: 'unn-therese', name: 'Unn-Therese Marken', title: 'Jordmor', desc: '' },
-        { img: 'berit', name: 'Berit Engeset', title: 'Yogaterapeut', desc: '' },
-        { img: '', name: 'Linda Wold Martinsen', title: 'Fysioterapeut', desc: '' },
-        { img: '', name: 'Ingrid Gillund Lium', title: 'Fysioterapeut og osteopat', desc: '' }
-      ],
+      employees: employees,
 
+      // who works at which place? (each item is a index in the employees array)
       moelvGroup: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
       gjovikGroup: [7, 3, 10, 11, 4],
 
