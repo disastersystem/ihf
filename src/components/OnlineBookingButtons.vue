@@ -38,10 +38,13 @@
         color="accent"
         class="text-none pt-6 pb-6 pl-6 pr-6"
         rounded
+        disabled
       >
         <!-- <span class="mr-2">Bestill time</span> -->
+
         <span class="font-weight-regular mr-1">Bestill time</span>
         <span class="font-weight-bold">Gjøvik</span>
+        <span class="font-weight-bold ml-1">(Kommer Snart!)</span>
         <!-- <v-icon>mdi-open-in-new</v-icon> -->
       </v-btn>
     </v-col>

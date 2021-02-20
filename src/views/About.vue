@@ -67,15 +67,16 @@
           </v-row>
         </v-col>
 
-        <v-col style="max-width: 550px;">
+        <!-- <v-col style="max-width: 550px;"> -->
           <!-- <v-img
             :src="require('@/assets/sofa.jpg')"
             contain
           ></v-img> -->
-        </v-col>
+        <!-- </v-col> -->
       </v-row>
 
       <v-row class="mt-12 pt-6">
+        <!-- <v-col cols="1"></v-col> -->
         <v-col cols="12">
           <h2 class="display-1 mb-5">Våre medarbeidere</h2>
         </v-col>
@@ -83,7 +84,9 @@
 
       <v-row>
         <v-col sm="2" md="2" lg="1" xl="1">
-          <h3 class="pt-2 subtitle-1 font-weight-bold">Moelv</h3>
+          <h3 class="pt-2 subtitle-1 font-weight-bold title-location">
+            Moelv
+          </h3>
         </v-col>
         <v-col sm="10" md="10" lg="11" xl="11">
           <v-row>
@@ -131,7 +134,9 @@
 
       <v-row>
         <v-col sm="2" md="2" lg="1" xl="1">
-          <h3 class="pt-2 subtitle-1 font-weight-bold">Gjøvik</h3>
+          <h3 class="pt-2 subtitle-1 font-weight-bold title-location">
+            Gjøvik
+          </h3>
         </v-col>
         <v-col sm="10" md="10" lg="11" xl="11">
           <v-row>
@@ -155,8 +160,10 @@
                   color="accent"
                   class="text-none mt-1"
                   rounded
+                  disabled
                 >
                   <span>Bestill time</span>
+                  <span class="font-weight-bold ml-1">(Kommer Snart!)</span>
                   <!-- <v-icon>mdi-open-in-new</v-icon> -->
                 </v-btn>
               </div>
@@ -188,7 +195,8 @@
 
       <OnlineBookingButtons/>
 
-      <v-row class="mt-12">
+      <v-row class="mt-12 pt-12">
+        <!-- <v-col cols="1"></v-col> -->
         <v-col>
           <!-- <h3>Du finner oss her</h3> -->
           <h2 class="display-1">Du finner oss her</h2>
@@ -211,7 +219,7 @@
         </div>
       </v-row>
 
-      <v-row class="justify-center mt-12">
+      <v-row class="justify-center mt-12 pt-12">
         <v-col style="max-width: 750px;" class="pr-12">
           <h2 class="display-1">Lyst på jobb hos oss?</h2>
           <p class="line-height-18 mt-6">
@@ -362,11 +370,20 @@ export default {
   }
   .cursor-pointer {
     cursor: pointer;
+    transition: transform 0.3s, opacity 0.6s;
+  }
+  .cursor-pointer:hover {
+    transform: scale(1.02);
   }
   @media (max-width: 1200px) {
     .iframe-map {
       height: 200px;
       width: 400px;
+    }
+  }
+  @media (max-width: 560px) {
+    .title-location {
+      font-size: 1.4em !important;
     }
   }
  /* @media (max-width: 1000px) {
