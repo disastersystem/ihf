@@ -51,9 +51,8 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-12 pt-5 wrap-point" justify="center">
+    <!-- <v-row class="mt-12 pt-5 wrap-point" justify="center">
       <v-col style="padding-right: 50px; max-width: 300px;">
-        <!-- <img src="@/assets/ansatte/DSC_0200.jpg" style="display: block; width: 300px;"> -->
         <v-img
           :src="require('@/assets/ansatte/lene.jpg')"
           contain
@@ -80,7 +79,7 @@
           samarbeid med Moelven IL.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

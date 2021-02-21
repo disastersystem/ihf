@@ -72,45 +72,10 @@
       </v-col>
     </v-row>
 
-    <!-- <v-row justify="center" class="ihf-extra-margin-bottom">
-      <v-col
-        v-for="(treatment, i) in cards"
-        :key="i"
-        @click="$router.push(treatment.link)"
-        xs="12" sm="6" md="4" lg="3" xl="2"
-      >
-        <div class="pa-8 ml-4 mr-4 mt-4 mb-6 treatment-card elevation-2">
-          <v-img
-            :src="require(`@/assets/${treatment.image}`)"
-            contain
-            style="height: 80px;"
-          ></v-img>
-
-          <div class="mt-6">
-            <h2 class="text-center">
-              {{ treatment.name }}
-            </h2>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <v-btn
-            @click="$router.push(treatment.link)"
-            target="_blank"
-            color="secondary"
-            class="text-none"
-            text
-          >
-            <span>Les mer</span>
-            <v-icon right dark>mdi-arrow-right</v-icon>
-          </v-btn>
-        </div>
-      </v-col>
-    </v-row> -->
-
     <v-row justify="center" class="ihf-extra-margin-top">
-      <!-- <h2 class="display-1 mb-5 pa-5">Hør hva andre mener</h2> -->
-      <h2 class="display-1 mb-5 pa-5" id="pasienterfaring">Pasienterfaringer</h2>
+      <h2 class="display-1 mb-5 pa-5" id="pasienterfaring">
+        Pasienterfaringer
+      </h2>
     </v-row>
 
     <v-row justify="center">
@@ -123,7 +88,6 @@
           <div class="line-height-18">
             <v-icon color="#F75F49">mdi-format-quote-open</v-icon>
             <span v-html="quote.text"></span>
-            <!-- <v-icon>mdi-format-quote-close</v-icon> -->
           </div>
           <div class="ihf-quote-author ml-4 mt-2">
             - {{ quote.author }}
@@ -144,23 +108,6 @@
         <v-icon right dark>mdi-arrow-right</v-icon>
       </v-btn>
     </v-row>
-
-    <!-- <v-row justify="center">
-      <div class="ihf-wrap" style="margin-top: 200px; margin-bottom: 200px; display: flex;">
-        <Contact style="margin-right: 200px;" class="mb-12"/>
-
-        <div style="position: relative;">
-          <div class="ihf-welcome-message">
-            <h2 class="h1" style="font-weight: 400;">Velkommen inn til oss!</h2>
-          </div>
-          <v-img
-            :src="require('@/assets/sofa.jpg')"
-            contain
-            style="max-width: 800px; min-width: 300px;"
-          ></v-img>
-        </div>
-      </div>
-    </v-row> -->
 
     <Footer/>
   </div>
@@ -267,6 +214,14 @@ export default {
         text: ``
       },
       {
+        name: 'Muskelterapi og akupunktur',
+        image: 'massage.jpg',
+        ratio: 1.5,
+        bookingBtn: true,
+        link: 'massasje',
+        text: ``
+      },
+      {
         name: 'Kiropraktikk',
         image: '',
         ratio: 1.5,
@@ -307,7 +262,7 @@ export default {
         text: ``
       },
       {
-        name: 'Løpegrupper',
+        name: 'Løpegrupper for bedrifter og private',
         image: 'running2.jpg',
         ratio: 1,
         bookingBtn: null,

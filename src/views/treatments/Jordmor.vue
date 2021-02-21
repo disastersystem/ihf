@@ -147,7 +147,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-12 pt-5 wrap-point" justify="center">
+    <!-- <v-row class="mt-12 pt-5 wrap-point" justify="center">
       <v-col style="padding-right: 50px; max-width: 300px;">
         <v-img
           :src="require('@/assets/ansatte/unn-therese.jpg')"
@@ -185,7 +185,7 @@
           tillegg til jordmor.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

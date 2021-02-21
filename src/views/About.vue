@@ -92,40 +92,16 @@
           <v-row>
             <v-col v-for="index in moelvGroup" :key="index" sm="6" md="6" lg="3" xl="2">
               <div class="pb-10">
-                <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+                <div class="cursor-pointer mb-3" @click="showEmployee(index, 'moelv')">
                   <v-img
-                    v-if="employees[index].img !== ''"
-                    :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                    v-if="employees[index].key !== ''"
+                    :src="require(`@/assets/ansatte/${employees[index].key}.jpg`)"
                     contain
                     class="mb-3"
                   ></v-img>
                   <div class="body-1" style="margin-bottom: 2px;">{{ employees[index].name }}</div>
                   <div class="body-1 font-weight-bold">{{ employees[index].title }}</div>
                 </div>
-
-                <v-btn
-                  v-if="employees[index].img !== 'amalie'"
-                  href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                >
-                  <!-- <span class="mr-2">Bestill time</span> -->
-                  <span>Bestill time</span>
-                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
-                </v-btn>
-                <v-btn
-                  v-else
-                  href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                >
-                  <span>Bestill time</span>
-                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
-                </v-btn>
               </div>
             </v-col>
           </v-row>
@@ -142,10 +118,10 @@
           <v-row>
             <v-col v-for="index in gjovikGroup" :key="index" sm="6" md="6" lg="3" xl="2">
               <div class="pb-10">
-                <div class="cursor-pointer mb-3" @click="showEmployee(index)">
+                <div class="cursor-pointer mb-3" @click="showEmployee(index, 'gjovik')">
                   <v-img
-                    v-if="employees[index].img !== ''"
-                    :src="require(`@/assets/ansatte/${employees[index].img}.jpg`)"
+                    v-if="employees[index].key !== ''"
+                    :src="require(`@/assets/ansatte/${employees[index].key}.jpg`)"
                     contain
                     class="mb-3"
                   ></v-img>
@@ -153,19 +129,6 @@
                   <div class="body-1" style="margin-bottom: 2px;">{{ employees[index].name }}</div>
                   <div class="body-1 font-weight-bold">{{ employees[index].title }}</div>
                 </div>
-
-                <v-btn
-                  href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                  disabled
-                >
-                  <span>Bestill time</span>
-                  <span class="font-weight-bold ml-1">(Kommer Snart!)</span>
-                  <!-- <v-icon>mdi-open-in-new</v-icon> -->
-                </v-btn>
               </div>
             </v-col>
           </v-row>
@@ -181,6 +144,43 @@
           <v-card-text>
             <h3 class="pa-6 pt-12">{{ activeEmployee.name }}</h3>
             <div class="text-h2 pa-6 pt-0" v-html="activeEmployee.desc"></div>
+
+            <v-row>
+              <v-col cols="auto" class="pl-8">
+                <v-btn
+                  v-if="activeEmployee.key === 'amalie'"
+                  href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                >
+                  <span>Bestill time</span>
+                </v-btn>
+                <v-btn
+                  v-if="activeEmployee.location === 'moelv' && activeEmployee.key !== 'amalie'"
+                  href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                >
+                  <span>Bestill time</span>
+                </v-btn>
+                <v-btn
+                  v-if="activeEmployee.location === 'gjovik'"
+                  href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+                  target="_blank"
+                  color="accent"
+                  class="text-none mt-1"
+                  rounded
+                  disabled
+                >
+                  <span>Bestill time</span>
+                  <span class="font-weight-bold ml-1">(Kommer Snart!)</span>
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-card-text>
           <v-card-actions class="justify-end">
             <v-btn
@@ -340,17 +340,14 @@ export default {
       moelvGroup: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
       gjovikGroup: [7, 3, 10, 11, 4],
 
-      activeEmployee: {
-        name: '',
-        desc: ''
-      }
+      activeEmployee: {}
     }
   },
 
   methods: {
-    showEmployee (index) {
-      this.activeEmployee.name = this.employees[index].name
-      this.activeEmployee.desc = this.employees[index].desc
+    showEmployee (index, location) {
+      this.activeEmployee = this.employees[index]
+      this.activeEmployee.location = location
       this.dialog = true
     }
   }

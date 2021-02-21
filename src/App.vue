@@ -159,7 +159,7 @@
         nav
       >
         <v-list-item class="mb-12">
-          <v-list-item-title>
+          <!-- <v-list-item-title> -->
             <v-dialog
               transition="dialog-bottom-transition"
               max-width="600"
@@ -192,7 +192,7 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-          </v-list-item-title>
+          <!-- </v-list-item-title> -->
         </v-list-item>
 
         <!-- active-class="deep-purple--text text--accent-4" -->
@@ -213,7 +213,7 @@
         <v-list-group>
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Om Innlandet Helse og Fysioterapi</v-list-item-title>
+              <v-list-item-title>Om oss</v-list-item-title>
             </v-list-item-content>
           </template>
 

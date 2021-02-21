@@ -105,7 +105,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center" class="mt-12 pt-5 wrap-point-semi-large">
+    <!-- <v-row justify="center" class="mt-12 pt-5 wrap-point-semi-large">
       <v-col style="padding-right: 40px; max-width: 400px;">
         <v-img
           :src="require('@/assets/running.jpg')"
@@ -125,7 +125,7 @@
           kroppens funksjon.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

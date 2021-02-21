@@ -50,7 +50,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-12 pt-5 wrap-point" justify="center">
+    <!-- <v-row class="mt-12 pt-5 wrap-point" justify="center">
       <v-col style="padding-right: 50px; max-width: 300px;">
         <v-img
           :src="require('@/assets/ansatte/gro.jpg')"
@@ -58,23 +58,6 @@
         ></v-img>
       </v-col>
       <v-col style="max-width: 700px;">
-        <!-- <h3>Massasjeterapeut og akupunktør Gro Visdal</h3>
-
-        <p class="mt-4 line-height-18">
-          Gro Visdal er massasjeterapeut og akupunktør og har erfaring i fra tverrfaglige team i Oslo og Gudbrandsdalen.
-          Hun har nå flyttet til Åsmarka og skal starte hos oss i Innlandet helse og fysioterapi.
-          Gro har utdanning og videreutdanning i fra IFH og Høyskolen Kristiania i Oslo.
-          Hun er medlem av Massasjeforbundet og Akupunkturforeningen.
-        </p>
-        <p class="mt-4 line-height-18">
-          Gro har alltid fokus på en helhetlig behandling og tilpasser behandlingene etter pasientens ønsker,
-          men da med en faglig anbefaling.
-          Gro sine verktøy er terapeutisk/fysikalsk massasje, klassisk massasje, idrettsmassasje, velværemassasje, lymfedrenasje,
-          gravidmassasje, triggerpunktbehandling (massasje eller nåler), kopping, kinesioteiping,
-          IMS (intramuskulær stimulering), elektroakupunktur, tradisjonell kinesisk akupunktur og øreakupunktur.
-          Ofte komplementerer Gro behandlingene med generell kosthold- og treningsveiledning og ergonomiske råd.
-        </p> -->
-
         <h3>Massasjeterapeut og akupunktør Gro Visdal</h3>
 
         <p class="mt-4 line-height-18">
@@ -110,7 +93,7 @@
           Hun er medlem av Massasjeforbundet og Akupunkturforeningen.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <Footer/>
   </div>

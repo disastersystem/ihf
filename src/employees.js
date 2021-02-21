@@ -1,6 +1,6 @@
 export default [
   {
-    img: 'lene',
+    key: 'lene',
     name: 'Lene Moe Sognar',
     title: 'Fysioterapeut',
     desc: `
@@ -24,7 +24,7 @@ export default [
     `
   },
   {
-    img: 'amalie',
+    key: 'amalie',
     name: 'Amalie Øvergaard',
     title: 'Kiropraktor',
     desc: `
@@ -47,7 +47,7 @@ export default [
     `
   },
   {
-    img: 'monica',
+    key: 'monica',
     name: 'Monica Skjønsberg',
     title: 'Aut. fotterapeut',
     desc: `
@@ -65,7 +65,7 @@ export default [
     `
   },
   {
-    img: 'ingvild',
+    key: 'ingvild',
     name: 'Ingvild Midthaug',
     title: 'Osteopat D.O.',
     desc: `
@@ -82,7 +82,7 @@ export default [
     `
   },
   {
-    img: 'gro',
+    key: 'gro',
     name: 'Gro Visdal',
     title: 'Akupunktør og massasjeterapeut',
     desc: `
@@ -121,7 +121,7 @@ export default [
     `
   },
   {
-    img: 'gry',
+    key: 'gry',
     name: 'Gry Merete Haakensveen',
     title: 'Fysioterapeut',
     desc: `
@@ -138,7 +138,7 @@ export default [
     `
   },
   {
-    img: 'helge',
+    key: 'helge',
     name: 'Helge Afseth',
     title: 'Fysioterapeut',
     desc: `
@@ -174,7 +174,7 @@ export default [
     `
   },
   {
-    img: 'elin',
+    key: 'elin',
     name: 'Elin Fossbråten Næsse',
     title: 'Fysioterapeut',
     desc: `
@@ -191,7 +191,7 @@ export default [
     `
   },
   {
-    img: 'unn-therese',
+    key: 'unn-therese',
     name: 'Unn-Therese Marken',
     title: 'Jordmor',
     desc: `
@@ -221,7 +221,7 @@ export default [
     `
   },
   {
-    img: 'berit',
+    key: 'berit',
     name: 'Berit Engeset',
     title: 'Yogaterapeut',
     desc: `
@@ -232,13 +232,13 @@ export default [
     `
   },
   {
-    img: '',
+    key: '',
     name: 'Linda Wold Martinsen',
     title: 'Fysioterapeut',
     desc: ''
   },
   {
-    img: '',
+    key: '',
     name: 'Ingrid Gillund Lium',
     title: 'Fysioterapeut og osteopat',
     desc: ''
