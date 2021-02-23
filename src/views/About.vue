@@ -174,10 +174,9 @@
                   color="accent"
                   class="text-none mt-1"
                   rounded
-                  disabled
                 >
                   <span>Bestill time</span>
-                  <span class="font-weight-bold ml-1">(Kommer Snart!)</span>
+                  <!-- <span class="font-weight-bold ml-1">(Kommer Snart!)</span> -->
                 </v-btn>
               </v-col>
             </v-row>
