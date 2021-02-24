@@ -9,7 +9,7 @@
     <v-container class="mb-0 pb-0 pl-0">
       <v-breadcrumbs class="pl-0" :items="[
         { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Kiropraktikk', disabled: true, to: 'kiropraktikk' }
+        { text: 'Kiropraktor', disabled: true, to: 'kiropraktor' }
       ]">
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>
@@ -19,7 +19,7 @@
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col class="pr-5" style="max-width: 700px;">
-        <h1 class="display-2">Kiropraktikk</h1>
+        <h1 class="display-2">Kiropraktor</h1>
 
         <p class="mt-4 line-height-18">
           En kiropraktor er offentlig autorisert helsepersonell, som undersøker og behandler muskel-, nerve- og skjelettlidelser.

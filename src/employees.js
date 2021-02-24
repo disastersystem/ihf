@@ -238,7 +238,7 @@ export default [
     desc: ''
   },
   {
-    key: '',
+    key: 'ingrid',
     name: 'Ingrid Gillund Lium',
     title: 'Fysioterapeut og osteopat',
     desc: ''

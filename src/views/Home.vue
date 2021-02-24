@@ -214,19 +214,19 @@ export default {
         text: ``
       },
       {
-        name: 'Muskelterapi og akupunktur',
-        image: 'massage.jpg',
+        name: 'Akupunktur',
+        image: '',
         ratio: 1.5,
         bookingBtn: true,
         link: 'massasje',
         text: ``
       },
       {
-        name: 'Kiropraktikk',
+        name: 'Kiropraktor',
         image: '',
         ratio: 1.5,
         bookingBtn: true,
-        link: 'kiro',
+        link: 'kiropraktor',
         text: ``
       },
       {

@@ -63,9 +63,9 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
-    path: '/kiro',
-    name: 'Kiro',
-    component: () => import('@/views/treatments/Kiro.vue'),
+    path: '/kiropraktor',
+    name: 'kiropraktor',
+    component: () => import('@/views/treatments/Kiropraktor.vue'),
     meta: { scrollToTop: true }
   },
   {
@@ -84,6 +84,12 @@ const routes = [
     path: '/massasje',
     name: 'massage',
     component: () => import('@/views/treatments/Massage.vue'),
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/akupunktur',
+    name: 'acupuncture',
+    component: () => import('@/views/treatments/Acupuncture.vue'),
     meta: { scrollToTop: true }
   },
   {

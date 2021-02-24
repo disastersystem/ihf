@@ -9,7 +9,7 @@
     <v-container class="mb-0 pb-0 pl-0">
       <v-breadcrumbs class="pl-0" :items="[
         { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Massasjeterapi/massasje og akupunktur', disabled: true, to: 'massasje' }
+        { text: 'Massasje', disabled: true, to: 'massasje' }
       ]">
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>
@@ -19,9 +19,45 @@
 
     <v-row justify="center" class="wrap-point-large" style="margin: 100px 0;">
       <v-col style="max-width: 700px;" class="pr-5">
-        <h1 class="display-2">Massasjeterapi/massasje og akupunktur</h1>
+        <h1 class="display-2">Massasje</h1>
 
-        <v-simple-table dense class="ihf-table mt-6">
+        <p class="mt-4 line-height-18">
+          Massasje er en behandlingsteknikk som har eksistert i mange tusen år og blir i dag anvendt av mange forskjellige terapeuter. Hensikten med massasje er å påvirke kroppens blodsirkulasjonen, nerve- og hormonssystem. Dette fører til reduksjon av stressreaksjoner og øke kroppens evne til avspenning og restitusjon.
+          Det finnes flere underkategorier innen massasje. De ulike typene massasje har ulike formål.
+        </p>
+
+        <p class="mt-4 line-height-18">
+          <b>Klassisk massasje</b> består av fem hovedteknikker som er effleurage (stryking), petrissage (knaing),
+          tapotement (rytmisk tapping), friksjon og vibrering. Dette er en slags grunnbehandling som
+          både kan ha som formål å løsne spenninger i muskulatur og øke velvære og avspenning.
+          Andre massasjeteknikker er som regel basert på den klassiske massasjen.
+        </p>
+
+        <p class="mt-4 line-height-18">
+          <b>Lymfedrenasje</b> er en massasjeteknikk for å bedre sirkulasjon av lymfesystemet.
+          Dette er en gunstig behandling for de som opplever hevelser i kroppen grunnet medisinbruk,
+          operasjoner eller generelt nedsatt lymfesirkulasjon.
+        </p>
+
+        <p class="mt-4 line-height-18">
+          <b>Idrettsmassasje</b> består av massasjeteknikker for å optimalisere sirkulasjon i muskulatur
+          som skal prestere 100% og restitusjon av muskulatur som har høy belastning.
+        </p>
+
+        <p class="mt-4 line-height-18">
+          <b>Gravidmassasje</b> er en massasje som er tilpasset gravide. Massasje under svangerskapet er
+          svært populært og har som formål å lindre smerter i anspent muskulatur grunnet svangerskap
+          og fremme god sirkulasjon. Økt velvære er positivt for både mor og barn.
+        </p>
+
+        <p class="mt-4 line-height-18">
+          <b>Bindevevsmassasje</b> er en type massasje som har som hensikt å løse opp i "opphenget"
+          til muskulatur og organer. Senefester, hud og bindevev påvirkes ofte ved langvarige
+          smerter og spent muskulatur. Disse strukturene kan bli svært stramme og skape en
+          sekundær smerte som kan kjennes muskulært ut.
+        </p>
+
+        <!-- <v-simple-table dense class="ihf-table mt-6">
           <template v-slot:default>
             <thead>
               <tr>
@@ -38,7 +74,7 @@
               </tr>
             </tbody>
           </template>
-        </v-simple-table>
+        </v-simple-table> -->
       </v-col>
 
       <v-col style="max-width: 500px;">
