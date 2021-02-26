@@ -2,19 +2,6 @@
   <v-container class="ihf-max-width">
     <v-row>
       <v-col cols="auto" style="position: relative;">
-        <div class="ihf-logo">
-          <v-img
-            v-if="mobile"
-            :src="require('@/assets/logo.svg')"
-            contain
-          ></v-img>
-          <v-img
-            v-else
-            :src="require('@/assets/logo-dropshadow.svg')"
-            contain
-          ></v-img>
-        </div>
-
         <v-col class="pa-0" style="width: 1600px;">
           <v-img
             class="ihf-max-width"
@@ -45,7 +32,7 @@
               <!-- <br>på kort og lang sikt! -->
             </h2>
             <p class="title mt-6 font-weight-thin">
-              Helse- og fysioterapiklinikk i Moelv og Gjøvik sentrum.
+              Helse- og fysioterapiklinikk<br>i Moelv og Gjøvik sentrum.
             </p>
           </div>
 
@@ -100,7 +87,7 @@ export default {
     max-width: 1600px;
   }
   .ihf-logo {
-    max-width: 600px;
+    max-width: 200px;
     position: absolute;
     top: 80px;
     z-index: 2;
@@ -108,7 +95,7 @@ export default {
   }
   .ihf-statement {
     position: absolute;
-    bottom: 10%;
+    top: 30%;
     left: 80px;
     z-index: 2;
   }
@@ -123,6 +110,11 @@ export default {
     }
   }
   @media (max-width: 1100px) {
+    .ihf-statement {
+      top: 20%;
+    }
+  }
+  @media (max-width: 800px) {
     .ihf-statement {
       position: static;
       margin-top: 48px;
