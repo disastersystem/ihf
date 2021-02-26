@@ -327,7 +327,7 @@ export default {
           },
           {
             name: 'Akupunktur',
-            link: 'Akupunktur'
+            link: 'akupunktur'
           },
           {
             name: 'Fotterapi',

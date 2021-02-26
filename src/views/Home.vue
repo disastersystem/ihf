@@ -218,7 +218,7 @@ export default {
         image: '',
         ratio: 1.5,
         bookingBtn: true,
-        link: 'massasje',
+        link: 'akupunktur',
         text: ``
       },
       {

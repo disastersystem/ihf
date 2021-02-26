@@ -23,19 +23,31 @@
           <h1 class="display-2">Lyst på jobb hos oss?</h1>
 
           <p class="line-height-18 mt-6">
-            Vi er en voksende bedrift, og har avdeling både på Moelv og Gjøvik. Send oss gjerne en åpen søknad om du er utdannet
-            fysioterapeut, osteopat, kiropraktor, massasjeterapeut, akupunktør eller naprapat og fortell om hvorfor du ønsker å jobbe hos oss.
-            Er du interessert i å holde foredrag eller ha gruppetimer er det også mulighet til å ha det i våre lokaler på Moelv.
+            Vi er en bedrift i sterk vekst og har avdelinger både i Moelv og på Gjøvik.
+            Innlandet helse og fysioterapi er til enhver tid åpne for nye terapeuter og medarbeidere
+            til våre klinikker, vi oppfordrer derfor alle som ønsker til å søke. Send oss gjerne en
+            åpen søknad om hvorfor du ønsker å jobbe hos oss. Er du interessert i å holde foredrag
+            eller ha gruppetimer er det også mulighet til å ha det i våre lokaler på Moelv.
           </p>
           <p class="line-height-18 mt-6">
-            Den ene fysioterapeuten vår, skal ut i permisjon i starten av oktober, og vi ønsker å få inn noen til å vikariere for henne da.
-            Det vil være mulighet for forlengelse av kontrakt utover tiden man fungerer som vikar for henne.
-          </p>
-          <p class="line-height-18 mt-6">
-            Ta kontakt med oss på telefon, mail eller sosiale medier om du ønsker å vite mer.
+            Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse,
+            service, kunnskap og resultater.
           </p>
 
-          <div class="mt-4" style="display: flex;">
+          <!-- <p class="line-height-18 mt-6">
+          </p> -->
+          <h4 class="mt-6">Ønskede kvalifikasjoner for terapeuter:</h4>
+          <ul>
+            <li class="mt-4">Kvalifisert og/eller autorisert terapeut</li>
+            <li class="mt-2">En motivert og engasjert person som ønsker å jobber i et tverrfaglig miljø</li>
+            <li class="mt-2">Er selvstendig, og kan utvikle og skape nye relasjoner til nærmiljøet og samarbeidspartnere</li>
+            <li class="mt-2">Inneha gode kommunikasjonsevner</li>
+            <li class="mt-2">Ha en sterk drivkraft i å utvikle sin egen og klinikkens praksis og renommé</li>
+            <li class="mt-2">Et sterkt ønske om faglig kompetanseutvikling</li>
+            <li class="mt-2">Er åpen for å arbeide ute i bedrifter ved behov</li>
+          </ul>
+
+          <div class="mt-12" style="display: flex;">
             <div class="mr-3">
               <v-icon>mdi-cellphone-iphone</v-icon>
             </div>
@@ -59,14 +71,14 @@
             </div>
           </div>
 
-          <div class="mt-4">
+          <!-- <div class="mt-4">
             <div>
               <a href="https://www.facebook.com/innlandethelseogfysio/" target="_blank" style="text-decoration: none; margin-left: 0; padding-left: 0;">
-                <!-- <v-icon large color="rgb(66, 103, 178)">mdi-facebook-box</v-icon> -->
+                <v-icon large color="rgb(66, 103, 178)">mdi-facebook-box</v-icon>
                 <img src="@/assets/facebook.svg" alt="Facebook link" style="width: 35px;">
               </a>
             </div>
-          </div>
+          </div> -->
         </v-col>
 
         <v-col style="max-width: 550px;">

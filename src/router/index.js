@@ -88,7 +88,7 @@ const routes = [
   },
   {
     path: '/akupunktur',
-    name: 'acupuncture',
+    name: 'akupunktur',
     component: () => import('@/views/treatments/Acupuncture.vue'),
     meta: { scrollToTop: true }
   },
