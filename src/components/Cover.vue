@@ -26,17 +26,66 @@
         </v-col>
 
         <div class="ihf-statement">
+          <!-- <div style="width: 250px; margin-left: 1%; padding-bottom: 5px; margin-bottom: 40px;">
+            <v-img
+              :src="require('@/assets/logo-twolines.svg')"
+              contain
+            ></v-img>
+          </div> -->
+
           <div class="ihf-statement-text">
-            <h2 class="display-1 mb-6 font-weight-bold" style="line-height: 1.4em;">
+            <h2 class="
+              text-h4
+              text-sm-h4
+              text-md-h4
+              text-lg-h3
+              text-xl-h3
+              mb-4 font-weight-bold"
+              style="line-height: 1.4em;"
+            >
               Vi hjelper deg til bedre helse <br>med hensyn til din situasjon
               <!-- <br>på kort og lang sikt! -->
             </h2>
-            <p class="title mt-6 font-weight-thin">
-              Helse- og fysioterapiklinikk<br>i Moelv og Gjøvik sentrum.
-            </p>
+            <h3 class="mt-4 mb-6 text-h6" style="color: #eee;">
+              Helse- og fysioterapiklinikk i Moelv og Gjøvik
+              <!-- sentrum. -->
+            </h3>
           </div>
 
           <div>
+            <v-dialog
+              transition="dialog-bottom-transition"
+              max-width="600"
+              v-model="dialog"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  v-bind="attrs"
+                  v-on="on"
+                  color="accent"
+                  class="pa-6 mt-6 mr-6"
+                  rounded
+                >
+                  <span class="font-weight-bold">Bestill time</span>
+                </v-btn>
+              </template>
+              <v-card>
+                <v-card-text class="pt-10">
+                  <OnlineBookingButtons/>
+                </v-card-text>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    text
+                    @click="dialog = false"
+                  >
+                    Lukk
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
+
             <v-btn
               @click="$router.push('om')"
               target="_blank"
@@ -45,7 +94,7 @@
               rounded
               large
             >
-              <span>Bli kjent med oss</span>
+              <span class="font-weight-bold" style="color: #fff;">Bli kjent med oss</span>
             </v-btn>
 
             <!-- <v-btn
@@ -58,6 +107,8 @@
             >
               <span>Bestill time</span>
             </v-btn> -->
+            <!-- <OnlineBookingButtons/> -->
+            <!-- <OnlineBookingDialog/> -->
           </div>
         </div>
       </v-col>
@@ -66,10 +117,18 @@
 </template>
 
 <script>
+import OnlineBookingButtons from '@/components/OnlineBookingButtons'
+// import OnlineBookingDialog from '@/components/OnlineBookingDialog'
+
 export default {
+  components: {
+    OnlineBookingButtons
+    // OnlineBookingDialog
+  },
   data () {
     return {
-      mobile: false
+      mobile: false,
+      dialog: false
     }
   },
   mounted () {
@@ -111,7 +170,7 @@ export default {
   }
   @media (max-width: 1100px) {
     .ihf-statement {
-      top: 20%;
+      top: 28%;
     }
   }
   @media (max-width: 800px) {

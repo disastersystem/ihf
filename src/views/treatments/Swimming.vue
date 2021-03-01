@@ -9,7 +9,7 @@
     <v-container class="mb-0 pb-0 pl-0">
       <v-breadcrumbs class="pl-0" :items="[
         { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Svømming', disabled: true, to: 'svømming' }
+        { text: 'Svømming', disabled: true, to: 'svomming' }
       ]">
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>

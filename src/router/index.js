@@ -99,13 +99,13 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
-    path: '/svømming',
+    path: '/svomming',
     name: 'swimming',
     component: () => import('@/views/treatments/Swimming.vue'),
     meta: { scrollToTop: true }
   },
   {
-    path: '/løping',
+    path: '/loping',
     name: 'running',
     component: () => import('@/views/treatments/Running.vue'),
     meta: { scrollToTop: true }

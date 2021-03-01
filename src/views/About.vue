@@ -7,14 +7,18 @@
     mr-xl-12 ml-xl-12
   ">
     <v-container class="mb-0 pb-0">
-      <v-breadcrumbs :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Vår visjon og historie', disabled: true, to: 'om' }
-      ]" style="padding-left: 0;">
-        <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
-        </template>
-      </v-breadcrumbs>
+      <v-row class="justify-center wrap-point-large">
+        <v-col style="max-width: 750px;" class="pr-12">
+          <v-breadcrumbs :items="[
+            { text: 'Hjem', disabled: false, to: '/' },
+            { text: 'Vår visjon og historie', disabled: true, to: 'om' }
+          ]" style="padding-left: 0;">
+            <template v-slot:divider>
+              <v-icon>mdi-chevron-right</v-icon>
+            </template>
+          </v-breadcrumbs>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container class="about mt-12">
@@ -143,7 +147,7 @@
         <v-card>
           <v-card-text>
             <h3 class="pa-6 pt-12">{{ activeEmployee.name }}</h3>
-            <div class="text-h2 pa-6 pt-0" v-html="activeEmployee.desc"></div>
+            <div class="body-1 pa-6 pt-0" v-html="activeEmployee.desc"></div>
 
             <v-row>
               <v-col cols="auto" class="pl-8">

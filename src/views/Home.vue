@@ -10,7 +10,7 @@
 
     <!-- <Message/> -->
 
-    <OnlineBookingButtons style="margin-top: 50px;"/>
+    <!-- <OnlineBookingButtons style="margin-top: 50px;"/> -->
 
     <v-row justify="center" class="ihf-extra-margin-top">
       <h2 class="display-1 mb-5 pa-5">Våre tjenester</h2>
@@ -115,7 +115,7 @@
 
 <script>
 import Cover from '@/components/Cover'
-import OnlineBookingButtons from '@/components/OnlineBookingButtons'
+// import OnlineBookingButtons from '@/components/OnlineBookingButtons'
 import Footer from '@/components/Footer'
 
 export default {
@@ -123,7 +123,7 @@ export default {
 
   components: {
     Cover,
-    OnlineBookingButtons,
+    // OnlineBookingButtons,
     Footer
   },
 
@@ -266,7 +266,7 @@ export default {
         image: 'running2.jpg',
         ratio: 1,
         bookingBtn: null,
-        link: 'løping',
+        link: 'loping',
         text: ``
       },
       {
@@ -274,7 +274,7 @@ export default {
         image: 'swimming.png',
         ratio: 2.6,
         bookingBtn: null,
-        link: 'svømming',
+        link: 'svomming',
         text: ``
       }
     ],
