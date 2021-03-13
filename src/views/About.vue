@@ -225,51 +225,13 @@
       <v-row class="justify-center mt-12 pt-12">
         <v-col style="max-width: 750px;" class="pr-12">
           <h2 class="display-1">Lyst på jobb hos oss?</h2>
-          <p class="line-height-18 mt-6">
-            Vi er en voksende bedrift, og har avdeling både på Moelv og Gjøvik. Send oss gjerne en åpen søknad om du er utdannet
-            fysioterapeut, osteopat, kiropraktor, massasjeterapeut, akupunktør eller naprapat og fortell om hvorfor du ønsker å jobbe hos oss.
-            Er du interessert i å holde foredrag eller ha gruppetimer er det også mulighet til å ha det i våre lokaler på Moelv.
-          </p>
-          <p class="line-height-18 mt-6">
-            Den ene fysioterapeuten vår, skal ut i permisjon i starten av oktober, og vi ønsker å få inn noen til å vikariere for henne da.
-            Det vil være mulighet for forlengelse av kontrakt utover tiden man fungerer som vikar for henne.
-          </p>
-          <p class="line-height-18 mt-6">
-            Ta kontakt med oss på telefon, mail eller sosiale medier om du ønsker å vite mer.
-          </p>
 
-          <div class="mt-4" style="display: flex;">
-            <div class="mr-3">
-              <v-icon>mdi-cellphone-iphone</v-icon>
-            </div>
-            <div>Tlf Moelv: 951 888 73</div>
-          </div>
-          <div class="mt-4" style="display: flex;">
-            <div class="mr-3">
-              <v-icon>mdi-cellphone-iphone</v-icon>
-            </div>
-            <div>Tlf Gjøvik: 973 488 73</div>
-          </div>
-
-          <div class="mt-4" style="display: flex;">
-            <div class="mr-3">
-              <v-icon>mdi-email-outline</v-icon>
-            </div>
-            <div class="overflow-wrap">
-              <a href="mailto:post@innlandethelseogfysioterapi.no" class="overflow-wrap" style="color: #2E86AB; text-decoration: underline;">
-                post@innlandethelseogfysioterapi.no
-              </a>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div>
-              <a href="https://www.facebook.com/innlandethelseogfysio/" target="_blank" style="text-decoration: none; margin-left: 0; padding-left: 0;">
-                <!-- <v-icon large color="rgb(66, 103, 178)">mdi-facebook-box</v-icon> -->
-                <img src="@/assets/facebook.svg" alt="Facebook link" style="width: 35px;">
-              </a>
-            </div>
-          </div>
+          <!-- <v-btn text class="text-none mr-2" @click="$router.push('/om')">
+            <span style="text-decoration: underline;">Les mer her</span>
+          </v-btn> -->
+          <a href="/personvern" class="overflow-wrap mt-6" style="color: #2E86AB; text-decoration: underline;">
+            Les mer her
+          </a>
         </v-col>
       </v-row>
 

@@ -241,6 +241,33 @@ export default [
     key: 'ingrid',
     name: 'Ingrid Gillund Lium',
     title: 'Fysioterapeut og osteopat',
-    desc: ''
+    desc: `
+      <p class="mt-4 line-height-18">
+        Ingrid har arbeidet ved ulike klinikker i Mjøs- regionen siden hun var ferdigutdannet
+        fysioterapeut (2005) og osteopat (2010). Hun er opptatt av å hjelpe med det akutte
+        problemet pasienten presenterer, men er også opptatt av det langsiktige perspektivet
+        ved å forstå hvorfor skaden/smerten har oppstått og hvordan det påvirker kroppen.
+      </p>
+       <p class="mt-4 line-height-18">
+        For Ingrid er god dialog med pasienten sammen med en grundig undersøkelse av hele
+        kroppen et viktig utgangspunkt for videre behandling. Å forstå helheten pasienten
+        presenterer at skaden/smerten kan ha sammenheng med livssituasjon og at årsaken til
+        smerten/skaden kan være i et helt annet område av kroppen, er viktig for Ingrid å ha
+        med i helhetsbilde, for å kunne gi pasienten en skreddersydd behandling som forbedrer
+        og avhjelper det gitte smerte/skadebilde pasienten presenterer.
+      </p>
+      <p class="mt-4 line-height-18">
+        Behandlingsmetoder
+        vil varierer utfra hva pasienten presenterer og spenner seg fra skånsomme
+        avspenningsteknikker til mer direkte teknikker som leddmanipulasjonsbehandling.
+        Hvis det er hensiktsmessig vil Ingrid veilede hjemmeøvelser som kan støtte og
+        effektivisere behandlingen.
+      </p>
+      <p class="mt-4 line-height-18">
+        Ingrid er særlige interessert i kvinnehelse og spedbarn/barn.
+        Hun har også god erfaring innen behandling av gravide og plager som kan oppstå under
+        graviditet eller etter fødsel.
+      </p>
+    `
   }
 ]

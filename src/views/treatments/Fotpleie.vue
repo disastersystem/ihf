@@ -86,6 +86,17 @@
           <p style="font-size: 0.9em;">* Moelv sentrum er uten tillegg i prisen. Bor du mer enn 1 km. unna, koster det 10 kr. pr. km.
           kjøring.</p>
         </div> -->
+
+        <v-btn
+          href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Moelv</span>
+        </v-btn>
       </v-col>
 
       <v-col style="max-width: 500px;">

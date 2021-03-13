@@ -103,5 +103,11 @@
         </div>
       </div>
     </div>
+
+    <div class="mt-12 pl-8">
+      <a href="/personvern" class="overflow-wrap" style="color: #2E86AB; text-decoration: underline;">
+        Personvernerklæring
+      </a>
+    </div>
   </div>
 </template>

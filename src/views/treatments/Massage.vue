@@ -57,24 +57,27 @@
           sekundær smerte som kan kjennes muskulært ut.
         </p>
 
-        <!-- <v-simple-table dense class="ihf-table mt-6">
-          <template v-slot:default>
-            <thead>
-              <tr>
-                <th class="text-left pl-0">Beh.</th>
-                <th class="text-left">Tid</th>
-                <th class="text-left">Pris</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(treatment, i) in treatments" :key="i">
-                <td class="pt-2 pb-2 pl-0">{{ treatment.name }}</td>
-                <td>{{ treatment.time }} min</td>
-                <td>{{ treatment.price }} kr</td>
-              </tr>
-            </tbody>
-          </template>
-        </v-simple-table> -->
+        <v-btn
+          href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Moelv</span>
+        </v-btn>
+        <v-btn
+          href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Gjøvik</span>
+          <!-- <v-icon>mdi-open-in-new</v-icon> -->
+        </v-btn>
       </v-col>
 
       <v-col style="max-width: 500px;">

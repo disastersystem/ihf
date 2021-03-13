@@ -54,6 +54,28 @@
           mage-, tarm- og urinveisplager, fordøyelsesbesvær, halsbrann og sure
           oppstøt, tung pust og pustebesvær.
         </p>
+
+        <v-btn
+          href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Moelv</span>
+        </v-btn>
+        <v-btn
+          href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Gjøvik</span>
+          <!-- <v-icon>mdi-open-in-new</v-icon> -->
+        </v-btn>
       </v-col>
 
       <v-col style="max-width: 500px;">

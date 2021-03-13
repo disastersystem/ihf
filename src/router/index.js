@@ -109,6 +109,12 @@ const routes = [
     name: 'running',
     component: () => import('@/views/treatments/Running.vue'),
     meta: { scrollToTop: true }
+  },
+  {
+    path: '/personvern',
+    name: 'personvern',
+    component: () => import('@/views/PrivacyPolicy.vue'),
+    meta: { scrollToTop: true }
   }
 ]
 

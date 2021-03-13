@@ -43,18 +43,26 @@
       </v-col>
     </v-row>
 
+    <v-row justify="center">
+      <v-col cols="auto">
+        <LeaveReviewDialog/>
+      </v-col>
+    </v-row>
+
     <Footer/>
   </div>
 </template>
 
 <script>
 import Footer from '@/components/Footer'
+import LeaveReviewDialog from '@/components/LeaveReviewDialog'
 
 export default {
   name: 'Reviews',
 
   components: {
-    Footer
+    Footer,
+    LeaveReviewDialog
   },
 
   data: () => ({

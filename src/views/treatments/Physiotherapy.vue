@@ -107,6 +107,28 @@
             <!-- Ja det kan du, ta direkte kontakt med ditt forsikringsselskap så hjelper de deg med dette. -->
             Ofte dekker de hele eller deler av behandlingen din slik at du kan komme raskere tilbake i jobb.
           </p>
+
+          <v-btn
+            href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+            target="_blank"
+            color="accent"
+            class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+            rounded
+          >
+            <span class="font-weight-regular mr-1">Bestill time</span>
+            <span class="font-weight-bold">Moelv</span>
+          </v-btn>
+          <v-btn
+            href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+            target="_blank"
+            color="accent"
+            class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+            rounded
+          >
+            <span class="font-weight-regular mr-1">Bestill time</span>
+            <span class="font-weight-bold">Gjøvik</span>
+            <!-- <v-icon>mdi-open-in-new</v-icon> -->
+          </v-btn>
         </div>
       </v-col>
 

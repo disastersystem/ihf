@@ -7,14 +7,18 @@
     mr-xl-12 ml-xl-12
   ">
     <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Kiropraktor', disabled: true, to: 'kiropraktor' }
-      ]">
-        <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
-        </template>
-      </v-breadcrumbs>
+      <v-row justify="center" class="wrap-point-large">
+        <v-col class="pr-5" style="max-width: 700px;">
+          <v-breadcrumbs class="pl-0" :items="[
+            { text: 'Hjem', disabled: false, to: '/' },
+            { text: 'Kiropraktor', disabled: true, to: 'kiropraktor' }
+          ]">
+            <template v-slot:divider>
+              <v-icon>mdi-chevron-right</v-icon>
+            </template>
+          </v-breadcrumbs>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
@@ -88,14 +92,25 @@
           ditt med deg til en barnekiropraktor. Vi bruker lette spesifikke trykk når vi behandler barn, hos
           spedbarn bruker vi ikke mer press enn den man kan bruke på et lukket øye.
         </p>
+
+        <v-btn
+          href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Moelv</span>
+        </v-btn>
       </v-col>
 
-      <v-col style="max-width: 500px;">
-        <!-- <v-img
+      <!-- <v-col style="max-width: 500px;">
+        <v-img
           :src="require('@/assets/foot.jpeg')"
           contain
-        ></v-img> -->
-      </v-col>
+        ></v-img>
+      </v-col> -->
     </v-row>
 
     <!-- <v-row justify="center" class="mt-12 pt-5 wrap-point-semi-large">

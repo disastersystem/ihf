@@ -7,14 +7,18 @@
     mr-xl-12 ml-xl-12
   ">
     <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Akupunktur', disabled: true, to: 'akupunktur' }
-      ]">
-        <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
-        </template>
-      </v-breadcrumbs>
+      <v-row class="justify-center wrap-point-large">
+        <v-col style="max-width: 700px;" class="pl-5">
+          <v-breadcrumbs class="pl-0" :items="[
+            { text: 'Hjem', disabled: false, to: '/' },
+            { text: 'Akupunktur', disabled: true, to: 'akupunktur' }
+          ]">
+            <template v-slot:divider>
+              <v-icon>mdi-chevron-right</v-icon>
+            </template>
+          </v-breadcrumbs>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-row justify="center" class="wrap-point-large" style="margin: 100px 0;">
@@ -43,6 +47,28 @@
           har som funksjon å løsne stramme muskelfibre, samt skape lokal sirkulasjon og
           smertelindring.
         </p>
+
+        <v-btn
+          href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Moelv</span>
+        </v-btn>
+        <v-btn
+          href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+          target="_blank"
+          color="accent"
+          class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+          rounded
+        >
+          <span class="font-weight-regular mr-1">Bestill time</span>
+          <span class="font-weight-bold">Gjøvik</span>
+          <!-- <v-icon>mdi-open-in-new</v-icon> -->
+        </v-btn>
       </v-col>
 
       <!-- <v-col style="max-width: 500px;">
