@@ -5,7 +5,7 @@
         <v-col class="pa-0" style="width: 1600px;">
           <v-img
             class="ihf-max-width"
-            :src="require('@/assets/neck-full-thin.jpg')"
+            :src="require('@/assets/neck-full-thin2.jpg')"
             gradient="to top right, rgba(25,32,72,.6), rgba(100,115,201,.01)"
             contain
             aspect-ratio="1.72"
@@ -19,7 +19,12 @@
                 justify-center
                 ma-0
               >
-                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde av person som får fysioterapi behandling"
+                ></v-progress-circular>
               </v-layout>
             </template>
           </v-img>
@@ -46,7 +51,7 @@
               Vi hjelper deg til bedre helse <br>med hensyn til din situasjon
               <!-- <br>på kort og lang sikt! -->
             </h2>
-            <h3 class="mt-4 mb-6 text-h6" style="color: #eee;">
+            <h3 class="mt-4 mb-6 text-h6 ihf-subtitle">
               Helse- og fysioterapiklinikk i Moelv og Gjøvik
               <!-- sentrum. -->
             </h3>
@@ -161,6 +166,9 @@ export default {
   .ihf-statement-text {
     color: #fff;
   }
+  .ihf-subtitle {
+    color: #eee
+  }
   @media (max-width: 1200px) {
     .ihf-logo {
       position: static;
@@ -180,6 +188,9 @@ export default {
     }
     .ihf-statement-text {
       color: #000;
+    }
+    .ihf-subtitle {
+      color: #777;
     }
   }
 </style>

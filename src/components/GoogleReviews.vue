@@ -6,10 +6,13 @@
     @click.prevent="_blank"
     v-if="show === true && hide === false"
   >
-    <div style="position: absolute; top: 0; right: 0; z-index: 3;">
-      <v-icon @click.prevent="hide = true" small class="pa-4">
+    <div style="position: absolute; top: 0; right: 0; z-index: 3;" class="pa-4">
+      <!-- <v-icon @click.prevent="hide = true" small class="pa-4">
         mdi-close
-      </v-icon>
+      </v-icon> -->
+      <svg @click.prevent="hide = true" style="width:18px;height:18px" viewBox="0 0 24 24">
+        <path fill="#777" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+      </svg>
     </div>
     <v-card-text>
       <!-- <transition name="fade"> -->
@@ -50,8 +53,20 @@
                     size="18"
                     half-increments
                     color="rgb(251, 188, 5)"
-                  ></v-rating>
-                  <div class="grey--text caption mr-2 mb-2 pl-1 pt-3">
+                  >
+                    <template v-slot:item="props">
+                      <svg v-if="props.isFilled" style="width:18px;height:18px;margin-bottom:-5px;" viewBox="0 0 24 24">
+                        <path fill="rgb(251, 188, 5)" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                      </svg>
+                      <svg v-if="props.isHalfFilled" style="width:18px;height:18px;margin-bottom:-5px;" viewBox="0 0 24 24">
+                        <path fill="rgb(251, 188, 5)" d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                      </svg>
+                      <svg v-if="!props.isFilled && !props.isHalfFilled" style="width:18px;height:18px;margin-bottom:-5px;" viewBox="0 0 24 24">
+                        <path fill="rgb(251, 188, 5)" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                      </svg>
+                    </template>
+                  </v-rating>
+                  <div class="grey--text caption mr-2 ml-1 mb-2 pl-1 pt-3">
                     {{ review.rating }} av 5 stjerner
                   </div>
                 </div>

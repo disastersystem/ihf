@@ -23,7 +23,7 @@
             <v-col cols="auto">
               <div class="mb-4 mt-12">
                 <h4 class="mb-2">Moelv</h4>
-                <iframe class="iframe-map" frameborder="0" style="border:0"
+                <iframe title="Google maps plassering for avdeling Moelv" class="iframe-map" frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:EiFNw7hsbGVyZ2F0YSAzLCAyMzkwIE1vZWx2LCBOb3J3YXkiMBIuChQKEgnpa6VqIXhqRhHlI3WyV5DiYRADKhQKEgnzQctuIXhqRhGzCSOc9-Bqkw"
                 ></iframe>
               </div>
@@ -32,7 +32,7 @@
             <v-col cols="auto">
               <div class="mb-4 mt-12">
                 <h4 class="mb-2">Gjøvik</h4>
-                <iframe class="iframe-map" frameborder="0" style="border:0"
+                <iframe title="Google maps plassering for avdeling Gjøvik" class="iframe-map" frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:ChIJ_8uuaRjaQUYR3MPSedwXKrc"
                 ></iframe>
               </div>

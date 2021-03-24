@@ -49,7 +49,7 @@ $mail->SMTPAuth = true;
 
 // authentication
 $mail->Username = 'pasienterfaring@innlandethelseogfysioterapi.no';
-$mail->Password = '*o=oh8~ll]sO';
+$mail->Password = '';
 
 // $mail->Username and this must match, otherwise "forgery"
 $mail->setFrom("pasienterfaring@innlandethelseogfysioterapi.no");

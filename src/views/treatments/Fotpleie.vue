@@ -12,7 +12,10 @@
         { text: 'Fotpleie', disabled: true, to: 'fotpleie' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -138,21 +141,19 @@
 import Footer from '@/components/Footer'
 
 export default {
-  components: {
-    Footer
+  metaInfo: {
+    title: 'Fotterapi og fotpleie',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Føttene bruker vi hver dag og det er de som bærer oss gjennom hele livet. Hver dag går vi flere tusen skritt og de blir stengt inne i sko. De trenger vedlikehold og pleie.`
+      }
+    ]
   },
 
-  data () {
-    return {
-      treatments: [
-        { name: 'Fotpleiebehandling', time: 45, price: 620 },
-        { name: 'SPA fotpleiebehandling', time: 90, price: 1250 },
-        { name: 'Gelish/Shellac tær', time: 30, price: 395 },
-        { name: 'Fot og leggmassasje', time: 30, price: 445 },
-        // { name: 'Parafinvoksbehandling', time: 30, price: 395 },
-        { name: 'Fotpleie hjemmebehandling *', time: 45, price: 790 }
-      ]
-    }
+  components: {
+    Footer
   }
 }
 </script>

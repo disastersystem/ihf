@@ -14,7 +14,10 @@
             { text: 'Kiropraktor', disabled: true, to: 'kiropraktor' }
           ]">
             <template v-slot:divider>
-              <v-icon>mdi-chevron-right</v-icon>
+              <!-- <v-icon>mdi-chevron-right</v-icon> -->
+              <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+              </svg>
             </template>
           </v-breadcrumbs>
         </v-col>
@@ -149,6 +152,17 @@
 import Footer from '@/components/Footer'
 
 export default {
+  metaInfo: {
+    title: 'Kiropraktor',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Behandling av muskel-, nerve- og skjelettlidelser. Behandling av bløtvev, hjemmeøvelser, kinesiotape, theragun, triggerpunktbehandling.`
+      }
+    ]
+  },
+
   components: {
     Footer
   },

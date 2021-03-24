@@ -12,7 +12,10 @@
         { text: 'Jordmor', disabled: true, to: 'bedrifter' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -195,6 +198,17 @@
 import Footer from '@/components/Footer'
 
 export default {
+  metaInfo: {
+    title: 'Jordmor',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Svangerskap-, fødsel- og foreldreforberedende kurs.`
+      }
+    ]
+  },
+
   components: {
     Footer
   }

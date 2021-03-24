@@ -12,7 +12,10 @@
         { text: 'YinYoga', disabled: true, to: 'yinyoga' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -74,6 +77,17 @@
 import Footer from '@/components/Footer'
 
 export default {
+  metaInfo: {
+    title: 'Yinyoga / yoga',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `YinYoga er en rolig terapeutisk yogaform og gir en god avspenning i en krevende hverdag. Det er lange gode strekk som er bra for stive muskler, bidevev og ledd.`
+      }
+    ]
+  },
+
   components: {
     Footer
   }

@@ -2,10 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
-import vueMeta from 'vue-meta'
+import Meta from 'vue-meta'
 
-Vue.use(vueMeta, {
-  // optional pluginOptions
+Vue.use(Meta, {
+  keyName: 'metaInfo',
+  attribute: 'data-vue-meta',
+  ssrAttribute: 'data-vue-meta-server-rendered',
+  tagIDKeyName: 'vmid',
   refreshOnceOnNavigation: true
 })
 

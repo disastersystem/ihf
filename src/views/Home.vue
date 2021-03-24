@@ -44,7 +44,12 @@
                 justify-center
                 ma-0
               >
-                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
               </v-layout>
             </template>
           </v-img>
@@ -65,8 +70,11 @@
             class="text-none mb-8"
             text
           >
-            <span>Les mer</span>
-            <v-icon right dark>mdi-arrow-right</v-icon>
+            <span class="pr-1">Les mer</span>
+            <!-- <v-icon right dark>mdi-arrow-right</v-icon> -->
+            <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+            </svg>
           </v-btn>
         </v-row>
       </v-col>
@@ -86,10 +94,13 @@
       >
         <div class="ihf-quote pa-5">
           <div class="line-height-18">
-            <v-icon color="#F75F49">mdi-format-quote-open</v-icon>
+            <!-- <v-icon color="#F75F49">mdi-format-quote-open</v-icon> -->
+            <svg style="width:24px;height:24px; margin-bottom: -5px" viewBox="0 0 24 24">
+                <path fill="#F75F49" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
+            </svg>
             <span v-html="quote.text"></span>
           </div>
-          <div class="ihf-quote-author ml-4 mt-2">
+          <div class="ihf-quote-author ml-4 mt-2 caption">
             - {{ quote.author }}
           </div>
         </div>
@@ -104,8 +115,11 @@
         class="text-none mb-8"
         text
       >
-        <span>Se flere</span>
-        <v-icon right dark>mdi-arrow-right</v-icon>
+        <span class="mr-1">Se flere</span>
+        <!-- <v-icon right dark>mdi-arrow-right</v-icon> -->
+        <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+        </svg>
       </v-btn>
     </v-row>
 
@@ -116,15 +130,26 @@
 <script>
 import Cover from '@/components/Cover'
 // import OnlineBookingButtons from '@/components/OnlineBookingButtons'
-import Footer from '@/components/Footer'
+// import Footer from '@/components/Footer'
 
 export default {
   name: 'Home',
 
+  metaInfo: {
+    title: 'Innlandet Helse og Fysioterapi',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+      }
+    ]
+  },
+
   components: {
     Cover,
     // OnlineBookingButtons,
-    Footer
+    Footer: () => import(/* webpackPrefetch: true */ '@/components/Footer')
   },
 
   data: () => ({
@@ -207,7 +232,7 @@ export default {
       },
       {
         name: 'Osteopati',
-        image: '',
+        image: 'osteopati2.jpg',
         ratio: 1.55,
         bookingBtn: true,
         link: 'osteopati',
@@ -247,7 +272,7 @@ export default {
       },
       {
         name: 'Bedrifter',
-        image: 'bedrift3.png',
+        image: 'bedrift3.jpg',
         ratio: 1,
         bookingBtn: null,
         link: 'bedrifter',
@@ -255,7 +280,7 @@ export default {
       },
       {
         name: 'Jordmor',
-        image: 'baby.png',
+        image: 'baby.jpg',
         ratio: 1,
         bookingBtn: null,
         link: 'jordmor',
@@ -263,7 +288,7 @@ export default {
       },
       {
         name: 'Løpegrupper for bedrifter og private',
-        image: 'running2.jpg',
+        image: 'running5.jpg',
         ratio: 1,
         bookingBtn: null,
         link: 'loping',

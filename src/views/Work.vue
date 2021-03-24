@@ -12,7 +12,10 @@
         { text: 'Lyst på jobb hos oss?', disabled: true, to: 'om' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -130,13 +133,19 @@
 import Contact from '@/components/Contact'
 
 export default {
-  components: {
-    Contact
+  metaInfo: {
+    title: 'Jobb hos oss',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
+      }
+    ]
   },
 
-  data () {
-    return {
-    }
+  components: {
+    Contact
   }
 }
 </script>

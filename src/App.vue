@@ -6,7 +6,7 @@
       flat
       height="80"
     >
-      <div style="width: 250px; margin-left: 1%; padding-bottom: 5px;">
+      <div style="width: 250px; padding-bottom: 5px;" class="ml-sm-0 ml-md-8">
         <v-img
           :src="require('@/assets/logo-twolines.svg')"
           contain
@@ -15,7 +15,15 @@
 
       <v-spacer></v-spacer>
 
-      <v-app-bar-nav-icon @click="drawer = true" class="hidden-lg-and-up"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        @click="drawer = true"
+        aria-label="Main Menu"
+        class="hidden-lg-and-up"
+      >
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+      </v-app-bar-nav-icon>
 
       <div class="pa-5 hidden-md-and-down">
         <v-btn @click="$router.push('/')" text class="text-none mr-2">
@@ -35,7 +43,10 @@
             >
               <!-- Om Innlandet Helse og Fysioterapi -->
               Om oss
-              <v-icon>mdi-chevron-down</v-icon>
+              <!-- <v-icon>mdi-chevron-down</v-icon> -->
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
             </v-btn>
           </template>
           <v-list>
@@ -62,7 +73,10 @@
               v-on="on"
             >
               Behandlinger
-              <v-icon>mdi-chevron-down</v-icon>
+              <!-- <v-icon>mdi-chevron-down</v-icon> -->
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
             </v-btn>
           </template>
           <v-list class="d-flex flex-wrap">
@@ -174,7 +188,7 @@
         <v-list-group>
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Om Innlandet Helse og Fysioterapi</v-list-item-title>
+              <v-list-item-title>Om oss</v-list-item-title>
             </v-list-item-content>
           </template>
 
@@ -197,7 +211,12 @@
         >
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Behandlinger</v-list-item-title>
+              <v-list-item-title>
+                Behandlinger
+                <svg style="width:24px;height:24px; margin-bottom:-7px; margin-left: 4px;" viewBox="0 0 24 24">
+                  <path fill="#555" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </v-list-item-title>
             </v-list-item-content>
           </template>
           <template
@@ -243,27 +262,41 @@
     </v-main>
 
     <transition name="fade" mode="out-in">
-      <GoogleReviews v-if="show"/>
+      <GoogleReviews v-if="scrolled"/>
     </transition>
   </v-app>
 </template>
 
 <script>
-import GoogleReviews from '@/components/GoogleReviews'
+// import GoogleReviews from '@/components/GoogleReviews'
 import OnlineBookingDialog from '@/components/OnlineBookingDialog'
 import OnlineBookingButtons from '@/components/OnlineBookingButtons'
 
 export default {
   name: 'App',
 
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Innlandet Helse og Fysioterapi, Moelv og Gjøvik',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Innlandet Helse og Fysioterapi, Moelv og Gjøvik',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: 'Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.'
+      }
+    ]
+  },
+
   components: {
-    GoogleReviews,
+    GoogleReviews: () => import('@/components/GoogleReviews.vue'),
     OnlineBookingDialog,
     OnlineBookingButtons
   },
 
   data: () => ({
-    show: true,
+    scrolled: true,
     dialogMobile: false,
     treatments: [
       {
@@ -376,7 +409,7 @@ export default {
     hyphens: auto;
   }
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
+    transition: opacity .1s;
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;

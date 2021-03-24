@@ -12,7 +12,10 @@
         { text: 'Osteopati', disabled: true, to: 'osteopati' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -54,6 +57,11 @@
           mage-, tarm- og urinveisplager, fordøyelsesbesvær, halsbrann og sure
           oppstøt, tung pust og pustebesvær.
         </p>
+        <p class="mt-4 line-height-18">
+          En osteopat har blant annet kompetanse i undersøkelse og behandling av bekkenrelaterte
+          plager hos både kvinner og menn. Slike plager kan eksempelvis være relatert til fødsel,
+          graviditet, seksuelle plager og sykdom eller operasjon i bekkenregionen.
+        </p>
 
         <v-btn
           href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
@@ -80,11 +88,11 @@
 
       <v-col style="max-width: 500px;">
         <!-- <img src="berit.jpg" style="display: block; width: 100%;"> -->
-        <!-- <v-img
-          :src="require('@/assets/berit-sun.jpg')"
+        <v-img
+          :src="require('@/assets/osteopati2.jpg')"
           contain
           style="max-width: 500px;"
-        ></v-img> -->
+        ></v-img>
       </v-col>
     </v-row>
 
@@ -119,6 +127,17 @@
 import Footer from '@/components/Footer'
 
 export default {
+  metaInfo: {
+    title: 'Osteopat',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Sammen finner vi sammenhengen mellom dine plager, din kropp og hverdag.`
+      }
+    ]
+  },
+
   components: {
     Footer
   }

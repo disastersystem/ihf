@@ -12,7 +12,10 @@
         { text: 'Bedrifter', disabled: true, to: 'bedrifter' }
       ]">
         <template v-slot:divider>
-          <v-icon>mdi-chevron-right</v-icon>
+          <!-- <v-icon>mdi-chevron-right</v-icon> -->
+          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
         </template>
       </v-breadcrumbs>
     </v-container>
@@ -99,6 +102,17 @@
 import Footer from '@/components/Footer'
 
 export default {
+  metaInfo: {
+    title: 'Fysioterapi/Massasjeterapi på arbeidsplassen',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content: `Muskel- og skjelettplager er den vanligste årsaken til sykefravær på arbeidsplasser. Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.`
+      }
+    ]
+  },
+
   components: {
     Footer
   }
