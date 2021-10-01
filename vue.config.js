@@ -27,11 +27,13 @@ module.exports = {
         //   renderAfterDocumentEvent: 'render-event'
         // })
       }),
-      new BundleAnalyzerPlugin()
+      // new BundleAnalyzerPlugin()
     ] : []
   },
 
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/hemmelig'
-    : '/hemmelig'
+    ? '/'
+    // ? 'https://innlandethelseogfysioterapi.no/testing/'
+    // ? 'C:/xampp/htdocs/ihf/dist/'
+    : '/'
 }

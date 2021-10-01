@@ -6,19 +6,21 @@
     pr-lg-12 pl-lg-12
     pr-xl-12 pl-xl-12
   ">
-    <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Osteopati', disabled: true, to: 'osteopati' }
-      ]">
-        <template v-slot:divider>
-          <!-- <v-icon>mdi-chevron-right</v-icon> -->
-          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
-        </template>
-      </v-breadcrumbs>
-    </v-container>
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
+        <v-breadcrumbs class="pl-0" :items="[
+          { text: 'Hjem', disabled: false, to: '/' },
+          { text: 'Osteopati', disabled: true, to: 'osteopati' }
+        ]">
+          <template v-slot:divider>
+            <!-- <v-icon>mdi-chevron-right</v-icon> -->
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </template>
+        </v-breadcrumbs>
+      </v-col>
+    </v-row>
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col style="max-width: 700px;" class="pr-12">
@@ -63,27 +65,39 @@
           graviditet, seksuelle plager og sykdom eller operasjon i bekkenregionen.
         </p>
 
-        <v-btn
-          href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
-          target="_blank"
-          color="accent"
-          class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
-          rounded
-        >
-          <span class="font-weight-regular mr-1">Bestill time</span>
-          <span class="font-weight-bold">Moelv</span>
-        </v-btn>
-        <v-btn
-          href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
-          target="_blank"
-          color="accent"
-          class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
-          rounded
-        >
-          <span class="font-weight-regular mr-1">Bestill time</span>
-          <span class="font-weight-bold">Gjøvik</span>
-          <!-- <v-icon>mdi-open-in-new</v-icon> -->
-        </v-btn>
+        <v-row>
+          <v-col cols="auto">
+            <v-btn
+              href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+              target="_blank"
+              color="accent"
+              class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
+              rounded
+            >
+              <span class="font-weight-regular mr-1">Bestill time</span>
+              <span class="font-weight-bold">Moelv</span>
+            </v-btn>
+            <p class="body-1 mt-2 pl-8">
+              Tlf: 951 888 73
+            </p>
+          </v-col>
+          <v-col cols="auto">
+            <v-btn
+              href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+              target="_blank"
+              color="accent"
+              class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
+              rounded
+            >
+              <span class="font-weight-regular mr-1">Bestill time</span>
+              <span class="font-weight-bold">Gjøvik</span>
+              <!-- <v-icon>mdi-open-in-new</v-icon> -->
+            </v-btn>
+            <p class="body-1 mt-2 pl-8">
+              Tlf: 973 488 73
+            </p>
+          </v-col>
+        </v-row>
       </v-col>
 
       <v-col style="max-width: 500px;">
@@ -133,7 +147,11 @@ export default {
       {
         vmid: 'description',
         name: 'description',
-        content: `Sammen finner vi sammenhengen mellom dine plager, din kropp og hverdag.`
+        content: `En osteopat fungerer som din individuelle problemløser. Sammen finner vi sammenhengen mellom dine plager, din kropp og hverdag`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/osteopati'
       }
     ]
   },

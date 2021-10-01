@@ -6,19 +6,21 @@
     pr-lg-12 pl-lg-12
     pr-xl-12 pl-xl-12
   ">
-    <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Bedrifter', disabled: true, to: 'bedrifter' }
-      ]">
-        <template v-slot:divider>
-          <!-- <v-icon>mdi-chevron-right</v-icon> -->
-          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
-        </template>
-      </v-breadcrumbs>
-    </v-container>
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
+        <v-breadcrumbs class="pl-0" :items="[
+          { text: 'Hjem', disabled: false, to: '/' },
+          { text: 'Bedrifter', disabled: true, to: 'bedrifter' }
+        ]">
+          <template v-slot:divider>
+            <!-- <v-icon>mdi-chevron-right</v-icon> -->
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </template>
+        </v-breadcrumbs>
+      </v-col>
+    </v-row>
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col style="max-width: 700px;" class="pr-12">
@@ -65,7 +67,7 @@
 
         <h4 class="mt-12">Priser</h4>
         <p class="mt-4 line-height-18">
-          Det settes av 30 minutter til hver ansatt. Veiledende pris er 445 per behandling. Hvis ansatte skal betale egenandel
+          Det settes av 30 minutter til hver ansatt. Veiledende pris er 465 kr per behandling. Hvis ansatte skal betale egenandel
           gjøres dette opp etter hver konsultasjon med vipps eller bankterminal. Bedriften faktureres resterende beløp månedlig.
         </p>
 
@@ -109,6 +111,10 @@ export default {
         vmid: 'description',
         name: 'description',
         content: `Muskel- og skjelettplager er den vanligste årsaken til sykefravær på arbeidsplasser. Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/bedrifter'
       }
     ]
   },

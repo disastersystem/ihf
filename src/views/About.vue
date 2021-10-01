@@ -6,23 +6,21 @@
     mr-lg-12 ml-lg-12
     mr-xl-12 ml-xl-12
   ">
-    <v-container class="mb-0 pb-0">
-      <v-row class="justify-center wrap-point-large">
-        <v-col style="max-width: 750px;" class="pr-12">
-          <v-breadcrumbs :items="[
-            { text: 'Hjem', disabled: false, to: '/' },
-            { text: 'Vår visjon og historie', disabled: true, to: 'om' }
-          ]" style="padding-left: 0;">
-            <template v-slot:divider>
-              <!-- <v-icon>mdi-chevron-right</v-icon> -->
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-              </svg>
-            </template>
-          </v-breadcrumbs>
-        </v-col>
-      </v-row>
-    </v-container>
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
+        <v-breadcrumbs :items="[
+          { text: 'Hjem', disabled: false, to: '/' },
+          { text: 'Vår visjon og historie', disabled: true, to: 'om' }
+        ]" style="padding-left: 0;">
+          <template v-slot:divider>
+            <!-- <v-icon>mdi-chevron-right</v-icon> -->
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </template>
+        </v-breadcrumbs>
+      </v-col>
+    </v-row>
 
     <v-container class="about mt-12">
       <v-row class="justify-center wrap-point-large" style="margin-top: 40px;">
@@ -97,14 +95,21 @@
         <!-- </v-col> -->
       </v-row>
 
-      <v-row class="mt-12 pt-6">
-        <!-- <v-col cols="1"></v-col> -->
-        <v-col cols="12">
-          <h2 class="display-1 mb-5">Våre medarbeidere</h2>
+      <v-row class="mt-12 pt-12">
+        <v-col cols="12" sm="2" md="2" lg="1" xl="1"></v-col>
+        <v-col cols="12" sm="10" md="10" lg="11" xl="11">
+          <h2 class="display-1 mb-5">
+            Våre medarbeidere
+          </h2>
         </v-col>
       </v-row>
 
       <v-row>
+        <!-- <v-col class="offset-1" style="padding-left: 105px;">
+          <h2 class="display-1 mb-5">
+            Våre medarbeidere
+          </h2>
+        </v-col> -->
         <v-col sm="2" md="2" lg="1" xl="1">
           <h3 class="pt-2 subtitle-1 font-weight-bold title-location">
             Moelv
@@ -169,37 +174,51 @@
 
             <v-row>
               <v-col cols="auto" class="pl-8">
-                <v-btn
-                  v-if="activeEmployee.key === 'amalie'"
-                  href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                >
-                  <span>Bestill time</span>
-                </v-btn>
-                <v-btn
-                  v-if="activeEmployee.location === 'moelv' && activeEmployee.key !== 'amalie'"
-                  href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                >
-                  <span>Bestill time</span>
-                </v-btn>
-                <v-btn
-                  v-if="activeEmployee.location === 'gjovik'"
-                  href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
-                  target="_blank"
-                  color="accent"
-                  class="text-none mt-1"
-                  rounded
-                >
-                  <span>Bestill time</span>
-                  <!-- <span class="font-weight-bold ml-1">(Kommer Snart!)</span> -->
-                </v-btn>
+                <div v-if="activeEmployee.key === 'amalie'">
+                  <v-btn
+                    href="https://innlandetkiro.bestille.no/OnCust2/#!/booking"
+                    target="_blank"
+                    color="accent"
+                    class="text-none mt-1"
+                    rounded
+                  >
+                    <span>Bestill time</span>
+                  </v-btn>
+                  <p class="body-1 mt-2">
+                    Tlf: 951 888 73
+                  </p>
+                </div>
+
+                <div v-if="activeEmployee.location === 'moelv' && activeEmployee.key !== 'amalie'">
+                  <v-btn
+                    href="https://innlandethelse.bestille.no/OnCust2/#!/booking"
+                    target="_blank"
+                    color="accent"
+                    class="text-none mt-1"
+                    rounded
+                  >
+                    <span>Bestill time</span>
+                  </v-btn>
+                  <p class="body-1 mt-2">
+                    Tlf: 951 888 73
+                  </p>
+                </div>
+
+                <div v-if="activeEmployee.location === 'gjovik'">
+                  <v-btn
+                    href="https://innlandetgjovik.bestille.no/OnCust2/#!/booking"
+                    target="_blank"
+                    color="accent"
+                    class="text-none mt-1"
+                    rounded
+                  >
+                    <span>Bestill time</span>
+                    <!-- <span class="font-weight-bold ml-1">(Kommer Snart!)</span> -->
+                  </v-btn>
+                  <p class="body-1 mt-2">
+                    Tlf: 973 488 73
+                  </p>
+                </div>
               </v-col>
             </v-row>
           </v-card-text>
@@ -216,10 +235,14 @@
 
       <OnlineBookingButtons/>
 
-      <v-row class="mt-12 pt-12">
-        <!-- <v-col cols="1"></v-col> -->
+      <!-- <v-row class="mt-12 pt-12">
         <v-col>
-          <!-- <h3>Du finner oss her</h3> -->
+          <h2 class="display-1">Du finner oss her</h2>
+        </v-col>
+      </v-row> -->
+
+      <v-row class="justify-center mt-12 pt-12">
+        <v-col style="max-width: 1054px;">
           <h2 class="display-1">Du finner oss her</h2>
         </v-col>
       </v-row>
@@ -242,12 +265,12 @@
 
       <v-row class="justify-center mt-12 pt-12">
         <v-col style="max-width: 750px;" class="pr-12">
-          <h2 class="display-1">Lyst på jobb hos oss?</h2>
+          <h2 class="display-1 mb-6">Lyst på jobb hos oss?</h2>
 
           <!-- <v-btn text class="text-none mr-2" @click="$router.push('/om')">
             <span style="text-decoration: underline;">Les mer her</span>
           </v-btn> -->
-          <a href="/personvern" class="overflow-wrap mt-6" style="color: #2E86AB; text-decoration: underline;">
+          <a href="/jobb" class="overflow-wrap mt-12" style="color: #2E86AB; text-decoration: underline;">
             Les mer her
           </a>
         </v-col>
@@ -299,12 +322,16 @@ import OnlineBookingButtons from '@/components/OnlineBookingButtons'
 
 export default {
   metaInfo: {
-    title: 'Om oss',
+    title: 'Om oss - Fysioterapi',
     meta: [
       {
         vmid: 'description',
         name: 'description',
-        content: 'Vår visjon: Vi skal være en profesjonell helse- og fysioterapiklinikk, samtidig som vi skal møte den enkelte pasienten med omsorg og forståelse for dens situasjon.'
+        content: 'Vår visjon: Vi skal møte den enkelte pasienten med omsorg og forståelse for dens situasjon. Samtidig som vi skal være en profesjonell helse- og fysioterapiklinikk'
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/om'
       }
     ]
   },
@@ -321,8 +348,8 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-      gjovikGroup: [7, 3, 10, 11, 4],
+      moelvGroup: [0, 2, 3, 6, 7, 8, 9],
+      gjovikGroup: [7, 3, 10, 11],
 
       activeEmployee: {},
 
@@ -375,7 +402,7 @@ export default {
           `
         },
         {
-          key: 'monica',
+          key: 'monica2',
           name: 'Monica Skjønsberg',
           title: 'Aut. fotterapeut',
           desc: `
@@ -410,7 +437,7 @@ export default {
           `
         },
         {
-          key: 'gro',
+          key: 'gro2',
           name: 'Gro Visdal',
           title: 'Akupunktør og massasjeterapeut',
           desc: `
@@ -449,7 +476,7 @@ export default {
           `
         },
         {
-          key: 'gry',
+          key: 'gry2',
           name: 'Gry Merete Haakensveen',
           title: 'Fysioterapeut',
           desc: `
@@ -560,13 +587,29 @@ export default {
           `
         },
         {
-          key: '',
+          key: 'linda',
           name: 'Linda Wold Martinsen',
           title: 'Fysioterapeut',
-          desc: ''
+          desc: `
+            <p class="mt-4 line-height-18">
+              Linda har mer enn 15 års erfaring som fysioterapeut. Hun har jobbet både i
+              sykehus og kommune, men har lengst erfaring fra tverrfaglig spesialisert
+              rehabilitering. Linda har fokus på en helhetlig tilnærming, og har erfaring
+              med arbeid innenfor ulike diagnoser, blant annet nevrologi, kreft, ortopedi,
+              muskel- og skjelett, brudd- og slitasje, langvarig og akutte smerter.
+            </p>
+            <p class="mt-4 line-height-18">
+              Behandlingen baseres på kundens mål og ønsker, samt historie og grundig
+              undersøkelse. Behandlingsmetoder kan være massasje, triggerpunktbehandling
+              med og uten nåler, tøyning og mobilisering. Passive behandlingsmetoder
+              kombineres gjerne med aktive øvelser for best mulig effekt. Linda veileder
+              i hvordan finne en god balanse mellom aktivitet og hvile i hverdagen, og i
+              ulike avspenningsteknikker.
+            </p>
+          `
         },
         {
-          key: 'ingrid',
+          key: 'ingrid2',
           name: 'Ingrid Gillund Lium',
           title: 'Fysioterapeut og osteopat',
           desc: `

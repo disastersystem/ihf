@@ -6,19 +6,21 @@
     mr-lg-12 ml-lg-12
     mr-xl-12 ml-xl-12
   ">
-    <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'Løpegrupper for bedrifter og private', disabled: true, to: 'running' }
-      ]">
-        <template v-slot:divider>
-          <!-- <v-icon>mdi-chevron-right</v-icon> -->
-          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
-        </template>
-      </v-breadcrumbs>
-    </v-container>
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
+        <v-breadcrumbs class="pl-0" :items="[
+          { text: 'Hjem', disabled: false, to: '/' },
+          { text: 'Løpegrupper for bedrifter og private', disabled: true, to: 'running' }
+        ]">
+          <template v-slot:divider>
+            <!-- <v-icon>mdi-chevron-right</v-icon> -->
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </template>
+        </v-breadcrumbs>
+      </v-col>
+    </v-row>
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col class="pr-5" style="max-width: 700px;">
@@ -139,12 +141,16 @@ import Footer from '@/components/Footer'
 
 export default {
   metaInfo: {
-    title: 'Løpegrupper',
+    title: 'Løpegrupper for privatpersoner og bedrifter',
     meta: [
       {
         vmid: 'description',
         name: 'description',
-        content: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+        content: `Løping er en målbar treningsform som ofte gir raske resultater. Program utarbeidet av fysioterapeut. Målet finner vi sammen. Gjøvik.`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/loping'
       }
     ]
   },

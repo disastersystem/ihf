@@ -6,6 +6,25 @@
     pa-lg-12
     pa-xl-12
   ">
+    <!-- <p style="text-align: center;">
+      NB! Klinikken i Moelv er stengt til og med 1 juni, pga. økt smittevern i kommunen. Gjøvik holder oppe som vanlig!
+      <v-tooltip top style="background: red;">
+        <template v-slot:activator="{ on }">
+          <v-btn icon v-on="on" class="mb-1">
+            <svg style="width:22px;height:22px" viewBox="0 0 24 24">
+              <path fill="#999" d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" />
+            </svg>
+          </v-btn>
+        </template>
+        <div class="pl-2 pr-2 pt-3 pb-3 body-1" style="width: 400px;">
+          Ringsaker kommune setter inn særlig høyt tiltaksnivå<br><br>
+          Som følge av det pågående utbruddet i regionen har kommuneoverlegene og kommunenes kriseledelse i Stange,
+          Hamar, Løten og Ringsaker besluttet å innføre smitteverntiltak på et særlig høyt tiltaksnivå.
+          Tiltakene varer i første omgang til og med 1. juni.
+        </div>
+      </v-tooltip>
+    </p> -->
+
     <Cover/>
 
     <!-- <Message/> -->
@@ -123,6 +142,8 @@
       </v-btn>
     </v-row>
 
+    <OnlineBookingButtons/>
+
     <Footer/>
   </div>
 </template>
@@ -130,26 +151,35 @@
 <script>
 import Cover from '@/components/Cover'
 // import OnlineBookingButtons from '@/components/OnlineBookingButtons'
-// import Footer from '@/components/Footer'
+import Footer from '@/components/Footer'
+// import Message from '@/components/Message'
+import OnlineBookingButtons from '@/components/OnlineBookingButtons'
 
 export default {
   name: 'Home',
 
   metaInfo: {
-    title: 'Innlandet Helse og Fysioterapi',
+    title: 'Fysioterapeut, Osteopati m.m.',
     meta: [
       {
         vmid: 'description',
         name: 'description',
-        content: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+        // Kiropraktor, fysioterapi, massasjeterapi, akupunktur, fotterapi, osteopati, yoga
+        content: `Vi hjelper deg til bedre helse med hensyn til din situasjon. På kort og lang sikt. Helse og fysioterapi klinikk på Moelv og Gjøvik. Book online`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no'
       }
     ]
   },
 
   components: {
     Cover,
-    // OnlineBookingButtons,
-    Footer: () => import(/* webpackPrefetch: true */ '@/components/Footer')
+    Footer,
+    OnlineBookingButtons
+    // Message
+    // Footer: () => import(/* webpackPrefetch: true */ '@/components/Footer')
   },
 
   data: () => ({
@@ -224,7 +254,7 @@ export default {
       },
       {
         name: 'Fotterapi- og pleie',
-        image: 'foot.jpeg',
+        image: 'fotpleie.jpeg',
         ratio: 1.55,
         bookingBtn: true,
         link: 'fotpleie',
@@ -238,25 +268,25 @@ export default {
         link: 'osteopati',
         text: ``
       },
-      {
-        name: 'Akupunktur',
-        image: '',
-        ratio: 1.5,
-        bookingBtn: true,
-        link: 'akupunktur',
-        text: ``
-      },
-      {
-        name: 'Kiropraktor',
-        image: '',
-        ratio: 1.5,
-        bookingBtn: true,
-        link: 'kiropraktor',
-        text: ``
-      },
+      // {
+      //   name: 'Akupunktur',
+      //   image: '',
+      //   ratio: 1.5,
+      //   bookingBtn: true,
+      //   link: 'akupunktur',
+      //   text: ``
+      // },
+      // {
+      //   name: 'Kiropraktor',
+      //   image: '',
+      //   ratio: 1.5,
+      //   bookingBtn: true,
+      //   link: 'kiropraktor',
+      //   text: ``
+      // },
       {
         name: 'YinYoga',
-        image: 'berit-sun.jpg',
+        image: 'yinyoga.jpg',
         ratio: 1.55,
         bookingBtn: true,
         link: 'yinyoga',
@@ -264,7 +294,7 @@ export default {
       },
       {
         name: 'MediYoga',
-        image: 'berit-small.jpg',
+        image: 'mediyoga.jpg',
         ratio: 1.5,
         bookingBtn: null,
         link: 'yoga',
@@ -286,14 +316,14 @@ export default {
         link: 'jordmor',
         text: ``
       },
-      {
-        name: 'Løpegrupper for bedrifter og private',
-        image: 'running5.jpg',
-        ratio: 1,
-        bookingBtn: null,
-        link: 'loping',
-        text: ``
-      },
+      // {
+      //   name: 'Løpegrupper for bedrifter og private',
+      //   image: 'løping.jpg',
+      //   ratio: 1,
+      //   bookingBtn: null,
+      //   link: 'loping',
+      //   text: ``
+      // },
       {
         name: 'Svømming',
         image: 'swimming.png',
@@ -328,6 +358,13 @@ export default {
         `
       },
       {
+        author: 'Olav H.',
+        text: `
+          Dyktig og humørfylt behandling;  anbefales til alle oppegående mennesker på egne gode føtter !!!!!
+          Monica er unik...
+        `
+      },
+      {
         author: 'Stein Roger, 55 år.',
         text: `
           Jeg hadde konstante smerter, nummenhet og prikking i hele beinet etter et brudd i 2013.
@@ -340,10 +377,10 @@ export default {
         `
       },
       {
-        author: 'Kirsten Franciska, 36 år.',
+        author: 'Rebecka',
         text: `
-          Gro er utrolig flink. Hun hjelper meg med fibromyalgi plager og sliten
-          kropp. Verd å la Gro prøve seg.
+          Kan varmt anbefale osteopat Ingvild, om du har smerter og plager relatert til muskel- og skjelettsystemet
+          ❣️ Super dyktig og hyggelig dama som virkelig ønsker å hjelpe deg med dine plager! 
         `
       }
       // ,

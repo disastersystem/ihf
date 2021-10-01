@@ -6,19 +6,21 @@
     pr-lg-12 pl-lg-12
     pr-xl-12 pl-xl-12
   ">
-    <v-container class="mb-0 pb-0 pl-0">
-      <v-breadcrumbs class="pl-0" :items="[
-        { text: 'Hjem', disabled: false, to: '/' },
-        { text: 'MediYoga', disabled: true, to: 'yoga' }
-      ]">
-        <template v-slot:divider>
-          <!-- <v-icon>mdi-chevron-right</v-icon> -->
-          <svg style="width:16px;height:16px" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
-        </template>
-      </v-breadcrumbs>
-    </v-container>
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
+        <v-breadcrumbs class="pl-0" :items="[
+          { text: 'Hjem', disabled: false, to: '/' },
+          { text: 'MediYoga', disabled: true, to: 'yoga' }
+        ]">
+          <template v-slot:divider>
+            <!-- <v-icon>mdi-chevron-right</v-icon> -->
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </template>
+        </v-breadcrumbs>
+      </v-col>
+    </v-row>
 
     <v-row justify="center" class="wrap-point-large" style="margin-top: 100px;">
       <v-col style="max-width: 700px;" class="pr-12">
@@ -107,6 +109,10 @@ export default {
         vmid: 'description',
         name: 'description',
         content: `MediYoga er en terapeutisk yogaform. Yogaformen passer for alle enten man har fysiske begrensninger eller ikke.`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/yoga'
       }
     ]
   },

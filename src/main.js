@@ -4,6 +4,12 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import Meta from 'vue-meta'
 
+// if (process.env.NODE_ENV === 'development') {
+//   Vue.prototype.$DOMAIN = 'http://127.0.0.1:8080'
+// } else {
+//   Vue.prototype.$DOMAIN = 'https://innlandethelseogfysioterapi.no'
+// }
+
 Vue.use(Meta, {
   keyName: 'metaInfo',
   attribute: 'data-vue-meta',

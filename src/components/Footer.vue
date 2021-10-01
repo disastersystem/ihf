@@ -1,6 +1,6 @@
 <template>
   <div
-    style="margin-top: 200px; background:#F1EDEE;"
+    style="margin-top: 150px; background:#F1EDEE;"
     class="
       mb-12
       pt-4 pl-4 pr-4
@@ -21,21 +21,21 @@
         <v-col cols="auto">
           <v-row class="break-it" justify="center">
             <v-col cols="auto">
-              <div class="mb-4 mt-12">
+              <!-- <div v-if="$route.name !== 'home'" class="mb-4 mt-12">
                 <h4 class="mb-2">Moelv</h4>
                 <iframe title="Google maps plassering for avdeling Moelv" class="iframe-map" frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:EiFNw7hsbGVyZ2F0YSAzLCAyMzkwIE1vZWx2LCBOb3J3YXkiMBIuChQKEgnpa6VqIXhqRhHlI3WyV5DiYRADKhQKEgnzQctuIXhqRhGzCSOc9-Bqkw"
                 ></iframe>
-              </div>
+              </div> -->
             </v-col>
 
             <v-col cols="auto">
-              <div class="mb-4 mt-12">
+              <!-- <div v-if="$route.name !== 'home'" class="mb-4 mt-12">
                 <h4 class="mb-2">Gjøvik</h4>
                 <iframe title="Google maps plassering for avdeling Gjøvik" class="iframe-map" frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3XoI6mFmPf-oUGScPxrl0HFP5OeRluxU&zoom=13&q=place_id:ChIJ_8uuaRjaQUYR3MPSedwXKrc"
                 ></iframe>
-              </div>
+              </div> -->
             </v-col>
           </v-row>
         </v-col>

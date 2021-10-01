@@ -6,21 +6,21 @@
     mr-lg-12 ml-lg-12
     mr-xl-12 ml-xl-12
   ">
-    <v-container class="mb-0 pb-0">
-      <v-row justify="center" class="mt-0 pt-0">
+    <v-row justify="center" class="wrap-point-large">
+      <v-col style="max-width: 1200px;" class="pr-12">
         <v-breadcrumbs :items="[
           { text: 'Hjem', disabled: false, to: '/' },
           { text: 'Pasienterfaringer', disabled: true, to: '' }
         ]" style="padding-left: 0;">
           <template v-slot:divider>
             <!-- <v-icon>mdi-chevron-right</v-icon> -->
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <svg style="width:16px;height:16px" viewBox="0 0 24 24">
               <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
             </svg>
           </template>
         </v-breadcrumbs>
-      </v-row>
-    </v-container>
+      </v-col>
+    </v-row>
 
     <v-row justify="center" style="margin-top: 80px;">
       <!-- <h2 class="display-1 mb-5 pa-5">Hør hva andre mener</h2> -->
@@ -72,7 +72,11 @@ export default {
       {
         vmid: 'description',
         name: 'description',
-        content: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+        content: `Les hva andre sier om oss i Innlandet helse og fysioterapi.`
+      },
+      {
+        rel: 'canonical',
+        href: 'https://innlandethelseogfysioterapi.no/pasienterfaringer'
       }
     ]
   },
@@ -89,6 +93,13 @@ export default {
         text: `
           Lokaliserte problemet med nakke/skulder fort og videre behandling både
           fungerer og er veldig behagelig.
+        `
+      },
+      {
+        author: 'Olav H.',
+        text: `
+          Dyktig og humørfylt behandling;  anbefales til alle oppegående mennesker på egne gode føtter !!!!!
+          Monica er unik...
         `
       },
       {
@@ -118,10 +129,41 @@ export default {
         `
       },
       {
-        author: 'Kirsten Franciska, 36 år.',
+        author: 'Rebecka',
         text: `
-          Gro er utrolig flink. Hun hjelper meg med fibromyalgi plager og sliten
-          kropp. Verd å la Gro prøve seg.
+          Kan varmt anbefale osteopat Ingvild, om du har smerter og plager relatert til muskel- og skjelettsystemet ❣️
+          Super dyktig og hyggelig dama som virkelig ønsker å hjelpe deg med dine plager! 
+        `
+      },
+      {
+        author: 'Erland',
+        text: `
+          Faglig dyktige folk, trivelige lokaler og veldig god service. 
+        `
+      },
+      {
+        author: 'Hege',
+        text: `
+          Ingvild lytter til deg og forklarer hva hun gjør. Her blir du behandlet godt.
+        `
+      },
+      {
+        author: 'Astrid',
+        text: `
+          Jeg ble kjent med dere gjennom min venninne, og flere med meg har blitt kjent med deres gode kunnskap og imøtekommelse.
+          Man blir godt tatt vare på. Mine plager er nakke, skuldre og armer.
+          Kan anbefale dere til disse flotte damene i Moelv eller Gjøvik
+        `
+      },
+      {
+        author: 'Anny',
+        text: `
+          Med min nakkeplage får jeg ikke fullrost den imøtekommenhet og "profesjonell" behandling jeg har fått,
+          først flere timer hos fysioterapeut Linda som etter noen behandlinger ikke var helt fornøyd med framgangen
+          og videre henviste meg til deres osteopat Ingvild. Linda satte opp fine treningsøvelser som "hjemmelekse".
+          Jeg fått en så mye bedre hverdag inkl. nattesøvn. Ingvild finner punkter med smerter jeg ikke visste jeg
+          hadde og dette har hjulpet stort. I tillegg har jeg hatt to alle tiders behandlinger/fotterapi hos Monica.
+          Det bør prøves! Jeg takker så mye og anbefaler dem alle tre.
         `
       },
       {

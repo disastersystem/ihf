@@ -1,8 +1,7 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="mx-auto ihf-review-card"
     max-width="344"
-    style="min-height: 80px; width: 320px; position: fixed; bottom: 30px; right: 30px; z-index: 2; border-radius: 10px;"
     @click.prevent="_blank"
     v-if="show === true && hide === false"
   >
@@ -366,6 +365,26 @@ export default {
 </script>
 
 <style scoped lang="css">
+  .ihf-review-card {
+    min-height: 80px;
+    width: 320px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  @media (max-width: 800px) {
+    .ihf-review-card {
+      right: 10px;
+      left: 10px;
+    }
+  }
+  @media (max-width: 400px) {
+    .ihf-review-card {
+      width: 250px;
+    }
+  }
   .fade-enter-active, .fade-leave-active {
     transition: opacity 2s;
   }

@@ -16,8 +16,8 @@
       </v-btn>
     </template>
     <v-card>
-      <v-card-text class="pt-10">
-        <OnlineBookingButtons/>
+      <v-card-text>
+        <OnlineBookingButtons class="pt-12"/>
       </v-card-text>
 
       <v-card-actions>

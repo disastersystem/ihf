@@ -39,18 +39,19 @@
           </div> -->
 
           <div class="ihf-statement-text">
-            <h2 class="
+            <h1 class="
               text-h4
               text-sm-h4
               text-md-h4
               text-lg-h3
               text-xl-h3
-              mb-4 font-weight-bold"
+              mb-4 font-weight-bold
+              ihf-ux-copy"
               style="line-height: 1.4em;"
             >
               Vi hjelper deg til bedre helse <br>med hensyn til din situasjon
               <!-- <br>på kort og lang sikt! -->
-            </h2>
+            </h1>
             <h3 class="mt-4 mb-6 text-h6 ihf-subtitle">
               Helse- og fysioterapiklinikk i Moelv og Gjøvik
               <!-- sentrum. -->
@@ -169,6 +170,9 @@ export default {
   .ihf-subtitle {
     color: #eee
   }
+  .ihf-ux-copy {
+    color: #fff;
+  }
   @media (max-width: 1200px) {
     .ihf-logo {
       position: static;
@@ -191,6 +195,9 @@ export default {
     }
     .ihf-subtitle {
       color: #777;
+    }
+    .ihf-ux-copy {
+      color: #000;
     }
   }
 </style>

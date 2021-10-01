@@ -134,7 +134,7 @@
         nav
       >
         <v-list-item class="mb-12">
-          <v-list-item-title>
+          <!-- <v-list-item-title> -->
             <v-dialog
               transition="dialog-bottom-transition"
               max-width="600"
@@ -167,7 +167,7 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-          </v-list-item-title>
+          <!-- </v-list-item-title> -->
         </v-list-item>
 
         <!-- active-class="deep-purple--text text--accent-4" -->
@@ -277,14 +277,14 @@ export default {
 
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'Innlandet Helse og Fysioterapi, Moelv og Gjøvik',
+    title: 'Fysioterapeut, Osteopati m.m.',
     // all titles will be injected into this template
-    titleTemplate: '%s | Innlandet Helse og Fysioterapi, Moelv og Gjøvik',
+    titleTemplate: '%s | Innlandet helse og fysioterapi',
     meta: [
       {
         vmid: 'description',
         name: 'description',
-        content: 'Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.'
+        content: 'Vi hjelper deg til bedre helse med hensyn til din situasjon. På kort og lang sikt. Helse og fysioterapi klinikk på Moelv og Gjøvik. Book online'
       }
     ]
   },
@@ -312,18 +312,18 @@ export default {
             name: 'Osteopati',
             link: 'osteopati'
           },
-          {
-            name: 'Kiropraktor',
-            link: 'kiropraktor'
-          },
+          // {
+          //   name: 'Kiropraktor',
+          //   link: 'kiropraktor'
+          // },
           {
             name: 'Massasje',
             link: 'massasje'
           },
-          {
-            name: 'Akupunktur',
-            link: 'akupunktur'
-          },
+          // {
+          //   name: 'Akupunktur',
+          //   link: 'akupunktur'
+          // },
           {
             name: 'Fotterapi',
             link: 'fotpleie'
@@ -362,11 +362,11 @@ export default {
           {
             name: 'Svømming',
             link: 'svomming'
-          },
-          {
-            name: 'Løping',
-            link: 'loping'
           }
+          // {
+          //   name: 'Løping',
+          //   link: 'loping'
+          // }
         ]
       },
       {
