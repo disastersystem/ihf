@@ -26,33 +26,8 @@
       <v-row class="justify-center wrap-point-large" style="margin-top: 40px;">
         <v-col style="max-width: 750px;" class="pr-12">
           <h1 class="display-2">Om oss</h1>
-          <!-- <h3 class="mt-12">Vår visjon er</h3> -->
-          <p class="headline mt-12 line-height-18" style="line-height: 1.8em;">
-            Vår visjon er: Vi skal være en profesjonell helse- og fysioterapiklinikk,
-            samtidig som vi skal møte den enkelte pasienten med omsorg og forståelse for dens
-            situasjon. Vi skal være nære gjennom hele behandlingen, støtte og veilede pasienten
-            til bedre helse gjennom erfaring og faglig kompetanse på både kort og lang sikt.
-          </p>
-          <!-- <h3 class="mt-12">Historie</h3> -->
-          <p class="line-height-18 mt-6">
-            Klinikken er helprivat, det vil si at den drives uten driftstilskudd fra det offentlige.
-            Det betyr igjen at det er veldig kort ventetid for å komme inn, og pasienten betaler
-            behandlingen sin selv.
-          </p>
-          <p class="mt-6 line-height-18">
-            Alle som jobber på Innlandet helse og fysioterapi skal være opptatt av at kunden skal
-            få best mulig service og bli fulgt gjennom hele behandlingen. Det vil si at vi aldri
-            har flere inne til behandling samtidig og vi skal være nære og støttende i
-            behandlingen. Har du tilbakemeldinger, setter vi stor pris på å få høre det.
-          </p>
-          <p class="mt-6 line-height-18">
-            Alle timene kan bookes via telefon, mail, facebook eller online timebestilling.
-          </p>
-          <p class="mt-6 line-height-18">
-            <!-- Du finner oss i nyoppusede lokaler i Moelv sentrum, og på Gjøvik! -->
-          </p>
 
-          <v-row>
+          <v-row class="mt-6">
             <v-col class="pr-6" cols="auto">
               <!-- <v-icon>mdi-chevron-right</v-icon> -->
               <svg style="width:24px;height:24px;margin-bottom:-6px;" viewBox="0 0 24 24">
@@ -85,6 +60,31 @@
               kort ventetid
             </v-col>
           </v-row>
+          <!-- <h3 class="mt-12">Vår visjon er</h3> -->
+          <p class="headline mt-12 line-height-18" style="line-height: 1.8em;">
+            Vi skal være en profesjonell helse- og fysioterapiklinikk,
+            samtidig som vi skal møte den enkelte pasienten med omsorg og forståelse for dens
+            situasjon. Vi skal være nære gjennom hele behandlingen, støtte og veilede pasienten
+            til bedre helse gjennom erfaring og faglig kompetanse på både kort og lang sikt.
+          </p>
+          <!-- <h3 class="mt-12">Historie</h3> -->
+          <p class="line-height-18 mt-6">
+            Klinikken er helprivat, det vil si at den drives uten driftstilskudd fra det offentlige.
+            Det betyr igjen at det er veldig kort ventetid for å komme inn, og pasienten betaler
+            behandlingen sin selv.
+          </p>
+          <p class="mt-6 line-height-18">
+            Alle som jobber på Innlandet helse og fysioterapi skal være opptatt av at kunden skal
+            få best mulig service og bli fulgt gjennom hele behandlingen. Det vil si at vi aldri
+            har flere inne til behandling samtidig og vi skal være nære og støttende i
+            behandlingen. Har du tilbakemeldinger, setter vi stor pris på å få høre det.
+          </p>
+          <p class="mt-6 line-height-18">
+            Alle timene kan bookes via telefon, mail, facebook eller online timebestilling.
+          </p>
+          <p class="mt-6 line-height-18">
+            <!-- Du finner oss i nyoppusede lokaler i Moelv sentrum, og på Gjøvik! -->
+          </p>
         </v-col>
 
         <!-- <v-col style="max-width: 550px;"> -->
@@ -182,6 +182,9 @@
                     class="text-none mt-1"
                     rounded
                   >
+                    <svg style="width:22px;height:22px; opacity: 0.8;" class="mr-2" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+                    </svg>
                     <span>Bestill time</span>
                   </v-btn>
                   <p class="body-1 mt-2">
@@ -197,6 +200,9 @@
                     class="text-none mt-1"
                     rounded
                   >
+                    <svg style="width:22px;height:22px; opacity: 0.8;" class="mr-2" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+                    </svg>
                     <span>Bestill time</span>
                   </v-btn>
                   <p class="body-1 mt-2">
@@ -212,6 +218,9 @@
                     class="text-none mt-1"
                     rounded
                   >
+                    <svg style="width:22px;height:22px; opacity: 0.8;" class="mr-2" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+                    </svg>
                     <span>Bestill time</span>
                     <!-- <span class="font-weight-bold ml-1">(Kommer Snart!)</span> -->
                   </v-btn>
@@ -348,7 +357,7 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 2, 3, 6, 7, 8, 9],
+      moelvGroup: [0, 2, 3, 8, 12],
       gjovikGroup: [7, 3, 10, 11],
 
       activeEmployee: {},
@@ -619,7 +628,7 @@ export default {
               problemet pasienten presenterer, men er også opptatt av det langsiktige perspektivet
               ved å forstå hvorfor skaden/smerten har oppstått og hvordan det påvirker kroppen.
             </p>
-             <p class="mt-4 line-height-18">
+            <p class="mt-4 line-height-18">
               For Ingrid er god dialog med pasienten sammen med en grundig undersøkelse av hele
               kroppen et viktig utgangspunkt for videre behandling. Å forstå helheten pasienten
               presenterer at skaden/smerten kan ha sammenheng med livssituasjon og at årsaken til
@@ -638,6 +647,28 @@ export default {
               Ingrid er særlige interessert i kvinnehelse og spedbarn/barn.
               Hun har også god erfaring innen behandling av gravide og plager som kan oppstå under
               graviditet eller etter fødsel.
+            </p>
+          `
+        },
+        {
+          key: 'benjamin2',
+          name: 'Benjamin Frankø',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Benjamin ble ferdig utdannet fysioterapeut i 2020 fra Danmark. Siden da har han jobbet på
+              sykehus, rehabiliteringssenter og i privat praksis. Han har bred erfaring med ulike
+              pasientgrupper, blant annet gjennom rehabilitering hvor han har beskjeftiget seg med
+              revmatologiske og ortopedkirurgiske pasienter, samt pasienter med langvarige smerter og
+              utmattelse. Benjamin har også erfaring fra elitesport og militæret, hvor han har fått
+              god kompetanse på akutte skader og skadeforebygging.
+            </p>
+            <p class="mt-4 line-height-18">
+              Som fysioterapeut er Benjamin opptatt av en evidensbasert og helhetlig tilnærming. En
+              behandling hos Benjamin vil typisk begynne med en grunnleggende undersøkelse med
+              kartlegging av problematikk og målsetting. Heretter den fysioterapeutiske behandling,
+              der kan bestå av en rekke forskjellige manuelle teknikker, supplert med veiledning og
+              øvelser som du selvstendig kan gjennomgå hjemme.
             </p>
           `
         }

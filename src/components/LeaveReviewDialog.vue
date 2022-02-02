@@ -8,7 +8,7 @@
       <v-btn
         v-bind="attrs"
         v-on="on"
-        color="#F75F49"
+        color="secondary"
         dark
         class="text-none pt-6 pb-6 pl-6 pr-6"
         rounded
@@ -18,7 +18,7 @@
       </v-btn>
     </template>
     <v-card>
-      <v-card-title>Fortell oss om din erfaring</v-card-title>
+      <v-card-title class="font-weight-bold pt-6">Fortell oss om din erfaring</v-card-title>
       <v-card-text class="pt-6">
         <v-text-field
           label="E-post"
@@ -95,7 +95,7 @@
           v-model="accepted"
           class="mt-0"
           :label="`Jeg aksepterer at pasienthistorien legges ut på innlandethelseogfysioterapi.no`"
-        ></v-checkbox> <!-- anonymt -->
+        ></v-checkbox>
 
         <div class="d-flex justify-center">
           <!-- <v-spacer></v-spacer> -->
@@ -103,7 +103,7 @@
             :disabled="accepted === false || name === '' || review === ''"
             :loading="loading"
             @click="send()"
-            color="#F75F49"
+            color="secondary"
             class="text-none pa-4 pl-6 pr-6 mt-4"
             style="color: #fff;"
             rounded
@@ -185,3 +185,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .v-input--selection-controls__input input[role=checkbox] {
+    opacity: 1 !important;
+  }
+</style>

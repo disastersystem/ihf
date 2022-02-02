@@ -115,7 +115,7 @@
           <div class="line-height-18">
             <!-- <v-icon color="#F75F49">mdi-format-quote-open</v-icon> -->
             <svg style="width:24px;height:24px; margin-bottom: -5px" viewBox="0 0 24 24">
-                <path fill="#F75F49" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
+                <path fill="#ef7b47" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
             </svg>
             <span v-html="quote.text"></span>
           </div>
@@ -218,21 +218,21 @@ export default {
         ratio: 1.72,
         bookingBtn: null,
         link: 'osteopati'
-      },
-      {
-        name: 'MediYoga',
-        image: 'lotus-position.svg',
-        ratio: 1.72,
-        bookingBtn: null,
-        link: 'yoga'
-      },
-      {
-        name: 'YinYoga',
-        image: 'exercise.svg',
-        ratio: 1.72,
-        bookingBtn: null,
-        link: 'yinyoga'
       }
+      // {
+      //   name: 'MediYoga',
+      //   image: 'lotus-position.svg',
+      //   ratio: 1.72,
+      //   bookingBtn: null,
+      //   link: 'yoga'
+      // }
+      // {
+      //   name: 'YinYoga',
+      //   image: 'exercise.svg',
+      //   ratio: 1.72,
+      //   bookingBtn: null,
+      //   link: 'yinyoga'
+      // }
     ],
 
     treatments: [
@@ -284,22 +284,22 @@ export default {
       //   link: 'kiropraktor',
       //   text: ``
       // },
-      {
-        name: 'YinYoga',
-        image: 'yinyoga.jpg',
-        ratio: 1.55,
-        bookingBtn: true,
-        link: 'yinyoga',
-        text: ``
-      },
-      {
-        name: 'MediYoga',
-        image: 'mediyoga.jpg',
-        ratio: 1.5,
-        bookingBtn: null,
-        link: 'yoga',
-        text: ``
-      },
+      // {
+      //   name: 'YinYoga',
+      //   image: 'yinyoga.jpg',
+      //   ratio: 1.55,
+      //   bookingBtn: true,
+      //   link: 'yinyoga',
+      //   text: ``
+      // },
+      // {
+      //   name: 'MediYoga',
+      //   image: 'mediyoga.jpg',
+      //   ratio: 1.5,
+      //   bookingBtn: null,
+      //   link: 'yoga',
+      //   text: ``
+      // },
       {
         name: 'Bedrifter',
         image: 'bedrift3.jpg',
@@ -315,7 +315,7 @@ export default {
         bookingBtn: null,
         link: 'jordmor',
         text: ``
-      },
+      }
       // {
       //   name: 'Løpegrupper for bedrifter og private',
       //   image: 'løping.jpg',
@@ -324,14 +324,14 @@ export default {
       //   link: 'loping',
       //   text: ``
       // },
-      {
-        name: 'Svømming',
-        image: 'swimming.png',
-        ratio: 2.6,
-        bookingBtn: null,
-        link: 'svomming',
-        text: ``
-      }
+      // {
+      //   name: 'Svømming',
+      //   image: 'swimming.png',
+      //   ratio: 2.6,
+      //   bookingBtn: null,
+      //   link: 'svomming',
+      //   text: ``
+      // }
     ],
 
     quotes: [

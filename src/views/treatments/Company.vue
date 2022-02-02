@@ -67,7 +67,7 @@
 
         <h4 class="mt-12">Priser</h4>
         <p class="mt-4 line-height-18">
-          Det settes av 30 minutter til hver ansatt. Veiledende pris er 465 kr per behandling. Hvis ansatte skal betale egenandel
+          Det settes av 30 minutter til hver ansatt. Veiledende pris er 590 kr per behandling. Hvis ansatte skal betale egenandel
           gjøres dette opp etter hver konsultasjon med vipps eller bankterminal. Bedriften faktureres resterende beløp månedlig.
         </p>
 

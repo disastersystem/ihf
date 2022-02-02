@@ -37,7 +37,7 @@
           <div class="line-height-18">
             <!-- <v-icon color="#F75F49">mdi-format-quote-open</v-icon> -->
             <svg style="width:24px;height:24px; margin-bottom: -5px" viewBox="0 0 24 24">
-                <path fill="#F75F49" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
+                <path fill="#ef7b47" d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" />
             </svg>
             <span v-html="quote.text"></span>
             <!-- <v-icon>mdi-format-quote-close</v-icon> -->

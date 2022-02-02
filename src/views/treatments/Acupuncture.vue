@@ -58,6 +58,9 @@
               class="text-none pt-6 pb-6 pl-6 pr-6 mr-6 mt-8"
               rounded
             >
+              <svg style="width:22px;height:22px; opacity: 0.8;" class="mr-2" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+              </svg>
               <span class="font-weight-regular mr-1">Bestill time</span>
               <span class="font-weight-bold">Moelv</span>
             </v-btn>
@@ -73,6 +76,9 @@
               class="text-none pt-6 pb-6 pl-6 pr-6 mt-8"
               rounded
             >
+              <svg style="width:22px;height:22px; opacity: 0.8;" class="mr-2" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+              </svg>
               <span class="font-weight-regular mr-1">Bestill time</span>
               <span class="font-weight-bold">Gjøvik</span>
               <!-- <v-icon>mdi-open-in-new</v-icon> -->
