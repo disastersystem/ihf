@@ -7,7 +7,7 @@
     mr-xl-12 ml-xl-12
   ">
     <v-row justify="center" class="wrap-point-large">
-      <v-col style="max-width: 1200px;" class="pr-12">
+      <v-col style="max-width: 1300px;" class="pr-12">
         <v-breadcrumbs class="pl-0" :items="[
           { text: 'Hjem', disabled: false, to: '/' },
           { text: 'Lyst på jobb hos oss?', disabled: true, to: 'om' }

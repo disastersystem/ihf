@@ -8,6 +8,7 @@
     >
       <div @click="$router.push('/')" style="width: 270px; padding-bottom: 5px; cursor: pointer;" class="ml-sm-0 ml-md-8">
         <v-img
+          style="width: 270px;"
           :src="require('@/assets/logo-twolines-long.svg')"
           contain
         ></v-img>
@@ -26,7 +27,7 @@
       </v-app-bar-nav-icon>
 
       <div class="pa-5 hidden-md-and-down">
-        <v-btn @click="$router.push('/')" text class="text-none mr-2">
+        <v-btn @click="$router.push('/')" text class="text-none">
           <span>Hjem</span>
         </v-btn>
 
@@ -38,7 +39,7 @@
           <template v-slot:activator="{ on }">
             <v-btn
               text
-              class="text-none mr-2"
+              class="text-none"
               v-on="on"
             >
               <!-- Om Innlandet Helse og Fysioterapi -->
@@ -69,7 +70,7 @@
           <template v-slot:activator="{ on }">
             <v-btn
               text
-              class="text-none mr-2"
+              class="text-none"
               v-on="on"
             >
               Behandlinger
@@ -98,7 +99,35 @@
           </v-list>
         </v-menu>
 
-        <v-btn @click="$router.push('bedrifter')" text class="text-none mr-2">
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              text
+              class="text-none"
+              v-on="on"
+            >
+              Gruppetrening 2022
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item @click="$router.push('langvarige-ryggsmerter')">
+              <v-list-item-title>
+                Langvarige ryggsmerter
+              </v-list-item-title>
+            </v-list-item>
+
+            <v-list-item @click="$router.push('sterk-med-strikk')">
+              <v-list-item-title>
+                Sterk med strikk
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+        <v-btn @click="$router.push('bedrifter')" text class="text-none">
           <span>Bedrifter</span>
         </v-btn>
 
@@ -191,7 +220,12 @@
         <v-list-group>
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>Om oss</v-list-item-title>
+              <v-list-item-title>
+                Om oss
+                <svg style="width:24px;height:24px; margin-bottom:-7px; margin-left: 4px;" viewBox="0 0 24 24">
+                  <path fill="#555" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </v-list-item-title>
             </v-list-item-content>
           </template>
 
@@ -235,6 +269,31 @@
               </v-list-item-content>
             </v-list-item>
           </template>
+        </v-list-group>
+
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>
+                Gruppetrening 2022
+                <svg style="width:24px;height:24px; margin-bottom:-7px; margin-left: 4px;" viewBox="0 0 24 24">
+                  <path fill="#555" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item @click="$router.push('langvarige-ryggsmerter')">
+            <v-list-item-title class="pl-6">
+              Langvarige ryggsmerter
+            </v-list-item-title>
+          </v-list-item>
+
+          <v-list-item @click="$router.push('sterk-med-strikk')">
+            <v-list-item-title class="pl-6">
+              sterk med strikk
+            </v-list-item-title>
+          </v-list-item>
         </v-list-group>
 
         <v-list-item-group>

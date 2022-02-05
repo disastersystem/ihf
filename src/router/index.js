@@ -45,6 +45,24 @@ const routes = [
     }
   },
   {
+    path: '/sterk-med-strikk',
+    name: 'rubberband',
+    component: loadView('Rubberband'),
+    meta: {
+      scrollToTop: true
+      // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
+    }
+  },
+  {
+    path: '/langvarige-ryggsmerter',
+    name: 'backpain',
+    component: loadView('BackPain'),
+    meta: {
+      scrollToTop: true
+      // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
+    }
+  },
+  {
     path: '/bedrifter',
     name: 'company',
     component: loadView('treatments/Company'),

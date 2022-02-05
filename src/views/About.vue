@@ -7,7 +7,7 @@
     mr-xl-12 ml-xl-12
   ">
     <v-row justify="center" class="wrap-point-large">
-      <v-col style="max-width: 1200px;" class="pr-12">
+      <v-col style="max-width: 750px;" class="pr-12">
         <v-breadcrumbs :items="[
           { text: 'Hjem', disabled: false, to: '/' },
           { text: 'Vår visjon og historie', disabled: true, to: 'om' }
@@ -27,8 +27,8 @@
         <v-col style="max-width: 750px;" class="pr-12">
           <h1 class="display-2">Om oss</h1>
 
-          <v-row class="mt-6">
-            <v-col class="pr-6" cols="auto">
+          <v-row class="mt-6 pa-0">
+            <v-col class="pr-6 pl-1" cols="auto">
               <!-- <v-icon>mdi-chevron-right</v-icon> -->
               <svg style="width:24px;height:24px;margin-bottom:-6px;" viewBox="0 0 24 24">
                 <path

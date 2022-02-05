@@ -12,13 +12,13 @@ module.exports = {
     config.plugins.delete('prefetch')
   },
 
-  configureWebpack:  {
+  configureWebpack: {
     plugins: process.env.NODE_ENV === 'production' ? [
       new PrerenderSPAPlugin({
         // Required - The path to the webpack-outputted app to prerender.
         staticDir: path.join(__dirname, 'dist'),
         // Required - Routes to render.
-        routes: ['/', '/om', '/jobb', '/massasje', '/fysioterapi', '/osteopati', '/kiropraktor', '/akupunktur', '/fotpleie', '/yoga', '/yinyoga', '/svomming', '/loping', '/jordmor', '/bedrifter'],
+        routes: ['/', '/om', '/sterk-med-strikk', '/langvarige-ryggsmerter', '/jobb', '/massasje', '/fysioterapi', '/osteopati', '/kiropraktor', '/akupunktur', '/fotpleie', '/yoga', '/yinyoga', '/svomming', '/loping', '/jordmor', '/bedrifter'],
         // renderer: new Renderer({
         //   inject: {
         //     foo: 'bar'
