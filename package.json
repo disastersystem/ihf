@@ -30,7 +30,7 @@
     "compression-webpack-plugin": "^7.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prerender-spa-plugin": "^3.4.0",
     "sass": "^1.32.8",
     "sass-loader": "^8.0.0",
