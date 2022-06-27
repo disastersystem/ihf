@@ -36,6 +36,15 @@ const routes = [
     }
   },
   {
+    path: '/samarbeidspartnere',
+    name: 'partners',
+    component: loadView('Partners'),
+    meta: {
+      scrollToTop: true
+      // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
+    }
+  },
+  {
     path: '/jobb',
     name: 'work',
     component: loadView('Work'),
@@ -60,6 +69,15 @@ const routes = [
     meta: {
       scrollToTop: true
       // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
+    }
+  },
+  {
+    path: '/finn-din-plage',
+    name: 'plage',
+    component: loadView('Plage'),
+    meta: {
+      scrollToTop: true
+      // description: `Muskel- og skjelettplager er den vanligste årsaken til sykefravær på arbeidsplasser. Vi som fysioterapeuter er eksperter på å forebygge og behandle nettopp dette.`
     }
   },
   {
@@ -173,6 +191,60 @@ const routes = [
     path: '/loping',
     name: 'running',
     component: loadView('treatments/Running'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/nakkesmerter',
+    name: 'nakkesmerter',
+    component: loadView('plager/Nakkesmerter'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/korsryggplager',
+    name: 'korsryggplager',
+    component: loadView('plager/Korsryggplager'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/hodepine',
+    name: 'hodepine',
+    component: loadView('plager/Hodepine'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/kneplager',
+    name: 'kneplager',
+    component: loadView('plager/Kneplager'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/mageplager',
+    name: 'mageplager',
+    component: loadView('plager/Mageplager'),
+    meta: {
+      scrollToTop: true
+      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
+    }
+  },
+  {
+    path: '/h%C3%A5ndleddsmerter',
+    name: 'haandleddsmerter',
+    component: loadView('plager/Haandledd'),
     meta: {
       scrollToTop: true
       // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`

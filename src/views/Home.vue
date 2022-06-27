@@ -142,7 +142,315 @@
       </v-btn>
     </v-row>
 
-    <OnlineBookingButtons/>
+    <OnlineBookingButtons class="ihf-extra-margin-bottom" />
+
+    <v-row justify="center" class="ihf-extra-margin-top">
+      <h2 class="display-1 mb-5 pa-5">
+        Hos oss kan du bruke din helseforsikring
+      </h2>
+    </v-row>
+
+    <v-row justify="center" align="center" class="ihf-extra-margin-top ihf-extra-margin-bottom">
+      <v-col class="shrink mr-4">
+        <div style="width: 250px;">
+          <v-img
+            contain
+            :src="require('@/assets/Storebrand.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink mr-4">
+        <div style="width: 160px;">
+          <v-img
+            contain
+            :src="require('@/assets/fremtind.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink mr-4">
+        <div style="width: 60px;">
+          <v-img
+            contain
+            :src="require('@/assets/if.jpg')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink mr-4">
+        <div style="width: 190px;">
+          <v-img
+            contain
+            :src="require('@/assets/vertikal-helse.svg')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/Falck.jpg')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/storebrand1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/if1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/eika1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/dnb1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/codan1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+      <v-col class="shrink">
+        <div style="width: 140px;">
+          <v-img
+            contain
+            :src="require('@/assets/protector1.png')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Laster bilde som illustrer behandling"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+    </v-row>
+
+    <v-row justify="center" class="ihf-extra-margin-top">
+      <h2 class="display-1 mb-5 pa-5">
+        Våre samarbeidspartnere
+      </h2>
+    </v-row>
+
+    <v-row justify="center" align="center" class="ihf-extra-margin-top">
+      <v-col class="shrink mr-4">
+        <div style="width: 250px;">
+          <v-img
+            contain
+            :src="require('@/assets/rudikompetansesenter.png')"
+            @click="openLink('https://rudikompetansesenter.no/')"
+          >
+            <template v-slot:placeholder>
+              <v-layout
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                  role="progressbar"
+                  title="Logo til Rudi Kompetansesenter"
+                ></v-progress-circular>
+              </v-layout>
+            </template>
+          </v-img>
+        </div>
+      </v-col>
+    </v-row>
 
     <Footer/>
   </div>
@@ -418,7 +726,13 @@ export default {
       //   `
       // }
     ]
-  })
+  }),
+
+  methods: {
+    openLink (path) {
+        window.open(path)
+    }
+  }
 }
 </script>
 

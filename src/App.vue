@@ -51,14 +51,20 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item @click="$router.push('om')">
+            <v-list-item @click="$router.push('/om')">
               <v-list-item-title>
                 <!-- Om oss / historie -->
                 Vår visjon og medarbeidere
               </v-list-item-title>
             </v-list-item>
 
-            <v-list-item @click="$router.push('jobb')">
+            <v-list-item @click="$router.push('/samarbeidspartnere')">
+              <v-list-item-title>
+                Våre samarbeidspartnere
+              </v-list-item-title>
+            </v-list-item>
+
+            <v-list-item @click="$router.push('/jobb')">
               <v-list-item-title>
                 Lyst på jobb hos oss?
               </v-list-item-title>
@@ -127,13 +133,17 @@
           </v-list>
         </v-menu>
 
-        <v-btn @click="$router.push('bedrifter')" text class="text-none">
+        <v-btn @click="$router.push('finn-din-plage')" text class="text-none mr-4">
+          <span>Finn din plage</span>
+        </v-btn>
+
+        <v-btn @click="$router.push('bedrifter')" text class="text-none mr-4">
           <span>Bedrifter</span>
         </v-btn>
 
-        <v-btn text class="text-none mr-2" @click="$router.push('/pasienterfaringer')">
+        <!-- <v-btn text class="text-none mr-2" @click="$router.push('/pasienterfaringer')">
           <span>Pasienterfaringer</span>
-        </v-btn>
+        </v-btn> -->
 
         <!-- <v-btn text class="text-none mr-4" @click="$router.push('/pasienterfaringer')">
           <span>Jobbe hos oss?</span>
@@ -236,6 +246,12 @@
             </v-list-item-title>
           </v-list-item>
 
+          <v-list-item @click="$router.push('/samarbeidspartnere')">
+            <v-list-item-title class="pl-6">
+              Våre samarbeidspartnere
+            </v-list-item-title>
+          </v-list-item>
+
           <v-list-item @click="$router.push('jobb')">
             <v-list-item-title class="pl-6">
               Lyst på jobb hos oss?
@@ -298,19 +314,27 @@
 
         <v-list-item-group>
           <v-list-item>
-            <v-list-item-title @click="$router.push('/bedrifter')">
-              Bedrifter
+            <v-list-item-title @click="$router.push('finn-din-plage')">
+              Finn din plage
             </v-list-item-title>
           </v-list-item>
         </v-list-item-group>
 
         <v-list-item-group>
           <v-list-item>
+            <v-list-item-title @click="$router.push('bedrifter')">
+              Bedrifter
+            </v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+
+        <!-- <v-list-item-group>
+          <v-list-item>
             <v-list-item-title @click="$router.push('/pasienterfaringer')">
               Pasienterfaringer
             </v-list-item-title>
           </v-list-item>
-        </v-list-item-group>
+        </v-list-item-group> -->
 
       </v-list>
     </v-navigation-drawer>
@@ -356,6 +380,10 @@ export default {
     OnlineBookingDialog,
     OnlineBookingButtons
   },
+
+  // created () {
+  //   console.log(this.$route)
+  // },
 
   data: () => ({
     scrolled: true,

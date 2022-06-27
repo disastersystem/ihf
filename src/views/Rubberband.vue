@@ -55,7 +55,7 @@
             ingen være for svak eller for sterk til å kunne være med her.
           </p>
 
-          <h4 class="mt-12">Påmelding</h4>
+          <h4 class="mt-12">Bli med!</h4>
           <v-row class="mt-2 line-height-18">
             <v-col cols="12">
               <div style="display: flex;">
@@ -123,11 +123,11 @@
 
       <v-col style="max-width: 500px;">
         <!-- <img src="berit.jpg" style="display: block; width: 100%;"> -->
-        <!-- <v-img
-          :src="require('@/assets/neck.jpg')"
+        <v-img
+          :src="require('@/assets/strikk.png')"
           contain
           style="max-width: 500px;"
-        ></v-img> -->
+        ></v-img>
       </v-col>
     </v-row>
 
