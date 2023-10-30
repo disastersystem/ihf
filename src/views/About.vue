@@ -397,8 +397,8 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 2, 3, 8, 12],
-      gjovikGroup: [7, 3, 10, 11],
+      moelvGroup: [0, 2, 8, 14, 13],
+      gjovikGroup: [7, 10, 11, 15],
 
       activeEmployee: {},
 
@@ -737,6 +737,45 @@ export default {
               kartlegging av problematikk og målsetting. Heretter den fysioterapeutiske behandling,
               der kan bestå av en rekke forskjellige manuelle teknikker, supplert med veiledning og
               øvelser som du selvstendig kan gjennomgå hjemme.
+            </p>
+          `
+        },
+        {
+          key: 'kristian',
+          name: 'Kristian Aasen',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Kristian studerte fysioterapi i Danmark og har nå flyttet hjem til Moelv. Turnustjeneste gjennomførte han ved Ringen Rehabilitering og KMS Tømmerli.
+            </p>
+            <p class="mt-4 line-height-18">
+              Han har god erfaring med muskel- og skjelettsmerter, brudd og andre traumeskader. Kristian interesserer seg spesielt for rygg og nakkeplager og jobber alltid for at du som pasient skal oppleve bedring i behandlingsforløpet.
+            </p>
+          `
+        },
+        {
+          key: 'astri',
+          name: 'Astri Ekre',
+          title: 'Massasjeterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Astri Ekre er utdannet massasjeterapeut fra Axelsons institute i Oslo i 2018. Hun er en blid Lillehamring som er veldig glad i å hjelpe mennesker (og dyr) med å løsne opp i spenninger og redusere smerter. Astri bor på en gård på Lillehammer med hester, hund, katt, høner og kaniner. Hun tilbyr behandlinger som klassisk massasje, idrettsmassasje, bindevevsbehandling, triggerpunktsmassasje, gravidmassasje og lymfemassasje.
+            </p>
+          `
+        },
+        {
+          key: 'julie',
+          name: 'Julie Torkehagen',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Julie ble ferdigutdannet fysioterapeut i 2021. Hun gjennomførte turnustjeneste i Råde kommune og ved Revmatismesykehuset på Lillehammer. I etterkant har hun blant annet jobbet på ortopedisk avdeling på sykehus, samt avdeling for geriatri, slag og rehabilitering. For tiden jobber hun både i privat- og spesialisthelsetjeneste.
+            </p>
+            <p class="mt-4 line-height-18">
+              Julie er opptatt av at mennesker skal føle seg sett, hørt og ivaretatt. Behandlingen baserer seg på undersøkelse og samtale der pasientens ønsker og mål er i fokus. Hun har et ønske om å hjelpe andre til en aktiv hverdag med tilpasset behandling.
+            </p>
+            <p class="mt-4 line-height-18">
+              Behandlingen inkluderer både bløtvevsbehandling som massasje og aktive øvelser.
             </p>
           `
         }
