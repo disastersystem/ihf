@@ -397,8 +397,8 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 2, 8, 14, 13],
-      gjovikGroup: [7, 10, 11, 15],
+      moelvGroup: [0, 2, 8, 14],
+      gjovikGroup: [7, 10, 11, 16],
 
       activeEmployee: {},
 
@@ -776,6 +776,19 @@ export default {
             </p>
             <p class="mt-4 line-height-18">
               Behandlingen inkluderer både bløtvevsbehandling som massasje og aktive øvelser.
+            </p>
+          `
+        },
+        {
+          key: 'kjersti',
+          name: 'Kjersti',
+          title: 'Osteopat',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Kjersti ble ferdig utdannet Osteopat i 2017 og har siden jobbet fulltid i privat klinikk. Hun er autorisert osteopat og medlem av norsk osteopatforbund.
+            </p>
+            <p class="mt-4 line-height-18">
+              Hun gleder seg til å gå på jobb hver dag for å hjelpe sine pasienter til en bedre helse med mindre smerter og plager. Kjersti bruker både massasjeteknikker, triggerpunktsbehandling, tøyninger og mobilisering av ledd i behandlingen. Hun er opptatt av å finne ut av hva som er viktig for deg og sammen jobbe mot en hverdag med mindre plager.
             </p>
           `
         }
