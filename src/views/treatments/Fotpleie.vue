@@ -51,12 +51,14 @@
           Behandlingen avsluttes med legg og fotmassasje med bruk av en behagelig massasjeolje.
         </p>
 
+        <!--
         <h4 class="mt-6">Gelish/Shellac tær</h4>
         <p class="mt-2 line-height-18">
           Gelish er en gelebasert neglelakk som påføres som en vanlig lakk, og sitter som en hard gele.
           Lakken herdes i UV-lampe. Den kan sitte i opptil 3 uker eller lengre, dette avhenger om man ikke piller på
           neglene eller lakken. Den kan ikke fjernes med vanlig neglelakkfjerner, men fjernes med bruk av aceton eller slipes av.
         </p>
+        -->
 
         <!-- <h4 class="mt-6">Parafinvoksbehandling</h4>
         <p class="mt-2 line-height-18">

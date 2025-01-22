@@ -1,0 +1,222 @@
+{
+          key: 'amalie',
+          name: 'Amalie Øvergaard',
+          title: 'Kiropraktor',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Amalie ble uteksaminert ved Anglo-European College of Chiropractic (AECC) i 2016. Hun jobbet sine første år som
+              kiropraktor i London før hun flyttet tilbake til Norge.<br>
+              Hun er medlem av Norsk Kiropraktorforening.
+            </p>
+            <p class="mt-5 line-height-18">
+              Amalie har alltid likt det å kunne hjelpe personer med plagene deres uten å måtte benytte medisiner eller operative tiltak. Som kiropraktor jobber hun mye med nakke og ryggsmerter,
+              men også med hodepine, kjeveproblematikk, skuldersmerter og andre plager i bevegelsesapparatet.
+            </p>
+            <p class="mt-5 line-height-18">
+              Amalie har bred erfaring og spesialisering innen behandling av gravide og spedbarn/barn. Dette fagfeltet er
+              hennes spesialfelt. Hun jobber blant annet med kolikk, refluksplager, stramt tungebånd, ammeproblemer,
+              torticollis og asymmetri i nakke/kropp hos barn, samt bekkenproblematikk og isjas hos gravide. Hun er
+              sertifisert i webster teknikk og utfører også kranium behandling på spedbarn. Hun utarbeider hjemmetreningsprogram
+              for gravide og barn ved behov, for å forebygge ytterligere ubehag og plager.
+            </p>
+          `
+        },
+        {
+          key: 'ingvild',
+          name: 'Ingvild Midthaug',
+          title: 'Osteopat D.O.',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Ingvild er utdannet Osteopat D.O., som er en fireårig helseutdannelse fra Høyskolen Kristiania.
+              Hun har siden 2015 jobbet i helsevesenet og har blant annet erfaring innen rehabilitering,
+              barn og eldreomsorg.
+            </p>
+            <p class="mt-4 line-height-18">
+              Det settes av god tid til førstegangskonsultasjon som varer opp mot 60 minutter. For å kunne tilby
+              best behandling for deg, vektlegges god kommunikasjon og undersøkelse for bedre forståelse av din
+              problemstilling. Dine plager/smerter, samt din sykehistorie legger grunnlaget for undersøkelse og
+              behandling. Sammen setter vi mål for behandlingen, og vurderer nødvendige tiltak som kan bestå av
+              øvelsesprogram eller eventuelle endringer i din hverdag.
+            </p>
+            <p class="mt-4 line-height-18">
+              Ingvild jobber målrettet for å tilrettelegge for god helse og en aktiv hverdag, tilpasset ditt
+              utgangspunkt. Hun er dyktig på å tilpasse behandlingen etter ønske og mål uansett alder eller
+              forutsetning. Mange oppsøker Ingvild for hennes kompetanse på langvarige smerter, kvinnerelaterte
+              plager og idrettsskader. Hun kan også undersøke og behandle barn med ulike problemer relatert til
+              gulp, luftplager, mye uro og gråt.
+            </p>
+            <p class="mt-4 line-height-18">
+              Ingvild har kurs i behandling av inkontinens og bekkenbunnsplager hos kvinner. Behandlingen kan
+              inneholde et behandlingshjelpemiddel med elektrostimuelring og biofeedback. Det er et apparat
+              som blant annet veileder deg i bekkenbunnstrening via en vaginal probe. Apparatet kan man låne
+              gratis med rekvisisjon. Ingvild kan hjelpe deg med rekvisisjon og opplæring av apparatet. Du
+              får også oppfølging i perioden du bruker apparatet. Behandlingshjelpemiddelet benyttes kun ved
+              behov og der det vurderes som nødvendig i behandlingen av din problematikk.
+            </p>
+            <p class="mt-4 mb-1 line-height-18">
+              Ingvild tilbyr ved behov:
+            </p>
+            <ul>
+              <li class="mb-1">Epikrise til fastlege</li>
+              <li class="mb-1">Hverdagsmestring</li>
+              <li class="mb-1">Øvelsesprogram</li>
+              <li class="mb-1">Bedriftsbehandling</li>
+              <li class="mb-1">Forsikringsbehandling</li>
+              <li class="mb-1">Rekvisisjon til behandlingshjelpemidler</li>
+            </ul>
+          `
+        },
+        {
+          key: 'gro2',
+          name: 'Gro Visdal',
+          title: 'Akupunktør og massasjeterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Gro er utdannet massasjeterapeut og har en bachelor i akupunktur fra IHF og Høyskolen Kristiania i Oslo. Hun har erfaring fra
+              tverrfaglige team i Oslo og Gudbrandsdalen.
+            </p>
+            <p class="mt-4 line-height-18">
+              Gro har alltid fokus på en helhetlig behandling og tilpasser behandlingene etter pasientens ønsker, men da med en faglig anbefaling.
+              Behandlingsformer hun tilbyr er:
+            </p>
+
+            <ul>
+              <li>Terapeutisk/fysikalsk massasje</li>
+              <li>Klassisk massasje</li>
+              <li>Idrettsmassasje</li>
+              <li>Velværemassasje</li>
+              <li>Lymfedrenasje</li>
+              <li>Gravidmassasje</li>
+              <li>Triggerpunktbehandling med massasje og/eller nåler</li>
+              <li>Kopping</li>
+              <li>Kinesioteiping</li>
+              <li>IMS (intramuskulær stimulering)</li>
+              <li>Elektroakupunktur</li>
+              <li>Tradisjonell kinesisk akupunktur</li>
+              <li>Øreakupunktur</li>
+            </ul>
+
+            <p class="mt-4 line-height-18">
+              Ofte komplementerer Gro behandlingene med generell kosthold- og treningsveiledning og ergonomiske råd.
+            </p>
+
+            <p class="mt-4 line-height-18">
+              Hun er medlem av Massasjeforbundet og Akupunkturforeningen.
+            </p>
+          `
+        },
+        {
+          key: 'gry2',
+          name: 'Gry Merete Haakensveen',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Gry har jobbet som fysioterapeut siden 2003, og har lang erfaring med pasienter i alle aldersgrupper og med bredde
+              i ulike diagnoser. De siste årene har hun jobbet privat med tilskudd samtidig som hun har tatt en master i
+              idrettsfysioterapi. Hun er utdannet personlig trener, yogalærer og gruppetreningsinstruktør.
+            </p>
+
+            <p class="mt-4 line-height-18">
+              Gry ser helheten hos kunden/pasienten og har god erfaring med kombinert behandling av tøyninger,
+              triggerpunkter, veiledete øvelser og treningsterapi.
+            </p>
+          `
+        },
+        {
+          key: 'helge',
+          name: 'Helge Afseth',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Den med lengst fartstid hos oss er Helge. Helge har jobbet som fysioterapeut siden 1980,
+              og startet sin karriere i Oslo ved Rikshospitalet og Statens attføringsinstitutt. Videre gikk veien inn
+              i Oslo kommune der han jobbet i hjemmetjenesten i mange år. Denne stillingen resulterte i at Helge
+              fikk stor interesse for nevrologi* og rehabilitering*.
+            </p>
+
+            <p class="mt-4 line-height-18">
+              Helge var med å åpne Ringen Rehabiliteringssenter* i 1989 og var avdelingsleder for fysioterapi frem til 2013.
+            </p>
+
+            <p class="mt-4 line-height-18">
+              De siste årene har Helge jobbet som privatpraktiserende fysioterapeut i Møllergården, der han startet opp sammen med Lene.
+            </p>
+
+            <div class="mt-8">
+              <p class="caption mb-2 mt-4">
+                *<i>Nevrologi</i> er den medisinske spesialiteten som omhandler sykdommer i nervesystemet.
+              </p>
+              <p class="caption mb-2">
+                *<i>Rehabilitering</i> har til formål å gjenvinne fysisk, kognitiv eller sosial funksjonsevne
+                som er tapt på grunn av sykdom eller skade.
+              </p>
+              <p class="caption">
+                *<i>Ringen Rehabiliteringssenter</i> As er et privat rehabiliteringssenter like nord for Moelv sentrum.
+                Ringen driver spesialisert rehabilitering og har avtale med Helse Sør-Øst RHF om drift av rehabiliteringsplasser.
+                Les mer på: https://www.ringen-rehab.no
+              </p>
+            </div>  
+          `
+        },
+        {
+          key: 'berit',
+          name: 'Berit Engeset',
+          title: 'Yogaterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Berit har deltatt og tatt kurs i klassisk- og Ashtanga yoga de siste tyve årene i tillegg til at hun er utdannet vetrinær.
+              Når hun ser tilbake på sin yogautøvelses hyppighet, ser hun at hun har brukt yoga i stressfulle perioder i livet.
+            </p>
+          `
+        },
+        {
+          key: 'benjamin2',
+          name: 'Benjamin Frankø',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Benjamin ble ferdig utdannet fysioterapeut i 2020 fra Danmark. Siden da har han jobbet på
+              sykehus, rehabiliteringssenter og i privat praksis. Han har bred erfaring med ulike
+              pasientgrupper, blant annet gjennom rehabilitering hvor han har beskjeftiget seg med
+              revmatologiske og ortopedkirurgiske pasienter, samt pasienter med langvarige smerter og
+              utmattelse. Benjamin har også erfaring fra elitesport og militæret, hvor han har fått
+              god kompetanse på akutte skader og skadeforebygging.
+            </p>
+            <p class="mt-4 line-height-18">
+              Som fysioterapeut er Benjamin opptatt av en evidensbasert og helhetlig tilnærming. En
+              behandling hos Benjamin vil typisk begynne med en grunnleggende undersøkelse med
+              kartlegging av problematikk og målsetting. Heretter den fysioterapeutiske behandling,
+              der kan bestå av en rekke forskjellige manuelle teknikker, supplert med veiledning og
+              øvelser som du selvstendig kan gjennomgå hjemme.
+            </p>
+          `
+        },
+        {
+          key: 'kristian',
+          name: 'Kristian Aasen',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Kristian studerte fysioterapi i Danmark og har nå flyttet hjem til Moelv. Turnustjeneste gjennomførte han ved Ringen Rehabilitering og KMS Tømmerli.
+            </p>
+            <p class="mt-4 line-height-18">
+              Han har god erfaring med muskel- og skjelettsmerter, brudd og andre traumeskader. Kristian interesserer seg spesielt for rygg og nakkeplager og jobber alltid for at du som pasient skal oppleve bedring i behandlingsforløpet.
+            </p>
+          `
+        },
+        {
+          key: 'julie',
+          name: 'Julie Torkehagen',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Julie ble ferdigutdannet fysioterapeut i 2021. Hun gjennomførte turnustjeneste i Råde kommune og ved Revmatismesykehuset på Lillehammer. I etterkant har hun blant annet jobbet på ortopedisk avdeling på sykehus, samt avdeling for geriatri, slag og rehabilitering. For tiden jobber hun både i privat- og spesialisthelsetjeneste.
+            </p>
+            <p class="mt-4 line-height-18">
+              Julie er opptatt av at mennesker skal føle seg sett, hørt og ivaretatt. Behandlingen baserer seg på undersøkelse og samtale der pasientens ønsker og mål er i fokus. Hun har et ønske om å hjelpe andre til en aktiv hverdag med tilpasset behandling.
+            </p>
+            <p class="mt-4 line-height-18">
+              Behandlingen inkluderer både bløtvevsbehandling som massasje og aktive øvelser.
+            </p>
+          `
+        },

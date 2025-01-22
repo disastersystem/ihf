@@ -91,27 +91,23 @@
             <div><b>Åpningstider</b></div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Mandag: </div>
-              <div>8-16</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Tirsdag: </div>
-              <div>8-20</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Onsdag: </div>
-              <div>8-1730</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Torsdag: </div>
-              <div>8-16</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Fredag: </div>
-              <div>8-16</div>
-            </div>
-            <div class="d-flex">
-              <div class="flex-grow-1 mr-3">Lørdag: </div>
-              <div>10-14</div>
+              <div>8-15.30</div>
             </div>
           </div>
         </div>
@@ -168,27 +164,23 @@
             <div><b>Åpningstider</b></div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Mandag: </div>
-              <div>8-16</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Tirsdag: </div>
-              <div>8-20</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Onsdag: </div>
-              <div>8-1730</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Torsdag: </div>
-              <div>8-16</div>
+              <div>8-15.30</div>
             </div>
             <div class="d-flex">
               <div class="flex-grow-1 mr-3">Fredag: </div>
-              <div>8-16</div>
-            </div>
-            <div class="d-flex">
-              <div class="flex-grow-1 mr-3">Lørdag: </div>
-              <div>10-14</div>
+              <div>8-15.30</div>
             </div>
           </div>
         </div>

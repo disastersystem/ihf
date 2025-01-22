@@ -112,7 +112,7 @@
     </v-container>
 
     <v-row
-      style="margin-top: 200px; background:#F1EDEE;"
+      style="margin-top: 200px; background:#003a5d;"
       class="
         mb-12
         pa-4

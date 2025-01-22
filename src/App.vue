@@ -105,7 +105,7 @@
           </v-list>
         </v-menu>
 
-        <v-menu offset-y>
+        <!-- <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn
               text
@@ -131,7 +131,7 @@
               </v-list-item-title>
             </v-list-item>
           </v-list>
-        </v-menu>
+        </v-menu> -->
 
         <v-btn @click="$router.push('finn-din-plage')" text class="text-none mr-4">
           <span>Finn din plage</span>
@@ -287,7 +287,7 @@
           </template>
         </v-list-group>
 
-        <v-list-group>
+        <!-- <v-list-group>
           <template v-slot:activator>
             <v-list-item-content>
               <v-list-item-title>
@@ -310,7 +310,7 @@
               sterk med strikk
             </v-list-item-title>
           </v-list-item>
-        </v-list-group>
+        </v-list-group> -->
 
         <v-list-item-group>
           <v-list-item>

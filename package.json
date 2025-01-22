@@ -12,9 +12,11 @@
   "dependencies": {
     "core-js": "^3.9.1",
     "vue": "^2.6.12",
+    "vue-loader": "^15.0.0",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.1",
-    "vuetify": "^2.4.5"
+    "vuetify": "^2.4.5",
+    "webpack": "^4.47.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.11",
