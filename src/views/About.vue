@@ -397,7 +397,7 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 1, 5, 7, 8],
+      moelvGroup: [0, 1, 5, 7, 8, 9],
       gjovikGroup: [2, 3, 4, 6],
 
       activeEmployee: {},
@@ -543,6 +543,19 @@ export default {
             </p>
             <p class="mt-4 line-height-18">
               Hun er nå under utdannelse ved fot-og helseakademiet i Oslo der hun studerer fotterapifaget.
+            </p>
+          `
+        },
+        {
+          key: 'mari',
+          name: 'Mari',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Mari kommer fra Vågå og bor på Lillehammer. Hun ble ferdig utdannet som fysioterapeut i 2020, og har jobbet som kommunal fysioterapeut siden. Her har hun hatt et bredt spekter av pasienter med muskel- og skjelettplager, kreft, nevrologiske lidelser samt langvarige smertetilstander.  
+            </p>
+            <p class="mt-4 line-height-18">
+              Mari er opptatt av å finne gode og overkommelige mestringsstrategier for hver enkelt. Gjennom individuell undersøkelse, og basert på kundens mål, finner vi sammen behandlingsmetode. Det kan være avspenning, massasje og bløtvevsbehandling, kombinert med en aktiv tilnærming med øvelser.
             </p>
           `
         }
