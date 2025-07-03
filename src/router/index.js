@@ -54,24 +54,6 @@ const routes = [
     }
   },
   {
-    path: '/sterk-med-strikk',
-    name: 'rubberband',
-    component: loadView('Rubberband'),
-    meta: {
-      scrollToTop: true
-      // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
-    }
-  },
-  {
-    path: '/langvarige-ryggsmerter',
-    name: 'backpain',
-    component: loadView('BackPain'),
-    meta: {
-      scrollToTop: true
-      // description: `Innlandet helse og fysioterapi er et etablert tverrfaglig team med fokus på kompetanse, service, kunnskap og resultater.`
-    }
-  },
-  {
     path: '/finn-din-plage',
     name: 'plage',
     component: loadView('Plage'),
@@ -108,33 +90,6 @@ const routes = [
     }
   },
   {
-    path: '/yoga',
-    name: 'yoga',
-    component: loadView('treatments/Yoga'),
-    meta: {
-      scrollToTop: true
-      // description: `MediYoga er en terapeutisk yogaform. Yogaformen passer for alle enten man har fysiske begrensninger eller ikke.`
-    }
-  },
-  {
-    path: '/yinyoga',
-    name: 'Yinyoga',
-    component: loadView('treatments/Yinyoga'),
-    meta: {
-      scrollToTop: true
-      // description: `YinYoga er en rolig terapeutisk yogaform og gir en god avspenning i en krevende hverdag. Det er lange gode strekk som er bra for stive muskler, bidevev og ledd.`
-    }
-  },
-  {
-    path: '/kiropraktor',
-    name: 'kiropraktor',
-    component: loadView('treatments/Kiropraktor'),
-    meta: {
-      scrollToTop: true
-      // description: `Behandling av muskel-, nerve- og skjelettlidelser. Behandling av bløtvev, hjemmeøvelser, kinesiotape, theragun, triggerpunktbehandling.`
-    }
-  },
-  {
     path: '/osteopati',
     name: 'Osteopati',
     component: loadView('treatments/Osteopati'),
@@ -159,41 +114,6 @@ const routes = [
     meta: {
       scrollToTop: true
       // description: `Massasje påvirker kroppens blodsirkulasjonen, nerve- og hormonssystem. Dette fører til reduksjon av stressreaksjoner og øker kroppens evne til avspenning og restitusjon.`
-    }
-  },
-  {
-    path: '/akupunktur',
-    name: 'akupunktur',
-    component: loadView('treatments/Acupuncture'),
-    meta: {
-      scrollToTop: true
-    }
-  },
-  {
-    path: '/jordmor',
-    name: 'jordmor',
-    component: loadView('treatments/Jordmor'),
-    meta: {
-      scrollToTop: true
-      // description: `Svangerskap-, fødsel- og foreldreforberedende kurs over to kvelder.`
-    }
-  },
-  {
-    path: '/svomming',
-    name: 'swimming',
-    component: loadView('treatments/Swimming'),
-    meta: {
-      scrollToTop: true
-      // description: `Lære de fire kjernefunksjonene: dykke – flyte – gli – fremdrift. Vanntilvenning – bli kjent med vannets egenskaper`
-    }
-  },
-  {
-    path: '/loping',
-    name: 'running',
-    component: loadView('treatments/Running'),
-    meta: {
-      scrollToTop: true
-      // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
     }
   },
   {

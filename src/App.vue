@@ -463,10 +463,6 @@ export default {
         header: 'Annet',
         items: [
           {
-            name: 'Jordmor',
-            link: 'jordmor'
-          },
-          {
             name: 'Bedrifter',
             link: 'bedrifter'
           }

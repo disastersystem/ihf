@@ -615,14 +615,6 @@ export default {
         bookingBtn: null,
         link: 'bedrifter',
         text: ``
-      },
-      {
-        name: 'Jordmor',
-        image: 'baby.jpg',
-        ratio: 1,
-        bookingBtn: null,
-        link: 'jordmor',
-        text: ``
       }
       // {
       //   name: 'Løpegrupper for bedrifter og private',

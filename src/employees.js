@@ -191,36 +191,6 @@ export default [
     `
   },
   {
-    key: 'unn-therese',
-    name: 'Unn-Therese Marken',
-    title: 'Jordmor',
-    desc: `
-      <p class="mt-4 line-height-18">
-        Unn-Therese Marken er utdannet jordmor og har bred erfaring fra fødeavdeling. Daglig jobber hun i svangerskapsomsorgen her på
-        Innlandet. Hun mener at det er å kunne tilby helhetlig og individuell tilpasset oppfølging til den gravide og partner er viktig.
-        Du skal føle deg ivaretatt og trygg igjennom svangerskap, fødsel og barseltid.
-      </p>
-
-      <p class="mt-4 line-height-18">
-        Fra tidligere er Unn-Therese utdannet barnevernspedagog, og har jobbet i barnevernstjenesten der hun hadde foreldreveiledning og
-        saksbehandling.
-      </p>
-
-      <p class="mt-4 line-height-18">
-        Unn-Therese startet som jordmor ved Ullevål sykehus, deretter Gjøvik og Lillehammer.
-        I dag tilbyr hun hjemmefødsler i Mjøs-regionen i tillegg til svangerskap- og fødselsforberedende kurs
-        ved Innlandet helse og fysioterapi.
-      </p>
-
-      <p class="mt-4 line-height-18">
-        Innlandet helse og fysioterapi kan tilby deg god oppfølging i ditt
-        svangerskap og etter fødsel. Vi jobber tett tverrfaglig, og tilbyr
-        fysioterapi, gravidmassaje, modningsakupunktur, osteopati, fotpleie i
-        tillegg til jordmor.
-      </p>
-    `
-  },
-  {
     key: 'berit',
     name: 'Berit Engeset',
     title: 'Yogaterapeut',
