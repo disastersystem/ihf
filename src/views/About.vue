@@ -397,8 +397,8 @@ export default {
       // employees: employees,
 
       // who works at which place? (each item is a index in the employees array)
-      moelvGroup: [0, 1, 5, 7, 8, 9],
-      gjovikGroup: [2, 3, 4, 6],
+      moelvGroup: [0, 1, 7, 9, 10],
+      gjovikGroup: [2, 3, 6],
 
       activeEmployee: {},
 
@@ -556,6 +556,22 @@ export default {
             </p>
             <p class="mt-4 line-height-18">
               Mari er opptatt av å finne gode og overkommelige mestringsstrategier for hver enkelt. Gjennom individuell undersøkelse, og basert på kundens mål, finner vi sammen behandlingsmetode. Det kan være avspenning, massasje og bløtvevsbehandling, kombinert med en aktiv tilnærming med øvelser.
+            </p>
+          `
+        },
+        {
+          key: 'silje',
+          name: 'Silje Renate Moen Krosby',
+          title: 'Fotpleier',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Silje har jobbet i helsevesenet siden 2001 og har lang erfaring med å hjelpe andre til å oppnå bedre helse. Gjennom sitt arbeid som fotpleier har hun som mål at du skal oppnå bedre fothelse. Hun tar hensyn til den enkeltes utfordringer, og ser mennesker godt. Silje har igjennom sitt arbeid igjennom alle år sett behovet og mangelen på tilstrekkelig god veiledning og fothelse, og har derfor bestemt seg for å starte på utdannelsen for å kunne bli autorisert fotterapeut.
+            </p>
+            <p class="mt-4 line-height-18">
+              Hos Silje blir du møtt av en behagelig og dyktig pleier, som ivaretar dine ønsker og behov, samtidig som hun veileder deg til bedre fothelse i hverdagen.
+            </p>
+            <p class="mt-4 line-height-18">
+              Silje er nesning og bosatt der ute sammen med mann, 4 barn og dyr i landlige omgivelser.
             </p>
           `
         }
