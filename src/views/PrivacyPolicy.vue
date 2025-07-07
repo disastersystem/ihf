@@ -27,7 +27,7 @@
         <h1 class="display-2">Personvernerklæring</h1>
 
         <p class="mt-4 line-height-18">
-          Denne erklæringen redegjør for Innlandet Helse og Fysioterapi AS avd. Moelv of Gjøvik,
+          Denne erklæringen redegjør for Innlandet Helse og Fysioterapi AS avd. Moelv og Gjøvik,
           sin behandling av personopplysninger på sine nettsider, og behandling
           av personopplysninger ved bruk av våre tjenester. Vi på Innlandet Helse og Fysioterapi er svært opptatt av å
           til enhver tid beskytte våre pasienters personopplysninger, og er ansvarlig for at din

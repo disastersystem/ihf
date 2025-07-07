@@ -178,6 +178,13 @@ const routes = [
       scrollToTop: true
       // description: `Vi hjelper deg til bedre helse med hensyn til din situasjon. Helse og fysioterapi klinikk på Moelv og Gjøvik.`
     }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: loadView('404'),
+    meta: {
+      scrollToTop: true
+    }
   }
 ]
 

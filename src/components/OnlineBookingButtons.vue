@@ -16,7 +16,7 @@
             <span class="font-weight-regular mr-1">Bestill time</span>
             <span class="font-weight-bold">Moelv</span>
           </v-btn>
-          <p class="body-1 mt-2 pl-8">
+          <p class="body-1 mt-4 text-center">
             Tlf: 951 888 73
           </p>
           <!-- <p style="max-width: 200px;">
@@ -73,7 +73,7 @@
         <span class="font-weight-bold">Gjøvik</span>
         <!-- <v-icon>mdi-open-in-new</v-icon> -->
       </v-btn>
-      <p class="body-1 mt-2 pl-8">
+      <p class="body-1 mt-4 text-center">
         Tlf: 973 488 73
       </p>
     </v-col>
