@@ -406,7 +406,7 @@ export default {
         {
           key: 'lene',
           name: 'Lene Moe Sognar',
-          title: 'Fysioterapeut',
+          title: 'Fysioterapeut og Aut. fotterapeut',
           desc: `
             <p class="mt-4 line-height-18">
               Lene har jobbet som fysioterapeut siden 2014. Hun har vært privatpraktiserende ved
@@ -518,18 +518,21 @@ export default {
           `
         },
         {
-          key: 'henrik',
-          name: 'Henrik',
+          key: 'eline',
+          name: 'Eline Kleiven Brun',
           title: 'Fysioterapeut',
           desc: `
             <p class="mt-4 line-height-18">
-              Henrik er utdannet fysioterapeut ved Oslomet, og har fullført sin turnus ved Sykehuset Innlandet HF og Elverum Helsehus. Han har god erfaring med klinikkarbeid og har jobbet hos oss siden 2023. I sin turnus fikk han erfaring med fysioterapi for eldre, slagpasienter, lungefysioterapi, hofte- og kneproteser samt rehabilitering etter funksjonsfall.
+              Eline ble ferdig med fysioterapiutdanningen ved OsloMet i 2019. Hun har siden jobbet som fysioterapeut. Vært innom sykehus og kommune, og de siste 5.5 årene jobbet innen spesialisert rehabilitering.
             </p>
             <p class="mt-4 line-height-18">
-              Henrik intresserer seg for idrett og spiller selv håndball for Storhamar herrelag. Han baserer behandlingen på en grundig undersøkelse og er opptatt av at pasientene skal føle seg ivaretatt.
+              Hun har erfaring med fysikalsk behandling av et bredt spekter av muskel-og skjelettplager og skader samt opptrening etter operasjoner for ulike ortopediske problemstillinger. Nevrologiske lidelser og langvarig smerteproblematikk og kreft har hun også mye erfaring med.
             </p>
             <p class="mt-4 line-height-18">
-              Henrik har kurs i idrettsmassasje, nåler og tilpasser behandlingen individuelt med trening og øvelser.  Han er opptatt av å øke pasientens forståelse for egen helse og bidra til bedring utfra felles forståelse og mål.
+              Eline er opptatt av å se den enkeltes behov og skape en god terapeut-pasient relasjon. Hun har en helhetlig tilnærming der en grundig anamnese og undersøkelse samt pasientens ønsker og behov legger grunnlaget for behandlingen.
+            </p>
+            <p class="mt-4 line-height-18">
+              Hun kombinerer gjerne aktive øvelser med massasje/ bløtvev-og triggerpunktsbehandling og manuelle mobiliseringsteknikker. Hun er opptatt av at pasienten er en aktiv aktør i eget liv, og vil bidra til å gi dem verktøyene de trenger for å fungere best mulig i hverdagen, og ha en helsefremmende livsstil. Hun er selv glad i å vært aktiv. Har tidligere spilt håndball, og har mye erfaring med ulike aktivitets- og treningsformer. Hun driver til vanlig med Crossfit, styrketrening og løping.
             </p>
           `
         },
@@ -552,7 +555,7 @@ export default {
           title: 'Fysioterapeut',
           desc: `
             <p class="mt-4 line-height-18">
-              Mari kommer fra Vågå og bor på Lillehammer. Hun ble ferdig utdannet som fysioterapeut i 2020, og har jobbet som kommunal fysioterapeut siden. Her har hun hatt et bredt spekter av pasienter med muskel- og skjelettplager, kreft, nevrologiske lidelser samt langvarige smertetilstander.  
+              Mari kommer fra Vågå og bor på Lillehammer. Hun ble ferdig utdannet som fysioterapeut i 2020, og har jobbet som kommunal fysioterapeut siden. Her har hun hatt et bredt spekter av pasienter med muskel- og skjelettplager, kreft, nevrologiske lidelser samt langvarige smertetilstander.
             </p>
             <p class="mt-4 line-height-18">
               Mari er opptatt av å finne gode og overkommelige mestringsstrategier for hver enkelt. Gjennom individuell undersøkelse, og basert på kundens mål, finner vi sammen behandlingsmetode. Det kan være avspenning, massasje og bløtvevsbehandling, kombinert med en aktiv tilnærming med øvelser.
@@ -562,7 +565,7 @@ export default {
         {
           key: 'silje',
           name: 'Silje Renate Moen Krosby',
-          title: 'Fotpleier',
+          title: 'Fotpleier og fotterapistudent',
           desc: `
             <p class="mt-4 line-height-18">
               Silje har jobbet i helsevesenet siden 2001 og har lang erfaring med å hjelpe andre til å oppnå bedre helse. Gjennom sitt arbeid som fotpleier har hun som mål at du skal oppnå bedre fothelse. Hun tar hensyn til den enkeltes utfordringer, og ser mennesker godt. Silje har igjennom sitt arbeid igjennom alle år sett behovet og mangelen på tilstrekkelig god veiledning og fothelse, og har derfor bestemt seg for å starte på utdannelsen for å kunne bli autorisert fotterapeut.

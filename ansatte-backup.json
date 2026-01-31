@@ -1,4 +1,20 @@
 {
+          key: 'henrik',
+          name: 'Henrik',
+          title: 'Fysioterapeut',
+          desc: `
+            <p class="mt-4 line-height-18">
+              Henrik er utdannet fysioterapeut ved Oslomet, og har fullført sin turnus ved Sykehuset Innlandet HF og Elverum Helsehus. Han har god erfaring med klinikkarbeid og har jobbet hos oss siden 2023. I sin turnus fikk han erfaring med fysioterapi for eldre, slagpasienter, lungefysioterapi, hofte- og kneproteser samt rehabilitering etter funksjonsfall.
+            </p>
+            <p class="mt-4 line-height-18">
+              Henrik intresserer seg for idrett og spiller selv håndball for Storhamar herrelag. Han baserer behandlingen på en grundig undersøkelse og er opptatt av at pasientene skal føle seg ivaretatt.
+            </p>
+            <p class="mt-4 line-height-18">
+              Henrik har kurs i idrettsmassasje, nåler og tilpasser behandlingen individuelt med trening og øvelser.  Han er opptatt av å øke pasientens forståelse for egen helse og bidra til bedring utfra felles forståelse og mål.
+            </p>
+          `
+        },
+{
           key: 'amalie',
           name: 'Amalie Øvergaard',
           title: 'Kiropraktor',
